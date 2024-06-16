@@ -1,0 +1,8 @@
+{
+    "aider.openaiApiKey": "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",
+    "aider.ignoreFiles": [
+        ".json",
+        ".csv",
+        ".geojson"
+    ]
+}
