@@ -1,0 +1,44 @@
+2024-06-17 08:22:40,806 - INFO - Initializing the map
+2024-06-17 08:22:40,855 - INFO - Selecting 11 random communes to start the districts
+2024-06-17 08:22:40,857 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:22:40,926 - INFO - Assigned 50 communes
+2024-06-17 08:22:40,928 - INFO - Assigned 100 communes
+2024-06-17 08:22:40,930 - INFO - Assigned 150 communes
+2024-06-17 08:22:40,932 - INFO - Assigned 200 communes
+2024-06-17 08:22:40,934 - INFO - Assigned 250 communes
+2024-06-17 08:22:40,936 - INFO - Assigned 300 communes
+2024-06-17 08:22:40,937 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:22:40,937 - INFO - District 0 has 16 communes
+2024-06-17 08:22:40,937 - INFO - District 1 has 17 communes
+2024-06-17 08:22:40,937 - INFO - District 2 has 20 communes
+2024-06-17 08:22:40,937 - INFO - District 3 has 23 communes
+2024-06-17 08:22:40,937 - INFO - District 4 has 30 communes
+2024-06-17 08:22:40,937 - INFO - District 5 has 34 communes
+2024-06-17 08:22:40,937 - INFO - District 6 has 34 communes
+2024-06-17 08:22:40,937 - INFO - District 7 has 36 communes
+2024-06-17 08:22:40,937 - INFO - District 8 has 37 communes
+2024-06-17 08:22:40,937 - INFO - District 9 has 40 communes
+2024-06-17 08:22:40,937 - INFO - District 10 has 43 communes
+2024-06-17 08:22:40,940 - INFO - Finished initializing the map
+2024-06-17 08:22:43,437 - INFO - Generated a map with 11 districts, starting the simulation
+2024-06-17 08:22:44,590 - INFO - Step 0, current temperature: 1000, current score: 18372.640336724493
+2024-06-17 08:23:20,358 - INFO - Step 50, current temperature: 605.006067137536, current score: 588780.012559784
+2024-06-17 08:23:20,363 - INFO - Seat deviation: 1, population std: 43088182826.690895
+2024-06-17 08:24:12,571 - INFO - Step 100, current temperature: 366.03234127322895, current score: 309155.68983934884
+2024-06-17 08:24:12,575 - INFO - Seat deviation: 1, population std: 37096660548.89091
+2024-06-17 08:25:20,935 - INFO - Step 150, current temperature: 221.45178723886076, current score: 251185.70995454208
+2024-06-17 08:25:20,941 - INFO - Seat deviation: 1, population std: 49789954775.890915
+2024-06-17 08:27:05,123 - INFO - Step 200, current temperature: 133.97967485796173, current score: 172295.63490289243
+2024-06-17 08:27:05,128 - INFO - Seat deviation: 1, population std: 56750702128.090904
+2024-06-17 08:28:56,893 - INFO - Step 250, current temperature: 81.05851616218126, current score: 109521.37853623326
+2024-06-17 08:28:56,904 - INFO - Seat deviation: 1, population std: 59899811237.29092
+2024-06-17 08:30:53,370 - INFO - Step 300, current temperature: 49.04089407128572, current score: 74850.63414218817
+2024-06-17 08:30:53,389 - INFO - Seat deviation: 1, population std: 67421557877.49092
+2024-06-17 08:33:41,214 - INFO - Step 350, current temperature: 29.67003845097708, current score: 38672.88597474875
+2024-06-17 08:33:41,220 - INFO - Seat deviation: 1, population std: 57736677599.690926
+2024-06-17 08:36:08,866 - INFO - Step 400, current temperature: 17.95055327504512, current score: 21348.934391745162
+2024-06-17 08:36:08,886 - INFO - Seat deviation: 1, population std: 52763482640.29091
+2024-06-17 08:38:52,877 - INFO - Step 450, current temperature: 10.860193639877869, current score: 10966.48786968001
+2024-06-17 08:38:52,877 - INFO - Seat deviation: 1, population std: 44298296356.09091
+2024-06-17 08:42:08,961 - INFO - Step 500, current temperature: 6.570483042414598, current score: 5820.475761824452
+2024-06-17 08:42:08,980 - INFO - Seat deviation: 4, population std: 39110603138.890915

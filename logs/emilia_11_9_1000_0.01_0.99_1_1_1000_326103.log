@@ -1,0 +1,668 @@
+2024-06-17 08:01:51,407 - INFO - Initializing the map
+2024-06-17 08:01:51,415 - INFO - Selecting 11 random communes to start the districts
+2024-06-17 08:01:51,416 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:01:51,421 - INFO - Assigned 50 communes
+2024-06-17 08:01:51,424 - INFO - Assigned 100 communes
+2024-06-17 08:01:51,426 - INFO - Assigned 150 communes
+2024-06-17 08:01:51,428 - INFO - Assigned 200 communes
+2024-06-17 08:01:51,429 - INFO - Assigned 250 communes
+2024-06-17 08:01:51,431 - INFO - Assigned 300 communes
+2024-06-17 08:01:51,432 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:01:51,432 - INFO - District 0 has 9 communes
+2024-06-17 08:01:51,432 - INFO - District 1 has 17 communes
+2024-06-17 08:01:51,432 - INFO - District 2 has 18 communes
+2024-06-17 08:01:51,433 - INFO - District 3 has 19 communes
+2024-06-17 08:01:51,433 - INFO - District 4 has 20 communes
+2024-06-17 08:01:51,433 - INFO - District 5 has 26 communes
+2024-06-17 08:01:51,433 - INFO - District 6 has 30 communes
+2024-06-17 08:01:51,433 - INFO - District 7 has 33 communes
+2024-06-17 08:01:51,433 - INFO - District 8 has 33 communes
+2024-06-17 08:01:51,433 - INFO - District 9 has 44 communes
+2024-06-17 08:01:51,433 - INFO - District 10 has 81 communes
+2024-06-17 08:01:51,435 - INFO - Finished initializing the map
+2024-06-17 08:01:52,079 - INFO - Generated a map with 11 districts, starting the simulation
+2024-06-17 08:01:53,231 - INFO - Step 0, current temperature: 1000, current score: 33616.81933862542
+2024-06-17 08:02:27,725 - INFO - Step 50, current temperature: 605.006067137536, current score: 1917709.7573079355
+2024-06-17 08:02:27,731 - INFO - Seat deviation: 1, population std: 139739290927.09094
+2024-06-17 08:03:23,137 - INFO - Step 100, current temperature: 366.03234127322895, current score: 1166115.6485472468
+2024-06-17 08:03:23,143 - INFO - Seat deviation: 1, population std: 140497478624.69092
+2024-06-17 08:07:00,587 - INFO - Initializing the map
+2024-06-17 08:07:00,602 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:00,603 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:00,609 - INFO - Assigned 50 communes
+2024-06-17 08:07:00,612 - INFO - Assigned 100 communes
+2024-06-17 08:07:00,615 - INFO - Assigned 150 communes
+2024-06-17 08:07:00,618 - INFO - Assigned 200 communes
+2024-06-17 08:07:00,620 - INFO - Assigned 250 communes
+2024-06-17 08:07:00,623 - INFO - Assigned 300 communes
+2024-06-17 08:07:00,626 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:00,626 - INFO - District 0 has 31 communes
+2024-06-17 08:07:00,626 - INFO - District 1 has 32 communes
+2024-06-17 08:07:00,626 - INFO - District 2 has 38 communes
+2024-06-17 08:07:00,627 - INFO - District 3 has 85 communes
+2024-06-17 08:07:00,627 - INFO - District 4 has 144 communes
+2024-06-17 08:07:00,629 - INFO - Finished initializing the map
+2024-06-17 08:07:01,138 - INFO - Initializing the map
+2024-06-17 08:07:01,142 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:01,142 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:01,144 - INFO - Assigned 50 communes
+2024-06-17 08:07:01,145 - INFO - Assigned 100 communes
+2024-06-17 08:07:01,146 - INFO - Assigned 150 communes
+2024-06-17 08:07:01,148 - INFO - Assigned 200 communes
+2024-06-17 08:07:01,150 - INFO - Assigned 250 communes
+2024-06-17 08:07:01,151 - INFO - Assigned 300 communes
+2024-06-17 08:07:01,152 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:01,152 - INFO - District 0 has 35 communes
+2024-06-17 08:07:01,152 - INFO - District 1 has 36 communes
+2024-06-17 08:07:01,152 - INFO - District 2 has 50 communes
+2024-06-17 08:07:01,152 - INFO - District 3 has 62 communes
+2024-06-17 08:07:01,152 - INFO - District 4 has 147 communes
+2024-06-17 08:07:01,153 - INFO - Finished initializing the map
+2024-06-17 08:07:01,538 - INFO - Initializing the map
+2024-06-17 08:07:01,547 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:01,548 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:01,551 - INFO - Assigned 50 communes
+2024-06-17 08:07:01,552 - INFO - Assigned 100 communes
+2024-06-17 08:07:01,553 - INFO - Assigned 150 communes
+2024-06-17 08:07:01,555 - INFO - Assigned 200 communes
+2024-06-17 08:07:01,557 - INFO - Assigned 250 communes
+2024-06-17 08:07:01,560 - INFO - Assigned 300 communes
+2024-06-17 08:07:01,560 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:01,561 - INFO - District 0 has 36 communes
+2024-06-17 08:07:01,561 - INFO - District 1 has 51 communes
+2024-06-17 08:07:01,561 - INFO - District 2 has 53 communes
+2024-06-17 08:07:01,561 - INFO - District 3 has 86 communes
+2024-06-17 08:07:01,561 - INFO - District 4 has 104 communes
+2024-06-17 08:07:01,562 - INFO - Finished initializing the map
+2024-06-17 08:07:02,023 - INFO - Initializing the map
+2024-06-17 08:07:02,030 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:02,030 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:02,032 - INFO - Assigned 50 communes
+2024-06-17 08:07:02,033 - INFO - Assigned 100 communes
+2024-06-17 08:07:02,034 - INFO - Assigned 150 communes
+2024-06-17 08:07:02,035 - INFO - Assigned 200 communes
+2024-06-17 08:07:02,035 - INFO - Assigned 250 communes
+2024-06-17 08:07:02,036 - INFO - Assigned 300 communes
+2024-06-17 08:07:02,036 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:02,036 - INFO - District 0 has 20 communes
+2024-06-17 08:07:02,036 - INFO - District 1 has 21 communes
+2024-06-17 08:07:02,036 - INFO - District 2 has 95 communes
+2024-06-17 08:07:02,036 - INFO - District 3 has 94 communes
+2024-06-17 08:07:02,036 - INFO - District 4 has 100 communes
+2024-06-17 08:07:02,037 - INFO - Finished initializing the map
+2024-06-17 08:07:02,418 - INFO - Initializing the map
+2024-06-17 08:07:02,426 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:02,426 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:02,428 - INFO - Assigned 50 communes
+2024-06-17 08:07:02,429 - INFO - Assigned 100 communes
+2024-06-17 08:07:02,430 - INFO - Assigned 150 communes
+2024-06-17 08:07:02,430 - INFO - Assigned 200 communes
+2024-06-17 08:07:02,431 - INFO - Assigned 250 communes
+2024-06-17 08:07:02,431 - INFO - Assigned 300 communes
+2024-06-17 08:07:02,432 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:02,432 - INFO - District 0 has 40 communes
+2024-06-17 08:07:02,432 - INFO - District 1 has 43 communes
+2024-06-17 08:07:02,432 - INFO - District 2 has 72 communes
+2024-06-17 08:07:02,432 - INFO - District 3 has 85 communes
+2024-06-17 08:07:02,432 - INFO - District 4 has 90 communes
+2024-06-17 08:07:02,433 - INFO - Finished initializing the map
+2024-06-17 08:07:02,892 - INFO - Initializing the map
+2024-06-17 08:07:02,896 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:02,896 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:02,897 - INFO - Assigned 50 communes
+2024-06-17 08:07:02,898 - INFO - Assigned 100 communes
+2024-06-17 08:07:02,899 - INFO - Assigned 150 communes
+2024-06-17 08:07:02,900 - INFO - Assigned 200 communes
+2024-06-17 08:07:02,901 - INFO - Assigned 250 communes
+2024-06-17 08:07:02,902 - INFO - Assigned 300 communes
+2024-06-17 08:07:02,903 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:02,903 - INFO - District 0 has 27 communes
+2024-06-17 08:07:02,903 - INFO - District 1 has 32 communes
+2024-06-17 08:07:02,903 - INFO - District 2 has 38 communes
+2024-06-17 08:07:02,903 - INFO - District 3 has 62 communes
+2024-06-17 08:07:02,903 - INFO - District 4 has 171 communes
+2024-06-17 08:07:02,904 - INFO - Finished initializing the map
+2024-06-17 08:07:03,318 - INFO - Initializing the map
+2024-06-17 08:07:03,325 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:03,326 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:03,328 - INFO - Assigned 50 communes
+2024-06-17 08:07:03,329 - INFO - Assigned 100 communes
+2024-06-17 08:07:03,330 - INFO - Assigned 150 communes
+2024-06-17 08:07:03,331 - INFO - Assigned 200 communes
+2024-06-17 08:07:03,332 - INFO - Assigned 250 communes
+2024-06-17 08:07:03,333 - INFO - Assigned 300 communes
+2024-06-17 08:07:03,334 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:03,334 - INFO - District 0 has 30 communes
+2024-06-17 08:07:03,334 - INFO - District 1 has 39 communes
+2024-06-17 08:07:03,334 - INFO - District 2 has 65 communes
+2024-06-17 08:07:03,334 - INFO - District 3 has 77 communes
+2024-06-17 08:07:03,334 - INFO - District 4 has 119 communes
+2024-06-17 08:07:03,335 - INFO - Finished initializing the map
+2024-06-17 08:07:03,855 - INFO - Initializing the map
+2024-06-17 08:07:03,865 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:03,865 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:03,867 - INFO - Assigned 50 communes
+2024-06-17 08:07:03,868 - INFO - Assigned 100 communes
+2024-06-17 08:07:03,869 - INFO - Assigned 150 communes
+2024-06-17 08:07:03,871 - INFO - Assigned 200 communes
+2024-06-17 08:07:03,873 - INFO - Assigned 250 communes
+2024-06-17 08:07:03,874 - INFO - Assigned 300 communes
+2024-06-17 08:07:03,875 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:03,875 - INFO - District 0 has 37 communes
+2024-06-17 08:07:03,875 - INFO - District 1 has 52 communes
+2024-06-17 08:07:03,875 - INFO - District 2 has 62 communes
+2024-06-17 08:07:03,875 - INFO - District 3 has 72 communes
+2024-06-17 08:07:03,875 - INFO - District 4 has 107 communes
+2024-06-17 08:07:03,877 - INFO - Finished initializing the map
+2024-06-17 08:07:04,343 - INFO - Initializing the map
+2024-06-17 08:07:04,348 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:04,348 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:04,350 - INFO - Assigned 50 communes
+2024-06-17 08:07:04,351 - INFO - Assigned 100 communes
+2024-06-17 08:07:04,351 - INFO - Assigned 150 communes
+2024-06-17 08:07:04,352 - INFO - Assigned 200 communes
+2024-06-17 08:07:04,353 - INFO - Assigned 250 communes
+2024-06-17 08:07:04,354 - INFO - Assigned 300 communes
+2024-06-17 08:07:04,355 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:04,355 - INFO - District 0 has 33 communes
+2024-06-17 08:07:04,355 - INFO - District 1 has 47 communes
+2024-06-17 08:07:04,355 - INFO - District 2 has 54 communes
+2024-06-17 08:07:04,355 - INFO - District 3 has 72 communes
+2024-06-17 08:07:04,355 - INFO - District 4 has 124 communes
+2024-06-17 08:07:04,358 - INFO - Finished initializing the map
+2024-06-17 08:07:04,861 - INFO - Initializing the map
+2024-06-17 08:07:04,869 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:04,869 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:04,873 - INFO - Assigned 50 communes
+2024-06-17 08:07:04,875 - INFO - Assigned 100 communes
+2024-06-17 08:07:04,876 - INFO - Assigned 150 communes
+2024-06-17 08:07:04,877 - INFO - Assigned 200 communes
+2024-06-17 08:07:04,877 - INFO - Assigned 250 communes
+2024-06-17 08:07:04,878 - INFO - Assigned 300 communes
+2024-06-17 08:07:04,879 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:04,879 - INFO - District 0 has 5 communes
+2024-06-17 08:07:04,879 - INFO - District 1 has 42 communes
+2024-06-17 08:07:04,879 - INFO - District 2 has 67 communes
+2024-06-17 08:07:04,879 - INFO - District 3 has 89 communes
+2024-06-17 08:07:04,879 - INFO - District 4 has 127 communes
+2024-06-17 08:07:04,880 - INFO - Finished initializing the map
+2024-06-17 08:07:20,128 - INFO - Initializing the map
+2024-06-17 08:07:20,138 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:20,138 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:20,141 - INFO - Assigned 50 communes
+2024-06-17 08:07:20,143 - INFO - Assigned 100 communes
+2024-06-17 08:07:20,144 - INFO - Assigned 150 communes
+2024-06-17 08:07:20,145 - INFO - Assigned 200 communes
+2024-06-17 08:07:20,146 - INFO - Assigned 250 communes
+2024-06-17 08:07:20,147 - INFO - Assigned 300 communes
+2024-06-17 08:07:20,148 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:20,148 - INFO - District 0 has 33 communes
+2024-06-17 08:07:20,148 - INFO - District 1 has 35 communes
+2024-06-17 08:07:20,148 - INFO - District 2 has 61 communes
+2024-06-17 08:07:20,148 - INFO - District 3 has 65 communes
+2024-06-17 08:07:20,148 - INFO - District 4 has 136 communes
+2024-06-17 08:07:20,150 - INFO - Finished initializing the map
+2024-06-17 08:07:20,586 - INFO - Initializing the map
+2024-06-17 08:07:20,595 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:20,596 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:20,598 - INFO - Assigned 50 communes
+2024-06-17 08:07:20,600 - INFO - Assigned 100 communes
+2024-06-17 08:07:20,602 - INFO - Assigned 150 communes
+2024-06-17 08:07:20,603 - INFO - Assigned 200 communes
+2024-06-17 08:07:20,604 - INFO - Assigned 250 communes
+2024-06-17 08:07:20,605 - INFO - Assigned 300 communes
+2024-06-17 08:07:20,606 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:20,606 - INFO - District 0 has 33 communes
+2024-06-17 08:07:20,606 - INFO - District 1 has 38 communes
+2024-06-17 08:07:20,606 - INFO - District 2 has 42 communes
+2024-06-17 08:07:20,606 - INFO - District 3 has 84 communes
+2024-06-17 08:07:20,606 - INFO - District 4 has 133 communes
+2024-06-17 08:07:20,608 - INFO - Finished initializing the map
+2024-06-17 08:07:21,096 - INFO - Initializing the map
+2024-06-17 08:07:21,106 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:21,106 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:21,109 - INFO - Assigned 50 communes
+2024-06-17 08:07:21,110 - INFO - Assigned 100 communes
+2024-06-17 08:07:21,111 - INFO - Assigned 150 communes
+2024-06-17 08:07:21,113 - INFO - Assigned 200 communes
+2024-06-17 08:07:21,115 - INFO - Assigned 250 communes
+2024-06-17 08:07:21,118 - INFO - Assigned 300 communes
+2024-06-17 08:07:21,119 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:21,119 - INFO - District 0 has 17 communes
+2024-06-17 08:07:21,119 - INFO - District 1 has 39 communes
+2024-06-17 08:07:21,119 - INFO - District 2 has 46 communes
+2024-06-17 08:07:21,119 - INFO - District 3 has 92 communes
+2024-06-17 08:07:21,119 - INFO - District 4 has 136 communes
+2024-06-17 08:07:21,122 - INFO - Finished initializing the map
+2024-06-17 08:07:21,667 - INFO - Initializing the map
+2024-06-17 08:07:21,676 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:21,676 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:21,678 - INFO - Assigned 50 communes
+2024-06-17 08:07:21,679 - INFO - Assigned 100 communes
+2024-06-17 08:07:21,680 - INFO - Assigned 150 communes
+2024-06-17 08:07:21,682 - INFO - Assigned 200 communes
+2024-06-17 08:07:21,683 - INFO - Assigned 250 communes
+2024-06-17 08:07:21,685 - INFO - Assigned 300 communes
+2024-06-17 08:07:21,685 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:21,685 - INFO - District 0 has 9 communes
+2024-06-17 08:07:21,685 - INFO - District 1 has 63 communes
+2024-06-17 08:07:21,685 - INFO - District 2 has 64 communes
+2024-06-17 08:07:21,685 - INFO - District 3 has 64 communes
+2024-06-17 08:07:21,685 - INFO - District 4 has 130 communes
+2024-06-17 08:07:21,688 - INFO - Finished initializing the map
+2024-06-17 08:07:22,203 - INFO - Initializing the map
+2024-06-17 08:07:22,211 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:22,211 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:22,214 - INFO - Assigned 50 communes
+2024-06-17 08:07:22,215 - INFO - Assigned 100 communes
+2024-06-17 08:07:22,217 - INFO - Assigned 150 communes
+2024-06-17 08:07:22,218 - INFO - Assigned 200 communes
+2024-06-17 08:07:22,219 - INFO - Assigned 250 communes
+2024-06-17 08:07:22,220 - INFO - Assigned 300 communes
+2024-06-17 08:07:22,221 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:22,221 - INFO - District 0 has 19 communes
+2024-06-17 08:07:22,221 - INFO - District 1 has 27 communes
+2024-06-17 08:07:22,221 - INFO - District 2 has 47 communes
+2024-06-17 08:07:22,221 - INFO - District 3 has 83 communes
+2024-06-17 08:07:22,221 - INFO - District 4 has 154 communes
+2024-06-17 08:07:22,223 - INFO - Finished initializing the map
+2024-06-17 08:07:22,635 - INFO - Initializing the map
+2024-06-17 08:07:22,640 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:22,640 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:22,642 - INFO - Assigned 50 communes
+2024-06-17 08:07:22,643 - INFO - Assigned 100 communes
+2024-06-17 08:07:22,643 - INFO - Assigned 150 communes
+2024-06-17 08:07:22,644 - INFO - Assigned 200 communes
+2024-06-17 08:07:22,645 - INFO - Assigned 250 communes
+2024-06-17 08:07:22,646 - INFO - Assigned 300 communes
+2024-06-17 08:07:22,646 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:22,646 - INFO - District 0 has 41 communes
+2024-06-17 08:07:22,646 - INFO - District 1 has 42 communes
+2024-06-17 08:07:22,647 - INFO - District 2 has 45 communes
+2024-06-17 08:07:22,647 - INFO - District 3 has 101 communes
+2024-06-17 08:07:22,647 - INFO - District 4 has 101 communes
+2024-06-17 08:07:22,649 - INFO - Finished initializing the map
+2024-06-17 08:07:23,131 - INFO - Initializing the map
+2024-06-17 08:07:23,140 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:23,140 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:23,143 - INFO - Assigned 50 communes
+2024-06-17 08:07:23,143 - INFO - Assigned 100 communes
+2024-06-17 08:07:23,144 - INFO - Assigned 150 communes
+2024-06-17 08:07:23,145 - INFO - Assigned 200 communes
+2024-06-17 08:07:23,146 - INFO - Assigned 250 communes
+2024-06-17 08:07:23,147 - INFO - Assigned 300 communes
+2024-06-17 08:07:23,149 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:23,149 - INFO - District 0 has 52 communes
+2024-06-17 08:07:23,149 - INFO - District 1 has 53 communes
+2024-06-17 08:07:23,149 - INFO - District 2 has 53 communes
+2024-06-17 08:07:23,149 - INFO - District 3 has 58 communes
+2024-06-17 08:07:23,149 - INFO - District 4 has 114 communes
+2024-06-17 08:07:23,151 - INFO - Finished initializing the map
+2024-06-17 08:07:23,578 - INFO - Initializing the map
+2024-06-17 08:07:23,586 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:23,586 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:23,588 - INFO - Assigned 50 communes
+2024-06-17 08:07:23,589 - INFO - Assigned 100 communes
+2024-06-17 08:07:23,590 - INFO - Assigned 150 communes
+2024-06-17 08:07:23,591 - INFO - Assigned 200 communes
+2024-06-17 08:07:23,592 - INFO - Assigned 250 communes
+2024-06-17 08:07:23,592 - INFO - Assigned 300 communes
+2024-06-17 08:07:23,593 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:23,593 - INFO - District 0 has 26 communes
+2024-06-17 08:07:23,593 - INFO - District 1 has 55 communes
+2024-06-17 08:07:23,593 - INFO - District 2 has 56 communes
+2024-06-17 08:07:23,593 - INFO - District 3 has 73 communes
+2024-06-17 08:07:23,593 - INFO - District 4 has 120 communes
+2024-06-17 08:07:23,594 - INFO - Finished initializing the map
+2024-06-17 08:07:23,983 - INFO - Initializing the map
+2024-06-17 08:07:23,990 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:23,991 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:23,993 - INFO - Assigned 50 communes
+2024-06-17 08:07:23,994 - INFO - Assigned 100 communes
+2024-06-17 08:07:23,994 - INFO - Assigned 150 communes
+2024-06-17 08:07:23,995 - INFO - Assigned 200 communes
+2024-06-17 08:07:23,996 - INFO - Assigned 250 communes
+2024-06-17 08:07:23,997 - INFO - Assigned 300 communes
+2024-06-17 08:07:23,998 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:23,998 - INFO - District 0 has 34 communes
+2024-06-17 08:07:23,998 - INFO - District 1 has 48 communes
+2024-06-17 08:07:23,998 - INFO - District 2 has 64 communes
+2024-06-17 08:07:23,998 - INFO - District 3 has 88 communes
+2024-06-17 08:07:23,998 - INFO - District 4 has 96 communes
+2024-06-17 08:07:24,000 - INFO - Finished initializing the map
+2024-06-17 08:07:24,454 - INFO - Initializing the map
+2024-06-17 08:07:24,458 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:24,458 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:24,460 - INFO - Assigned 50 communes
+2024-06-17 08:07:24,461 - INFO - Assigned 100 communes
+2024-06-17 08:07:24,461 - INFO - Assigned 150 communes
+2024-06-17 08:07:24,462 - INFO - Assigned 200 communes
+2024-06-17 08:07:24,462 - INFO - Assigned 250 communes
+2024-06-17 08:07:24,463 - INFO - Assigned 300 communes
+2024-06-17 08:07:24,464 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:24,464 - INFO - District 0 has 36 communes
+2024-06-17 08:07:24,464 - INFO - District 1 has 52 communes
+2024-06-17 08:07:24,464 - INFO - District 2 has 59 communes
+2024-06-17 08:07:24,464 - INFO - District 3 has 69 communes
+2024-06-17 08:07:24,464 - INFO - District 4 has 114 communes
+2024-06-17 08:07:24,466 - INFO - Finished initializing the map
+2024-06-17 08:07:36,367 - INFO - Initializing the map
+2024-06-17 08:07:36,378 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:36,379 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:36,383 - INFO - Assigned 50 communes
+2024-06-17 08:07:36,385 - INFO - Assigned 100 communes
+2024-06-17 08:07:36,388 - INFO - Assigned 150 communes
+2024-06-17 08:07:36,390 - INFO - Assigned 200 communes
+2024-06-17 08:07:36,393 - INFO - Assigned 250 communes
+2024-06-17 08:07:36,397 - INFO - Assigned 300 communes
+2024-06-17 08:07:36,398 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:36,398 - INFO - District 0 has 33 communes
+2024-06-17 08:07:36,398 - INFO - District 1 has 39 communes
+2024-06-17 08:07:36,399 - INFO - District 2 has 45 communes
+2024-06-17 08:07:36,399 - INFO - District 3 has 92 communes
+2024-06-17 08:07:36,399 - INFO - District 4 has 121 communes
+2024-06-17 08:07:36,401 - INFO - Finished initializing the map
+2024-06-17 08:07:39,067 - INFO - Initializing the map
+2024-06-17 08:07:39,074 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:39,075 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:39,078 - INFO - Assigned 50 communes
+2024-06-17 08:07:39,079 - INFO - Assigned 100 communes
+2024-06-17 08:07:39,080 - INFO - Assigned 150 communes
+2024-06-17 08:07:39,081 - INFO - Assigned 200 communes
+2024-06-17 08:07:39,081 - INFO - Assigned 250 communes
+2024-06-17 08:07:39,082 - INFO - Assigned 300 communes
+2024-06-17 08:07:39,082 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:39,082 - INFO - District 0 has 51 communes
+2024-06-17 08:07:39,082 - INFO - District 1 has 56 communes
+2024-06-17 08:07:39,082 - INFO - District 2 has 68 communes
+2024-06-17 08:07:39,082 - INFO - District 3 has 71 communes
+2024-06-17 08:07:39,082 - INFO - District 4 has 84 communes
+2024-06-17 08:07:39,083 - INFO - Finished initializing the map
+2024-06-17 08:07:39,634 - INFO - Initializing the map
+2024-06-17 08:07:39,641 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:39,641 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:39,645 - INFO - Assigned 50 communes
+2024-06-17 08:07:39,646 - INFO - Assigned 100 communes
+2024-06-17 08:07:39,647 - INFO - Assigned 150 communes
+2024-06-17 08:07:39,648 - INFO - Assigned 200 communes
+2024-06-17 08:07:39,649 - INFO - Assigned 250 communes
+2024-06-17 08:07:39,649 - INFO - Assigned 300 communes
+2024-06-17 08:07:39,650 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:39,650 - INFO - District 0 has 42 communes
+2024-06-17 08:07:39,650 - INFO - District 1 has 43 communes
+2024-06-17 08:07:39,650 - INFO - District 2 has 71 communes
+2024-06-17 08:07:39,650 - INFO - District 3 has 76 communes
+2024-06-17 08:07:39,650 - INFO - District 4 has 98 communes
+2024-06-17 08:07:39,651 - INFO - Finished initializing the map
+2024-06-17 08:07:40,205 - INFO - Initializing the map
+2024-06-17 08:07:40,215 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:40,215 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:40,218 - INFO - Assigned 50 communes
+2024-06-17 08:07:40,219 - INFO - Assigned 100 communes
+2024-06-17 08:07:40,220 - INFO - Assigned 150 communes
+2024-06-17 08:07:40,221 - INFO - Assigned 200 communes
+2024-06-17 08:07:40,222 - INFO - Assigned 250 communes
+2024-06-17 08:07:40,222 - INFO - Assigned 300 communes
+2024-06-17 08:07:40,223 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:40,223 - INFO - District 0 has 44 communes
+2024-06-17 08:07:40,223 - INFO - District 1 has 58 communes
+2024-06-17 08:07:40,223 - INFO - District 2 has 74 communes
+2024-06-17 08:07:40,223 - INFO - District 3 has 75 communes
+2024-06-17 08:07:40,223 - INFO - District 4 has 79 communes
+2024-06-17 08:07:40,225 - INFO - Finished initializing the map
+2024-06-17 08:07:40,629 - INFO - Initializing the map
+2024-06-17 08:07:40,636 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:40,636 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:40,639 - INFO - Assigned 50 communes
+2024-06-17 08:07:40,640 - INFO - Assigned 100 communes
+2024-06-17 08:07:40,641 - INFO - Assigned 150 communes
+2024-06-17 08:07:40,642 - INFO - Assigned 200 communes
+2024-06-17 08:07:40,643 - INFO - Assigned 250 communes
+2024-06-17 08:07:40,645 - INFO - Assigned 300 communes
+2024-06-17 08:07:40,645 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:40,645 - INFO - District 0 has 52 communes
+2024-06-17 08:07:40,645 - INFO - District 1 has 56 communes
+2024-06-17 08:07:40,645 - INFO - District 2 has 67 communes
+2024-06-17 08:07:40,645 - INFO - District 3 has 71 communes
+2024-06-17 08:07:40,645 - INFO - District 4 has 84 communes
+2024-06-17 08:07:40,647 - INFO - Finished initializing the map
+2024-06-17 08:07:41,057 - INFO - Initializing the map
+2024-06-17 08:07:41,064 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:41,064 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:41,067 - INFO - Assigned 50 communes
+2024-06-17 08:07:41,068 - INFO - Assigned 100 communes
+2024-06-17 08:07:41,069 - INFO - Assigned 150 communes
+2024-06-17 08:07:41,070 - INFO - Assigned 200 communes
+2024-06-17 08:07:41,073 - INFO - Assigned 250 communes
+2024-06-17 08:07:41,076 - INFO - Assigned 300 communes
+2024-06-17 08:07:41,077 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:41,077 - INFO - District 0 has 25 communes
+2024-06-17 08:07:41,077 - INFO - District 1 has 41 communes
+2024-06-17 08:07:41,077 - INFO - District 2 has 51 communes
+2024-06-17 08:07:41,077 - INFO - District 3 has 54 communes
+2024-06-17 08:07:41,077 - INFO - District 4 has 159 communes
+2024-06-17 08:07:41,078 - INFO - Finished initializing the map
+2024-06-17 08:07:41,487 - INFO - Initializing the map
+2024-06-17 08:07:41,494 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:41,495 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:41,497 - INFO - Assigned 50 communes
+2024-06-17 08:07:41,497 - INFO - Assigned 100 communes
+2024-06-17 08:07:41,498 - INFO - Assigned 150 communes
+2024-06-17 08:07:41,499 - INFO - Assigned 200 communes
+2024-06-17 08:07:41,499 - INFO - Assigned 250 communes
+2024-06-17 08:07:41,500 - INFO - Assigned 300 communes
+2024-06-17 08:07:41,501 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:41,501 - INFO - District 0 has 41 communes
+2024-06-17 08:07:41,501 - INFO - District 1 has 53 communes
+2024-06-17 08:07:41,501 - INFO - District 2 has 67 communes
+2024-06-17 08:07:41,501 - INFO - District 3 has 73 communes
+2024-06-17 08:07:41,501 - INFO - District 4 has 96 communes
+2024-06-17 08:07:41,502 - INFO - Finished initializing the map
+2024-06-17 08:07:41,997 - INFO - Initializing the map
+2024-06-17 08:07:42,008 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:42,009 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:42,015 - INFO - Assigned 50 communes
+2024-06-17 08:07:42,018 - INFO - Assigned 100 communes
+2024-06-17 08:07:42,020 - INFO - Assigned 150 communes
+2024-06-17 08:07:42,024 - INFO - Assigned 200 communes
+2024-06-17 08:07:42,030 - INFO - Assigned 250 communes
+2024-06-17 08:07:42,034 - INFO - Assigned 300 communes
+2024-06-17 08:07:42,035 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:42,035 - INFO - District 0 has 5 communes
+2024-06-17 08:07:42,035 - INFO - District 1 has 6 communes
+2024-06-17 08:07:42,035 - INFO - District 2 has 10 communes
+2024-06-17 08:07:42,035 - INFO - District 3 has 42 communes
+2024-06-17 08:07:42,035 - INFO - District 4 has 267 communes
+2024-06-17 08:07:42,037 - INFO - Finished initializing the map
+2024-06-17 08:07:42,446 - INFO - Initializing the map
+2024-06-17 08:07:42,453 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:42,453 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:42,455 - INFO - Assigned 50 communes
+2024-06-17 08:07:42,456 - INFO - Assigned 100 communes
+2024-06-17 08:07:42,458 - INFO - Assigned 150 communes
+2024-06-17 08:07:42,459 - INFO - Assigned 200 communes
+2024-06-17 08:07:42,461 - INFO - Assigned 250 communes
+2024-06-17 08:07:42,462 - INFO - Assigned 300 communes
+2024-06-17 08:07:42,462 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:42,462 - INFO - District 0 has 21 communes
+2024-06-17 08:07:42,462 - INFO - District 1 has 44 communes
+2024-06-17 08:07:42,462 - INFO - District 2 has 47 communes
+2024-06-17 08:07:42,462 - INFO - District 3 has 89 communes
+2024-06-17 08:07:42,462 - INFO - District 4 has 129 communes
+2024-06-17 08:07:42,463 - INFO - Finished initializing the map
+2024-06-17 08:07:42,851 - INFO - Initializing the map
+2024-06-17 08:07:42,857 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:07:42,858 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:07:42,860 - INFO - Assigned 50 communes
+2024-06-17 08:07:42,861 - INFO - Assigned 100 communes
+2024-06-17 08:07:42,861 - INFO - Assigned 150 communes
+2024-06-17 08:07:42,862 - INFO - Assigned 200 communes
+2024-06-17 08:07:42,863 - INFO - Assigned 250 communes
+2024-06-17 08:07:42,864 - INFO - Assigned 300 communes
+2024-06-17 08:07:42,865 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:07:42,865 - INFO - District 0 has 29 communes
+2024-06-17 08:07:42,865 - INFO - District 1 has 44 communes
+2024-06-17 08:07:42,865 - INFO - District 2 has 49 communes
+2024-06-17 08:07:42,865 - INFO - District 3 has 90 communes
+2024-06-17 08:07:42,865 - INFO - District 4 has 118 communes
+2024-06-17 08:07:42,866 - INFO - Finished initializing the map
+2024-06-17 08:08:00,917 - INFO - Initializing the map
+2024-06-17 08:08:00,928 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:00,928 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:00,931 - INFO - Assigned 50 communes
+2024-06-17 08:08:00,932 - INFO - Assigned 100 communes
+2024-06-17 08:08:00,933 - INFO - Assigned 150 communes
+2024-06-17 08:08:00,934 - INFO - Assigned 200 communes
+2024-06-17 08:08:00,936 - INFO - Assigned 250 communes
+2024-06-17 08:08:00,937 - INFO - Assigned 300 communes
+2024-06-17 08:08:00,937 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:00,938 - INFO - District 0 has 51 communes
+2024-06-17 08:08:00,938 - INFO - District 1 has 59 communes
+2024-06-17 08:08:00,938 - INFO - District 2 has 66 communes
+2024-06-17 08:08:00,938 - INFO - District 3 has 70 communes
+2024-06-17 08:08:00,938 - INFO - District 4 has 84 communes
+2024-06-17 08:08:00,940 - INFO - Finished initializing the map
+2024-06-17 08:08:01,627 - INFO - Initializing the map
+2024-06-17 08:08:01,633 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:01,633 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:01,636 - INFO - Assigned 50 communes
+2024-06-17 08:08:01,637 - INFO - Assigned 100 communes
+2024-06-17 08:08:01,638 - INFO - Assigned 150 communes
+2024-06-17 08:08:01,639 - INFO - Assigned 200 communes
+2024-06-17 08:08:01,640 - INFO - Assigned 250 communes
+2024-06-17 08:08:01,641 - INFO - Assigned 300 communes
+2024-06-17 08:08:01,642 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:01,642 - INFO - District 0 has 36 communes
+2024-06-17 08:08:01,642 - INFO - District 1 has 39 communes
+2024-06-17 08:08:01,642 - INFO - District 2 has 40 communes
+2024-06-17 08:08:01,642 - INFO - District 3 has 99 communes
+2024-06-17 08:08:01,642 - INFO - District 4 has 116 communes
+2024-06-17 08:08:01,643 - INFO - Finished initializing the map
+2024-06-17 08:08:02,161 - INFO - Initializing the map
+2024-06-17 08:08:02,168 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:02,169 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:02,173 - INFO - Assigned 50 communes
+2024-06-17 08:08:02,174 - INFO - Assigned 100 communes
+2024-06-17 08:08:02,175 - INFO - Assigned 150 communes
+2024-06-17 08:08:02,176 - INFO - Assigned 200 communes
+2024-06-17 08:08:02,177 - INFO - Assigned 250 communes
+2024-06-17 08:08:02,178 - INFO - Assigned 300 communes
+2024-06-17 08:08:02,178 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:02,178 - INFO - District 0 has 13 communes
+2024-06-17 08:08:02,178 - INFO - District 1 has 29 communes
+2024-06-17 08:08:02,178 - INFO - District 2 has 56 communes
+2024-06-17 08:08:02,178 - INFO - District 3 has 58 communes
+2024-06-17 08:08:02,178 - INFO - District 4 has 174 communes
+2024-06-17 08:08:02,179 - INFO - Finished initializing the map
+2024-06-17 08:08:02,626 - INFO - Initializing the map
+2024-06-17 08:08:02,630 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:02,631 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:02,633 - INFO - Assigned 50 communes
+2024-06-17 08:08:02,635 - INFO - Assigned 100 communes
+2024-06-17 08:08:02,636 - INFO - Assigned 150 communes
+2024-06-17 08:08:02,637 - INFO - Assigned 200 communes
+2024-06-17 08:08:02,637 - INFO - Assigned 250 communes
+2024-06-17 08:08:02,639 - INFO - Assigned 300 communes
+2024-06-17 08:08:02,639 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:02,640 - INFO - District 0 has 45 communes
+2024-06-17 08:08:02,640 - INFO - District 1 has 49 communes
+2024-06-17 08:08:02,640 - INFO - District 2 has 58 communes
+2024-06-17 08:08:02,640 - INFO - District 3 has 71 communes
+2024-06-17 08:08:02,640 - INFO - District 4 has 107 communes
+2024-06-17 08:08:02,641 - INFO - Finished initializing the map
+2024-06-17 08:08:03,088 - INFO - Initializing the map
+2024-06-17 08:08:03,092 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:03,092 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:03,094 - INFO - Assigned 50 communes
+2024-06-17 08:08:03,095 - INFO - Assigned 100 communes
+2024-06-17 08:08:03,096 - INFO - Assigned 150 communes
+2024-06-17 08:08:03,096 - INFO - Assigned 200 communes
+2024-06-17 08:08:03,097 - INFO - Assigned 250 communes
+2024-06-17 08:08:03,098 - INFO - Assigned 300 communes
+2024-06-17 08:08:03,098 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:03,098 - INFO - District 0 has 15 communes
+2024-06-17 08:08:03,098 - INFO - District 1 has 51 communes
+2024-06-17 08:08:03,098 - INFO - District 2 has 72 communes
+2024-06-17 08:08:03,098 - INFO - District 3 has 77 communes
+2024-06-17 08:08:03,098 - INFO - District 4 has 115 communes
+2024-06-17 08:08:03,099 - INFO - Finished initializing the map
+2024-06-17 08:08:03,495 - INFO - Initializing the map
+2024-06-17 08:08:03,501 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:03,503 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:03,505 - INFO - Assigned 50 communes
+2024-06-17 08:08:03,506 - INFO - Assigned 100 communes
+2024-06-17 08:08:03,506 - INFO - Assigned 150 communes
+2024-06-17 08:08:03,507 - INFO - Assigned 200 communes
+2024-06-17 08:08:03,507 - INFO - Assigned 250 communes
+2024-06-17 08:08:03,509 - INFO - Assigned 300 communes
+2024-06-17 08:08:03,509 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:03,509 - INFO - District 0 has 56 communes
+2024-06-17 08:08:03,509 - INFO - District 1 has 60 communes
+2024-06-17 08:08:03,509 - INFO - District 2 has 60 communes
+2024-06-17 08:08:03,509 - INFO - District 3 has 76 communes
+2024-06-17 08:08:03,509 - INFO - District 4 has 78 communes
+2024-06-17 08:08:03,510 - INFO - Finished initializing the map
+2024-06-17 08:08:03,929 - INFO - Initializing the map
+2024-06-17 08:08:03,936 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:03,937 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:03,939 - INFO - Assigned 50 communes
+2024-06-17 08:08:03,940 - INFO - Assigned 100 communes
+2024-06-17 08:08:03,940 - INFO - Assigned 150 communes
+2024-06-17 08:08:03,941 - INFO - Assigned 200 communes
+2024-06-17 08:08:03,942 - INFO - Assigned 250 communes
+2024-06-17 08:08:03,942 - INFO - Assigned 300 communes
+2024-06-17 08:08:03,942 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:03,942 - INFO - District 0 has 44 communes
+2024-06-17 08:08:03,942 - INFO - District 1 has 57 communes
+2024-06-17 08:08:03,942 - INFO - District 2 has 60 communes
+2024-06-17 08:08:03,942 - INFO - District 3 has 61 communes
+2024-06-17 08:08:03,943 - INFO - District 4 has 108 communes
+2024-06-17 08:08:03,943 - INFO - Finished initializing the map
+2024-06-17 08:08:04,340 - INFO - Initializing the map
+2024-06-17 08:08:04,348 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:04,348 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:04,352 - INFO - Assigned 50 communes
+2024-06-17 08:08:04,354 - INFO - Assigned 100 communes
+2024-06-17 08:08:04,355 - INFO - Assigned 150 communes
+2024-06-17 08:08:04,357 - INFO - Assigned 200 communes
+2024-06-17 08:08:04,358 - INFO - Assigned 250 communes
+2024-06-17 08:08:04,359 - INFO - Assigned 300 communes
+2024-06-17 08:08:04,359 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:04,359 - INFO - District 0 has 23 communes
+2024-06-17 08:08:04,359 - INFO - District 1 has 25 communes
+2024-06-17 08:08:04,359 - INFO - District 2 has 39 communes
+2024-06-17 08:08:04,360 - INFO - District 3 has 95 communes
+2024-06-17 08:08:04,360 - INFO - District 4 has 148 communes
+2024-06-17 08:08:04,361 - INFO - Finished initializing the map
+2024-06-17 08:08:04,798 - INFO - Initializing the map
+2024-06-17 08:08:04,804 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:04,804 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:04,807 - INFO - Assigned 50 communes
+2024-06-17 08:08:04,808 - INFO - Assigned 100 communes
+2024-06-17 08:08:04,809 - INFO - Assigned 150 communes
+2024-06-17 08:08:04,810 - INFO - Assigned 200 communes
+2024-06-17 08:08:04,810 - INFO - Assigned 250 communes
+2024-06-17 08:08:04,811 - INFO - Assigned 300 communes
+2024-06-17 08:08:04,811 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:04,811 - INFO - District 0 has 25 communes
+2024-06-17 08:08:04,811 - INFO - District 1 has 29 communes
+2024-06-17 08:08:04,811 - INFO - District 2 has 46 communes
+2024-06-17 08:08:04,811 - INFO - District 3 has 112 communes
+2024-06-17 08:08:04,811 - INFO - District 4 has 118 communes
+2024-06-17 08:08:04,812 - INFO - Finished initializing the map
+2024-06-17 08:08:05,198 - INFO - Initializing the map
+2024-06-17 08:08:05,206 - INFO - Selecting 5 random communes to start the districts
+2024-06-17 08:08:05,206 - INFO - Assigning the remaining communes to districts
+2024-06-17 08:08:05,209 - INFO - Assigned 50 communes
+2024-06-17 08:08:05,210 - INFO - Assigned 100 communes
+2024-06-17 08:08:05,211 - INFO - Assigned 150 communes
+2024-06-17 08:08:05,212 - INFO - Assigned 200 communes
+2024-06-17 08:08:05,214 - INFO - Assigned 250 communes
+2024-06-17 08:08:05,215 - INFO - Assigned 300 communes
+2024-06-17 08:08:05,215 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 08:08:05,215 - INFO - District 0 has 17 communes
+2024-06-17 08:08:05,215 - INFO - District 1 has 38 communes
+2024-06-17 08:08:05,216 - INFO - District 2 has 41 communes
+2024-06-17 08:08:05,216 - INFO - District 3 has 110 communes
+2024-06-17 08:08:05,216 - INFO - District 4 has 124 communes
+2024-06-17 08:08:05,217 - INFO - Finished initializing the map

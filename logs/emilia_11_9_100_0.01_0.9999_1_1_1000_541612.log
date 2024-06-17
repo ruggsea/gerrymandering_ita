@@ -1,0 +1,26 @@
+2024-06-17 09:02:35,892 - INFO - Initializing the map
+2024-06-17 09:02:35,906 - INFO - Selecting 11 random communes to start the districts
+2024-06-17 09:02:35,907 - INFO - Assigning the remaining communes to districts
+2024-06-17 09:02:35,911 - INFO - Assigned 50 communes
+2024-06-17 09:02:35,914 - INFO - Assigned 100 communes
+2024-06-17 09:02:35,918 - INFO - Assigned 150 communes
+2024-06-17 09:02:35,921 - INFO - Assigned 200 communes
+2024-06-17 09:02:35,923 - INFO - Assigned 250 communes
+2024-06-17 09:02:35,925 - INFO - Assigned 300 communes
+2024-06-17 09:02:35,925 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2024-06-17 09:02:35,926 - INFO - District 0 has 11 communes
+2024-06-17 09:02:35,926 - INFO - District 1 has 11 communes
+2024-06-17 09:02:35,926 - INFO - District 2 has 11 communes
+2024-06-17 09:02:35,926 - INFO - District 3 has 15 communes
+2024-06-17 09:02:35,926 - INFO - District 4 has 18 communes
+2024-06-17 09:02:35,926 - INFO - District 5 has 19 communes
+2024-06-17 09:02:35,926 - INFO - District 6 has 20 communes
+2024-06-17 09:02:35,926 - INFO - District 7 has 35 communes
+2024-06-17 09:02:35,926 - INFO - District 8 has 39 communes
+2024-06-17 09:02:35,926 - INFO - District 9 has 40 communes
+2024-06-17 09:02:35,926 - INFO - District 10 has 111 communes
+2024-06-17 09:02:35,927 - INFO - Finished initializing the map
+2024-06-17 09:02:36,547 - INFO - Generated a map with 11 districts, starting the simulation
+2024-06-17 09:02:37,511 - INFO - Step 0, current temperature: 100, current score: 30190.241771348803
+2024-06-17 09:03:05,670 - INFO - Step 50, current temperature: 99.50122304230095, current score: 273489.66289258515
+2024-06-17 09:03:05,678 - INFO - Seat deviation: 1, population std: 121241972003.69093
