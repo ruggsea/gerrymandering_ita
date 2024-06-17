@@ -24,3 +24,13 @@
 2024-06-17 09:02:37,511 - INFO - Step 0, current temperature: 100, current score: 30190.241771348803
 2024-06-17 09:03:05,670 - INFO - Step 50, current temperature: 99.50122304230095, current score: 273489.66289258515
 2024-06-17 09:03:05,678 - INFO - Seat deviation: 1, population std: 121241972003.69093
+2024-06-17 09:03:29,556 - INFO - Step 100, current temperature: 99.00493386913722, current score: 320329.35433219274
+2024-06-17 09:03:29,560 - INFO - Seat deviation: 4, population std: 143942833852.89096
+2024-06-17 09:03:59,383 - INFO - Step 150, current temperature: 98.51112007201279, current score: 285223.72633382067
+2024-06-17 09:03:59,387 - INFO - Seat deviation: 4, population std: 129166433867.49094
+2024-06-17 09:04:28,467 - INFO - Step 200, current temperature: 98.0197693043223, current score: 234056.1372559203
+2024-06-17 09:04:28,471 - INFO - Seat deviation: 9, population std: 106334842615.89093
+2024-06-17 09:05:12,898 - INFO - Step 250, current temperature: 97.5308692810425, current score: 210846.71821702717
+2024-06-17 09:05:12,903 - INFO - Seat deviation: 4, population std: 94819063520.4909
+2024-06-17 09:05:42,049 - INFO - Step 300, current temperature: 97.04440777842501, current score: 227612.55005740913
+2024-06-17 09:05:42,053 - INFO - Seat deviation: 4, population std: 104889214268.69093
