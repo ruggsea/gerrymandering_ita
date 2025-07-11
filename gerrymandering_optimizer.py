@@ -16,6 +16,7 @@ import pickle
 import json
 from typing import Dict, List, Tuple, Optional, Union
 from dataclasses import dataclass
+from pathlib import Path
 from shapely.geometry import Point, Polygon, MultiPolygon
 from shapely.ops import unary_union
 import random
@@ -32,8 +33,34 @@ logger = logging.getLogger(__name__)
 
 
 @dataclass
-class OptimizationConfig:
+class Config:
     """Configuration for the gerrymandering optimization algorithm."""
+    
+    # Simulated annealing parameters
+    temperature: float = 1000.0
+    cooling_rate: float = 0.99
+    steps: int = 1000
+    
+    # District parameters
+    target_districts: int = 11
+    
+    # Optimization weights
+    compactness_weight: float = 0.3
+    population_weight: float = 0.3
+    
+    def __post_init__(self):
+        """Validate configuration parameters."""
+        if self.temperature <= 0:
+            raise ValueError("Temperature must be positive")
+        if not 0 < self.cooling_rate < 1:
+            raise ValueError("Cooling rate must be between 0 and 1")
+        if self.target_districts <= 0:
+            raise ValueError("Number of districts must be positive")
+
+
+@dataclass
+class OptimizationConfig:
+    """Legacy configuration class for backward compatibility."""
     
     # Simulated annealing parameters
     initial_temperature: float = 1000.0
@@ -332,82 +359,136 @@ class DistrictMap:
 class GerrymanderingOptimizer:
     """Main class for optimizing district boundaries using simulated annealing."""
     
-    def __init__(self, voting_data: ItalianVotingData, config: OptimizationConfig):
+    def __init__(self, data_dir: str, config: Config):
         """
         Initialize the optimizer.
         
         Args:
-            voting_data: Italian voting data
+            data_dir: Directory containing data files
             config: Optimization configuration
         """
-        self.voting_data = voting_data
+        self.data_dir = Path(data_dir)
         self.config = config
         self.current_map = None
         self.best_map = None
         self.best_score = float('inf')
+        
+        # Load data
+        self._load_data()
         
         self.history = {
             'scores': [],
             'temperatures': [],
             'steps': [],
             'population_stds': [],
-            'seat_deviations': []
+            'seat_deviations': [],
+            'districts': []  # Store district states for GIF
         }
     
-    def initialize_map(self) -> DistrictMap:
+    def _load_data(self):
+        """Load voting and geographical data."""
+        # Load geographical data (which already contains voting data)
+        geojson_path = self.data_dir / "comuni_italiani_trend_liste_2022_2024.geojson"
+        if geojson_path.exists():
+            self.combined_data = gpd.read_file(geojson_path)
+        else:
+            raise FileNotFoundError(f"Geographical data not found: {geojson_path}")
+        
+        # Load population data
+        pop_path = self.data_dir / "POSAS_2024_it_Comuni.csv"
+        if pop_path.exists():
+            self.population_data = pd.read_csv(pop_path, sep=';')
+        else:
+            self.population_data = None
+        
+        # Add population data if available
+        if self.population_data is not None:
+            # Process population data to get total population per commune
+            pop_by_commune = self.population_data.groupby('Codice comune')['Totale'].sum().reset_index()
+            pop_by_commune.columns = ['comune_id', 'population']
+            
+            self.combined_data = self.combined_data.merge(
+                pop_by_commune,
+                left_on='com_istat_code_num',
+                right_on='comune_id',
+                how='left'
+            )
+        else:
+            # Add dummy population data
+            self.combined_data['population'] = 1000
+        
+        print(f"Loaded data for {len(self.combined_data)} communes")
+    
+    def get_district_statistics(self, districts):
+        """Get statistics for districts in the format expected by GIF creator."""
+        stats = []
+        for i, district in enumerate(districts):
+            # Calculate district statistics
+            district_communes = district['communes']
+            district_data = self.combined_data[self.combined_data['com_istat_code_num'].isin(district_communes)]
+            
+            # Calculate voting results - use actual party columns from GeoJSON
+            # Center-left parties: PD, M5S, AVS, etc.
+            center_left_votes = (
+                district_data['PARTITO DEMOCRATICO'].sum() +
+                district_data['MOVIMENTO 5 STELLE'].sum() +
+                district_data['ALLEANZA VERDI E SINISTRA'].sum()
+            )
+            
+            # Center-right parties: FdI, Lega, FI, etc.
+            center_right_votes = (
+                district_data['FRATELLI D\'ITALIA'].sum() +
+                district_data['LEGA SALVINI PREMIER'].sum() +
+                district_data['FORZA ITALIA - NOI MODERATI - PPE'].sum()
+            )
+            
+            total_votes = center_left_votes + center_right_votes
+            
+            # Determine winner
+            if center_left_votes > center_right_votes:
+                winner = 'center-left'
+            else:
+                winner = 'center-right'
+            
+            # Calculate population
+            total_population = district_data['population'].sum()
+            
+            stats.append({
+                'district_id': i,
+                'communes': district_communes,
+                'center_left_votes': center_left_votes,
+                'center_right_votes': center_right_votes,
+                'total_votes': total_votes,
+                'winner': winner,
+                'total_population': total_population,
+                'compactness': 0.5  # Placeholder
+            })
+        
+        return stats
+    
+    def initialize_map(self):
         """Initialize a new district map."""
-        commune_data = self.voting_data.get_commune_data()
-        return DistrictMap(commune_data, self.config.num_districts)
+        # Create random district assignments
+        communes = self.combined_data['com_istat_code_num'].tolist()
+        num_communes = len(communes)
+        
+        # Randomly assign communes to districts
+        district_assignments = {}
+        for i, commune_id in enumerate(communes):
+            district_assignments[commune_id] = i % self.config.target_districts
+        
+        # Create initial districts
+        districts = []
+        for district_id in range(self.config.target_districts):
+            district_communes = [c for c, d in district_assignments.items() if d == district_id]
+            if district_communes:
+                districts.append({'communes': district_communes})
+        
+        return districts
     
-    def get_neighbor_solution(self, current_map: DistrictMap) -> DistrictMap:
-        """
-        Generate a neighbor solution by swapping two communes.
-        
-        Args:
-            current_map: Current district map
-            
-        Returns:
-            New district map with swapped communes
-        """
-        # Create a copy of the current map
-        new_map = DistrictMap(self.voting_data.get_commune_data(), self.config.num_districts)
-        new_map.district_assignments = current_map.district_assignments.copy()
-        new_map._update_district_geometries()
-        new_map._calculate_district_stats()
-        
-        # Select two random communes from different districts
-        commune_indices = list(current_map.district_assignments.keys())
-        commune1 = random.choice(commune_indices)
-        district1 = current_map.get_commune_district(commune1)
-        
-        # Find a commune from a different district
-        other_communes = [idx for idx in commune_indices 
-                         if current_map.get_commune_district(idx) != district1]
-        
-        if other_communes:
-            commune2 = random.choice(other_communes)
-            new_map.swap_communes(commune1, commune2)
-        
-        return new_map
+
     
-    def calculate_seat_deviation(self, district_map: DistrictMap) -> int:
-        """
-        Calculate seat deviation (simplified metric).
-        
-        Args:
-            district_map: District map to evaluate
-            
-        Returns:
-            Seat deviation score
-        """
-        # This is a simplified metric - in practice, you'd calculate actual seat allocation
-        populations = [stats['population'] for stats in district_map.district_stats.values()]
-        population_mean = np.mean(populations)
-        
-        deviations = [abs(pop - population_mean) / population_mean for pop in populations]
-        return sum(1 for dev in deviations if dev > self.config.max_population_deviation)
-    
-    def optimize(self, save_path: Optional[str] = None) -> DistrictMap:
+    def optimize(self, save_path: Optional[str] = None):
         """
         Run the simulated annealing optimization.
         
@@ -415,53 +496,54 @@ class GerrymanderingOptimizer:
             save_path: Optional path to save the best solution
             
         Returns:
-            Best district map found
+            Tuple of (final_score, final_districts, history)
         """
-        logger.info("Initializing the map")
-        self.current_map = self.initialize_map()
-        self.best_map = self.current_map
-        self.best_score = self.current_map.get_score(self.config)
+        print("Initializing the map")
+        self.current_districts = self.initialize_map()
+        self.best_districts = self.current_districts.copy()
+        self.best_score = self._calculate_score(self.current_districts)
         
-        temperature = self.config.initial_temperature
+        temperature = self.config.temperature
         step = 0
         
-        logger.info(f"Generated a map with {self.config.num_districts} districts, starting the simulation")
+        print(f"Generated a map with {self.config.target_districts} districts, starting the simulation")
         
-        while temperature > self.config.min_temperature and step < self.config.max_steps:
+        # Initialize history arrays
+        self.history['scores'] = []
+        self.history['temperatures'] = []
+        self.history['districts'] = []
+        
+        while step < self.config.steps:
             # Generate neighbor solution
-            neighbor_map = self.get_neighbor_solution(self.current_map)
-            neighbor_score = neighbor_map.get_score(self.config)
+            neighbor_districts = self._get_neighbor_solution(self.current_districts)
+            neighbor_score = self._calculate_score(neighbor_districts)
             
             # Calculate acceptance probability
-            delta_score = neighbor_score - self.current_map.get_score(self.config)
+            current_score = self._calculate_score(self.current_districts)
+            delta_score = neighbor_score - current_score
             acceptance_prob = math.exp(-delta_score / temperature) if temperature > 0 else 0
             
             # Accept or reject the neighbor
             if delta_score < 0 or random.random() < acceptance_prob:
-                self.current_map = neighbor_map
+                self.current_districts = neighbor_districts
                 current_score = neighbor_score
-            else:
-                current_score = self.current_map.get_score(self.config)
             
             # Update best solution
             if current_score < self.best_score:
-                self.best_map = self.current_map
+                self.best_districts = [d.copy() for d in self.current_districts]
                 self.best_score = current_score
             
-            # Log progress
+            # Store history
+            self.history['scores'].append(current_score)
+            self.history['temperatures'].append(temperature)
+            
+            # Store district state every 50 steps for GIF
             if step % 50 == 0:
-                seat_deviation = self.calculate_seat_deviation(self.current_map)
-                population_std = np.std([stats['population'] for stats in self.current_map.district_stats.values()])
-                
-                logger.info(f"Step {step}, current temperature: {temperature}, current score: {current_score}")
-                logger.info(f"Seat deviation: {seat_deviation}, population std: {population_std}")
-                
-                # Store history
-                self.history['scores'].append(current_score)
-                self.history['temperatures'].append(temperature)
-                self.history['steps'].append(step)
-                self.history['population_stds'].append(population_std)
-                self.history['seat_deviations'].append(seat_deviation)
+                self.history['districts'].append([d.copy() for d in self.current_districts])
+            
+            # Log progress
+            if step % 100 == 0:
+                print(f"Step {step}, temperature: {temperature:.2f}, score: {current_score:.3f}")
             
             # Cool down
             temperature *= self.config.cooling_rate
@@ -471,12 +553,79 @@ class GerrymanderingOptimizer:
         if save_path:
             self.save_solution(save_path)
         
-        return self.best_map
+        return self.best_score, self.best_districts, self.history
+    
+    def optimize_with_history(self):
+        """Run optimization with full history tracking for GIF creation."""
+        return self.optimize()
+    
+    def _calculate_score(self, districts):
+        """Calculate the score for a district configuration."""
+        if not districts:
+            return float('inf')
+        
+        # Calculate population balance
+        populations = []
+        for district in districts:
+            district_data = self.combined_data[self.combined_data['comune_id'].isin(district['communes'])]
+            total_pop = district_data['population'].sum()
+            populations.append(total_pop)
+        
+        population_std = np.std(populations)
+        population_mean = np.mean(populations)
+        population_cv = population_std / population_mean if population_mean > 0 else float('inf')
+        
+        # Calculate partisan balance (simplified)
+        partisan_score = 0
+        for district in districts:
+            district_data = self.combined_data[self.combined_data['comune_id'].isin(district['communes'])]
+            center_left_votes = district_data['center_left_votes'].sum()
+            center_right_votes = district_data['center_right_votes'].sum()
+            total_votes = center_left_votes + center_right_votes
+            
+            if total_votes > 0:
+                # Penalize heavily skewed districts
+                vote_ratio = min(center_left_votes, center_right_votes) / total_votes
+                partisan_score += (1 - vote_ratio) ** 2
+        
+        # Combine scores
+        total_score = (self.config.population_weight * population_cv + 
+                      self.config.compactness_weight * partisan_score)
+        
+        return total_score
+    
+    def _get_neighbor_solution(self, districts):
+        """Generate a neighbor solution by swapping communes between districts."""
+        if len(districts) < 2:
+            return districts
+        
+        # Create a copy
+        new_districts = [d.copy() for d in districts]
+        
+        # Select two random districts
+        district1_idx = random.randint(0, len(new_districts) - 1)
+        district2_idx = random.randint(0, len(new_districts) - 1)
+        
+        if district1_idx == district2_idx:
+            return new_districts
+        
+        # Select random communes from each district
+        if new_districts[district1_idx]['communes'] and new_districts[district2_idx]['communes']:
+            commune1 = random.choice(new_districts[district1_idx]['communes'])
+            commune2 = random.choice(new_districts[district2_idx]['communes'])
+            
+            # Swap communes
+            new_districts[district1_idx]['communes'].remove(commune1)
+            new_districts[district1_idx]['communes'].append(commune2)
+            new_districts[district2_idx]['communes'].remove(commune2)
+            new_districts[district2_idx]['communes'].append(commune1)
+        
+        return new_districts
     
     def save_solution(self, path: str):
         """Save the best solution to a file."""
         solution_data = {
-            'best_map': self.best_map,
+            'best_districts': self.best_districts,
             'best_score': self.best_score,
             'config': self.config,
             'history': self.history,
@@ -486,19 +635,19 @@ class GerrymanderingOptimizer:
         with open(path, 'wb') as f:
             pickle.dump(solution_data, f)
         
-        logger.info(f"Solution saved to {path}")
+        print(f"Solution saved to {path}")
     
     def load_solution(self, path: str):
         """Load a solution from a file."""
         with open(path, 'rb') as f:
             solution_data = pickle.load(f)
         
-        self.best_map = solution_data['best_map']
+        self.best_districts = solution_data['best_districts']
         self.best_score = solution_data['best_score']
         self.config = solution_data['config']
         self.history = solution_data['history']
         
-        logger.info(f"Solution loaded from {path}")
+        print(f"Solution loaded from {path}")
     
     def export_results(self, output_dir: str):
         """
@@ -509,47 +658,33 @@ class GerrymanderingOptimizer:
         """
         os.makedirs(output_dir, exist_ok=True)
         
-        # Export district map as GeoJSON
-        if self.best_map:
-            district_gdf = self.voting_data.get_commune_data().copy()
-            district_gdf['district_id'] = district_gdf.index.map(self.best_map.district_assignments)
-            district_gdf.to_file(os.path.join(output_dir, 'optimized_districts.geojson'), driver='GeoJSON')
-        
         # Export optimization history
-        history_df = pd.DataFrame(self.history)
+        history_df = pd.DataFrame({
+            'step': range(len(self.history['scores'])),
+            'score': self.history['scores'],
+            'temperature': self.history['temperatures']
+        })
         history_df.to_csv(os.path.join(output_dir, 'optimization_history.csv'), index=False)
         
         # Export district statistics
-        if self.best_map:
-            stats_data = []
-            for district_id, stats in self.best_map.district_stats.items():
-                stats_data.append({
-                    'district_id': district_id,
-                    'population': stats['population'],
-                    'commune_count': stats['commune_count'],
-                    'compactness': stats['compactness']
-                })
-            
+        if self.best_districts:
+            stats_data = self.get_district_statistics(self.best_districts)
             stats_df = pd.DataFrame(stats_data)
             stats_df.to_csv(os.path.join(output_dir, 'district_statistics.csv'), index=False)
         
-        logger.info(f"Results exported to {output_dir}")
+        print(f"Results exported to {output_dir}")
 
 
 def run_optimization_experiment(
-    votes_file: str,
-    geo_file: str,
-    population_file: Optional[str] = None,
-    config: Optional[OptimizationConfig] = None,
+    data_dir: str,
+    config: Optional[Config] = None,
     output_dir: str = "results"
 ) -> GerrymanderingOptimizer:
     """
     Run a complete gerrymandering optimization experiment.
     
     Args:
-        votes_file: Path to voting data CSV
-        geo_file: Path to geographical data GeoJSON
-        population_file: Optional path to population data
+        data_dir: Directory containing data files
         config: Optimization configuration
         output_dir: Directory to save results
         
@@ -557,16 +692,13 @@ def run_optimization_experiment(
         Optimizer with results
     """
     if config is None:
-        config = OptimizationConfig()
-    
-    # Load data
-    voting_data = ItalianVotingData(votes_file, geo_file, population_file)
+        config = Config()
     
     # Create optimizer
-    optimizer = GerrymanderingOptimizer(voting_data, config)
+    optimizer = GerrymanderingOptimizer(data_dir, config)
     
     # Run optimization
-    best_map = optimizer.optimize()
+    final_score, final_districts, history = optimizer.optimize()
     
     # Export results
     optimizer.export_results(output_dir)
@@ -576,17 +708,15 @@ def run_optimization_experiment(
 
 if __name__ == "__main__":
     # Example usage
-    config = OptimizationConfig(
-        num_districts=11,
-        initial_temperature=1000.0,
+    config = Config(
+        target_districts=11,
+        temperature=1000.0,
         cooling_rate=0.99,
-        max_steps=1000
+        steps=1000
     )
     
     optimizer = run_optimization_experiment(
-        votes_file="politiche_2022_raw_votes.csv",
-        geo_file="gerrymandering_base.geojson",
-        population_file="POSAS_2024_it_Comuni.csv",
+        data_dir="data",
         config=config,
         output_dir="optimization_results"
     )
