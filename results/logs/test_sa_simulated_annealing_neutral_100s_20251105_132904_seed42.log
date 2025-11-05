@@ -1,0 +1,127 @@
+2025-11-05 13:29:04,278 - INFO - ================================================================================
+2025-11-05 13:29:04,278 - INFO - Experiment: test_sa
+2025-11-05 13:29:04,278 - INFO - Algorithm: simulated_annealing
+2025-11-05 13:29:04,279 - INFO - Objective: neutral - Population balance + proportionality
+2025-11-05 13:29:04,279 - INFO - Steps: 100
+2025-11-05 13:29:04,279 - INFO - Random seed: 42
+2025-11-05 13:29:04,279 - INFO - ================================================================================
+2025-11-05 13:29:04,280 - INFO - Building adjacency graph
+2025-11-05 13:29:04,648 - INFO - Starting optimization...
+2025-11-05 13:29:04,649 - INFO - Initializing the map
+2025-11-05 13:29:04,649 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 13:29:04,649 - INFO - Assigning the remaining communes to districts
+2025-11-05 13:29:04,876 - INFO - Assigned 50 communes
+2025-11-05 13:29:05,414 - INFO - Assigned 100 communes
+2025-11-05 13:29:06,251 - INFO - Assigned 150 communes
+2025-11-05 13:29:07,539 - INFO - Assigned 200 communes
+2025-11-05 13:29:09,200 - INFO - Assigned 250 communes
+2025-11-05 13:29:11,199 - INFO - Assigned 300 communes
+2025-11-05 13:29:12,027 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 13:29:12,027 - INFO - District 0 has 61 communes
+2025-11-05 13:29:12,028 - INFO - District 1 has 14 communes
+2025-11-05 13:29:12,028 - INFO - District 2 has 3 communes
+2025-11-05 13:29:12,028 - INFO - District 3 has 4 communes
+2025-11-05 13:29:12,028 - INFO - District 4 has 9 communes
+2025-11-05 13:29:12,028 - INFO - District 5 has 60 communes
+2025-11-05 13:29:12,028 - INFO - District 6 has 30 communes
+2025-11-05 13:29:12,028 - INFO - District 7 has 14 communes
+2025-11-05 13:29:12,028 - INFO - District 8 has 10 communes
+2025-11-05 13:29:12,028 - INFO - District 9 has 30 communes
+2025-11-05 13:29:12,028 - INFO - District 10 has 95 communes
+2025-11-05 13:29:12,028 - INFO - Finished initializing the map
+2025-11-05 13:29:12,032 - INFO - Generated a map with 11 districts, starting the simulation
+2025-11-05 13:29:12,032 - INFO - Step 0, current temperature: 1000.0, current score: 1122622.3565212341
+2025-11-05 13:29:12,037 - INFO - Step 1, current temperature: 990.0, current score: 1122622.3565212341
+2025-11-05 13:29:12,038 - INFO - Seat deviation: 0, population std: 1122622.36
+2025-11-05 13:29:12,043 - INFO - Step 2, current temperature: 980.1, current score: 1113175.566456048
+2025-11-05 13:29:12,043 - INFO - Seat deviation: 0, population std: 1113175.57
+2025-11-05 13:29:12,049 - INFO - Step 6, current temperature: 970.299, current score: 1113175.566456048
+2025-11-05 13:29:12,049 - INFO - Seat deviation: 0, population std: 1113175.57
+2025-11-05 13:29:12,055 - INFO - Step 8, current temperature: 960.59601, current score: 1110063.5261306681
+2025-11-05 13:29:12,055 - INFO - Seat deviation: 0, population std: 1110063.53
+2025-11-05 13:29:12,060 - INFO - Step 10, current temperature: 950.9900498999999, current score: 1099074.4128381258
+2025-11-05 13:29:12,060 - INFO - Seat deviation: 0, population std: 1099074.41
+2025-11-05 13:29:12,067 - INFO - Step 11, current temperature: 941.480149401, current score: 1093490.5500872042
+2025-11-05 13:29:12,067 - INFO - Seat deviation: 0, population std: 1093490.55
+2025-11-05 13:29:12,073 - INFO - Step 13, current temperature: 932.0653479069899, current score: 1092269.1983987938
+2025-11-05 13:29:12,073 - INFO - Seat deviation: 0, population std: 1092269.20
+2025-11-05 13:29:12,078 - INFO - Step 17, current temperature: 922.74469442792, current score: 1071508.1429546005
+2025-11-05 13:29:12,079 - INFO - Seat deviation: 0, population std: 1071508.14
+2025-11-05 13:29:12,087 - INFO - Step 20, current temperature: 913.5172474836407, current score: 1066308.63116293
+2025-11-05 13:29:12,087 - INFO - Seat deviation: 0, population std: 1066308.63
+2025-11-05 13:29:12,093 - INFO - Step 22, current temperature: 904.3820750088043, current score: 1047050.0572851059
+2025-11-05 13:29:12,093 - INFO - Seat deviation: 0, population std: 1047050.06
+2025-11-05 13:29:12,099 - INFO - Step 24, current temperature: 895.3382542587163, current score: 1046002.2096133528
+2025-11-05 13:29:12,099 - INFO - Seat deviation: 0, population std: 1046002.21
+2025-11-05 13:29:12,105 - INFO - Step 26, current temperature: 886.3848717161292, current score: 1046002.2096133528
+2025-11-05 13:29:12,105 - INFO - Seat deviation: 0, population std: 1046002.21
+2025-11-05 13:29:12,111 - INFO - Step 28, current temperature: 877.5210229989679, current score: 1046002.2096133528
+2025-11-05 13:29:12,111 - INFO - Seat deviation: 0, population std: 1046002.21
+2025-11-05 13:29:12,116 - INFO - Step 30, current temperature: 868.7458127689781, current score: 1041219.2853413462
+2025-11-05 13:29:12,117 - INFO - Seat deviation: 0, population std: 1041219.29
+2025-11-05 13:29:12,123 - INFO - Step 35, current temperature: 860.0583546412884, current score: 1041219.2853413462
+2025-11-05 13:29:12,123 - INFO - Seat deviation: 0, population std: 1041219.29
+2025-11-05 13:29:12,128 - INFO - Step 36, current temperature: 851.4577710948755, current score: 1037774.3746259098
+2025-11-05 13:29:12,128 - INFO - Seat deviation: 0, population std: 1037774.37
+2025-11-05 13:29:12,134 - INFO - Step 37, current temperature: 842.9431933839268, current score: 1037774.3746259098
+2025-11-05 13:29:12,134 - INFO - Seat deviation: 0, population std: 1037774.37
+2025-11-05 13:29:12,140 - INFO - Step 40, current temperature: 834.5137614500875, current score: 1037774.3746259098
+2025-11-05 13:29:12,140 - INFO - Seat deviation: 0, population std: 1037774.37
+2025-11-05 13:29:12,146 - INFO - Step 42, current temperature: 826.1686238355866, current score: 1020050.5851920099
+2025-11-05 13:29:12,147 - INFO - Seat deviation: 0, population std: 1020050.59
+2025-11-05 13:29:12,152 - INFO - Step 44, current temperature: 817.9069375972307, current score: 1015586.6965624166
+2025-11-05 13:29:12,152 - INFO - Seat deviation: 0, population std: 1015586.70
+2025-11-05 13:29:12,161 - INFO - Step 46, current temperature: 809.7278682212584, current score: 1015586.6965624166
+2025-11-05 13:29:12,161 - INFO - Seat deviation: 0, population std: 1015586.70
+2025-11-05 13:29:12,167 - INFO - Step 50, current temperature: 801.6305895390458, current score: 1015586.6965624166
+2025-11-05 13:29:12,167 - INFO - Seat deviation: 0, population std: 1015586.70
+2025-11-05 13:29:12,173 - INFO - Step 51, current temperature: 793.6142836436553, current score: 1011217.9708646662
+2025-11-05 13:29:12,174 - INFO - Seat deviation: 0, population std: 1011217.97
+2025-11-05 13:29:12,179 - INFO - Step 53, current temperature: 785.6781408072187, current score: 986489.687176256
+2025-11-05 13:29:12,179 - INFO - Seat deviation: 0, population std: 986489.69
+2025-11-05 13:29:12,185 - INFO - Step 55, current temperature: 777.8213593991466, current score: 982839.9563619049
+2025-11-05 13:29:12,185 - INFO - Seat deviation: 0, population std: 982839.96
+2025-11-05 13:29:12,191 - INFO - Step 60, current temperature: 770.0431458051551, current score: 982839.9563619049
+2025-11-05 13:29:12,192 - INFO - Seat deviation: 0, population std: 982839.96
+2025-11-05 13:29:12,197 - INFO - Step 61, current temperature: 762.3427143471035, current score: 979406.9752233739
+2025-11-05 13:29:12,198 - INFO - Seat deviation: 0, population std: 979406.98
+2025-11-05 13:29:12,203 - INFO - Step 62, current temperature: 754.7192872036325, current score: 973485.4828467085
+2025-11-05 13:29:12,203 - INFO - Seat deviation: 0, population std: 973485.48
+2025-11-05 13:29:12,212 - INFO - Step 64, current temperature: 747.1720943315961, current score: 965213.2249291854
+2025-11-05 13:29:12,212 - INFO - Seat deviation: 0, population std: 965213.22
+2025-11-05 13:29:12,218 - INFO - Step 70, current temperature: 739.7003733882801, current score: 962656.9219567733
+2025-11-05 13:29:12,218 - INFO - Seat deviation: 0, population std: 962656.92
+2025-11-05 13:29:12,224 - INFO - Step 71, current temperature: 732.3033696543973, current score: 962656.9219567733
+2025-11-05 13:29:12,225 - INFO - Seat deviation: 0, population std: 962656.92
+2025-11-05 13:29:12,231 - INFO - Step 72, current temperature: 724.9803359578533, current score: 960313.5572312817
+2025-11-05 13:29:12,231 - INFO - Seat deviation: 0, population std: 960313.56
+2025-11-05 13:29:12,237 - INFO - Step 74, current temperature: 717.7305325982747, current score: 952230.7926214956
+2025-11-05 13:29:12,237 - INFO - Seat deviation: 0, population std: 952230.79
+2025-11-05 13:29:12,243 - INFO - Step 75, current temperature: 710.553227272292, current score: 952230.7926214956
+2025-11-05 13:29:12,243 - INFO - Seat deviation: 0, population std: 952230.79
+2025-11-05 13:29:12,252 - INFO - Step 81, current temperature: 703.4476949995691, current score: 949155.1383586151
+2025-11-05 13:29:12,252 - INFO - Seat deviation: 0, population std: 949155.14
+2025-11-05 13:29:12,259 - INFO - Step 82, current temperature: 696.4132180495734, current score: 949155.1383586151
+2025-11-05 13:29:12,259 - INFO - Seat deviation: 0, population std: 949155.14
+2025-11-05 13:29:12,265 - INFO - Step 86, current temperature: 689.4490858690776, current score: 949155.1383586151
+2025-11-05 13:29:12,265 - INFO - Seat deviation: 0, population std: 949155.14
+2025-11-05 13:29:12,272 - INFO - Step 87, current temperature: 682.5545950103868, current score: 949155.1383586151
+2025-11-05 13:29:12,272 - INFO - Seat deviation: 0, population std: 949155.14
+2025-11-05 13:29:12,278 - INFO - Step 90, current temperature: 675.7290490602829, current score: 943048.0413301126
+2025-11-05 13:29:12,278 - INFO - Seat deviation: 0, population std: 943048.04
+2025-11-05 13:29:12,284 - INFO - Step 96, current temperature: 668.9717585696801, current score: 943048.0413301126
+2025-11-05 13:29:12,284 - INFO - Seat deviation: 0, population std: 943048.04
+2025-11-05 13:29:12,291 - INFO - Step 98, current temperature: 662.2820409839833, current score: 942136.0032694653
+2025-11-05 13:29:12,292 - INFO - Seat deviation: 0, population std: 942136.00
+2025-11-05 13:29:12,297 - INFO - Step 99, current temperature: 655.6592205741434, current score: 937946.4035255756
+2025-11-05 13:29:12,297 - INFO - Seat deviation: 0, population std: 937946.40
+2025-11-05 13:29:12,298 - INFO - Optimization complete. Best score: 937946.4035255756
+2025-11-05 13:29:12,299 - INFO - Results saved to results/data/test_sa_simulated_annealing_neutral_100s_20251105_132904_seed42.json
+2025-11-05 13:29:12,308 - INFO - Full results saved to results/data/test_sa_simulated_annealing_neutral_100s_20251105_132904_seed42.pkl
+2025-11-05 13:29:12,308 - INFO - Creating visualizations...
+2025-11-05 13:29:13,301 - INFO - Comparison plot saved to results/test_sa_simulated_annealing_neutral_100s_20251105_132904_seed42_comparison.png
+2025-11-05 13:29:13,302 - INFO - ================================================================================
+2025-11-05 13:29:13,302 - INFO - Experiment complete!
+2025-11-05 13:29:13,302 - INFO - Results: results/data/test_sa_simulated_annealing_neutral_100s_20251105_132904_seed42.json
+2025-11-05 13:29:13,302 - INFO - Comparison: results/test_sa_simulated_annealing_neutral_100s_20251105_132904_seed42_comparison.png
+2025-11-05 13:29:13,302 - INFO - ================================================================================

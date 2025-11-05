@@ -11,24 +11,54 @@ This research investigates whether electoral districts in Italy can be algorithm
 Electoral gerrymandering is the manipulation of electoral district boundaries to favor a particular party or coalition. While extensively studied in systems like the US, its applicability to Italian electoral geography and multi-party system remains unclear.
 
 This project:
-1. Implements simulated annealing to optimize district boundaries
-2. Tests different optimization objectives (neutral, pro-left, pro-right)
-3. Evaluates whether significant partisan advantages can be achieved
-4. Visualizes the optimization process and outcomes
+1. Implements **multiple optimization algorithms** (simulated annealing, greedy, hill climbing, constrained)
+2. Tests **various optimization objectives** (neutral, partisan, multi-objective)
+3. Evaluates whether **significant partisan advantages can be achieved**
+4. Provides **comprehensive visualization** (GIFs, convergence plots, comparative analysis)
+5. Generates **publication-ready tables and figures**
 
-## Methodology
+## Algorithms Implemented
 
-### Algorithm: Simulated Annealing
+### 1. Simulated Annealing (Primary)
 - **Initialization**: Random seed communes grow into districts
 - **Proposal**: Randomly reassign communes to neighboring districts
-- **Acceptance**: Based on objective function and temperature
-- **Cooling**: Gradual temperature reduction
+- **Acceptance**: Probabilistic based on score and temperature
+- **Cooling**: Exponential temperature reduction
+- **Advantage**: Escapes local optima, proven convergence
 
-### Objective Function
+### 2. Greedy Optimization
+- **Strategy**: Only accept strictly improving moves
+- **Advantage**: Fast, deterministic
+- **Limitation**: Prone to local optima
+
+### 3. Hill Climbing with Restarts
+- **Strategy**: Greedy search with periodic random restarts
+- **Advantage**: Balances exploitation and exploration
+- **Restarts**: Every 200 steps or when stuck
+
+### 4. Constrained Optimization
+- **Phase 1**: Achieve population balance constraint (CV ≤ 15%)
+- **Phase 2**: Maximize partisan gain while maintaining constraint
+- **Advantage**: Realistic, legally viable districts
+
+### 5. Random Walk (Baseline)
+- **Strategy**: Accept all proposed moves
+- **Purpose**: Null model for comparison
+
+## Objective Functions
+
 Combines three weighted components:
-- **Population Balance**: Minimize population variance across districts
-- **Seat Deviation**: Deviation from proportional representation
-- **Partisan Advantage**: Maximize seats for target coalition
+```
+Score = w₁×PopulationBalance + w₂×SeatDeviation + w₃×PartisanAdvantage
+```
+
+### Objective Variants:
+- **Neutral** (1:1:0): Fair, balanced districts
+- **Mild Partisan** (0.5:0.1:1): Slight partisan tilt
+- **Moderate Partisan** (0.1:0:5): Strong partisan focus
+- **Extreme Partisan** (0.1:0:50): Maximum partisan gain
+- **Balanced** (1:0:2): Population balance + partisan
+- **Constrained** (0:0:10): Pure partisan with hard constraint
 
 ### Test Region
 - **Emilia-Romagna**: 330 communes, 11 districts
@@ -40,17 +70,24 @@ Combines three weighted components:
 ```
 gerrymandering_ita/
 ├── src/
-│   ├── gerrymander.py      # Core optimization algorithm
+│   ├── gerrymander.py      # Core simulated annealing optimizer
+│   ├── algorithms.py       # Additional algorithms (greedy, hill climbing, etc.)
 │   ├── data_loader.py      # Data loading utilities
 │   └── visualizer.py       # Visualization and GIF generation
-├── experiments/            # Experiment configurations
+├── experiments/
+│   └── experiment_configs.py  # Experiment configurations for paper
 ├── results/
 │   ├── gifs/              # Animated optimization visualizations
 │   ├── data/              # Result data (JSON, pickle)
-│   └── logs/              # Execution logs
-├── run_experiment.py       # Main experiment runner
-├── README.md              # This file
-└── requirements.txt       # Python dependencies
+│   ├── logs/              # Execution logs
+│   └── paper_analysis/    # Analysis outputs for publication
+├── run_experiment.py       # Single experiment runner
+├── run_batch_experiments.py  # Batch experiment runner
+├── analyze_results.py      # Basic results analysis
+├── analyze_paper_results.py  # Comprehensive analysis for paper
+├── METHODOLOGY.md         # Detailed research methodology
+├── README.md             # This file
+└── requirements.txt      # Python dependencies
 ```
 
 ## Installation
@@ -62,26 +99,37 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Run Neutral Optimization (Baseline)
+### Quick Start: Single Experiments
+
+**Run neutral optimization (baseline):**
 ```bash
 python run_experiment.py --goal neutral --steps 1000 --create_gif
 ```
 
-### Run Partisan Experiments
-
-**Moderate left-wing advantage:**
+**Run partisan experiments:**
 ```bash
+# Moderate left-wing advantage
 python run_experiment.py --goal maximize_left --strength moderate --steps 1000 --create_gif
-```
 
-**Extreme right-wing advantage:**
-```bash
+# Extreme right-wing advantage
 python run_experiment.py --goal maximize_right --strength extreme --steps 2000 --create_gif
 ```
 
-**Mild partisan advantage:**
+### Batch Experiments: Run Full Suite
+
+**Run all paper experiments (~20 experiments):**
 ```bash
-python run_experiment.py --goal maximize_left --strength mild --steps 1000
+python run_batch_experiments.py --suite paper
+```
+
+**Run quick test suite:**
+```bash
+python run_batch_experiments.py --suite test
+```
+
+**Run specific experiments:**
+```bash
+python run_batch_experiments.py --suite paper --experiments baseline_sa_long partisan_right_extreme
 ```
 
 ### Full Options
@@ -120,6 +168,31 @@ Each experiment produces:
    - Map evolution over time
    - Seat distribution changes
    - Score and temperature tracking
+
+## Analysis
+
+### Basic Analysis
+```bash
+# Analyze and compare all experiments
+python analyze_results.py
+```
+
+This generates:
+- Seat distribution comparison table
+- Maximum partisan advantages achieved
+- Summary CSV file
+
+### Comprehensive Paper Analysis
+```bash
+# Generate publication-ready analysis
+python analyze_paper_results.py
+```
+
+This generates:
+- `results/paper_analysis/all_results.csv`: Consolidated data
+- `results/paper_analysis/figure_algorithm_convergence.png`: Convergence comparison
+- `results/paper_analysis/figure_pareto_frontier.png`: Trade-off analysis
+- `results/paper_analysis/latex/`: LaTeX-formatted tables
 
 ## Example Experiments
 
