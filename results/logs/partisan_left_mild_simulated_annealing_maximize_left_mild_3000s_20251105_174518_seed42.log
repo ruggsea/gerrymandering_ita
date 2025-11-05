@@ -91,3 +91,37 @@
 2025-11-05 17:47:24,608 - INFO - Seat deviation: 0, population std: 65768.43
 2025-11-05 17:47:28,614 - INFO - Step 1170, current temperature: 0.16105866882915784, current score: 26032.36840891398
 2025-11-05 17:47:28,614 - INFO - Seat deviation: 0, population std: 52064.64
+2025-11-05 17:47:32,126 - INFO - Step 1200, current temperature: 0.12527487273171253, current score: 23937.54429286245
+2025-11-05 17:47:32,126 - INFO - Seat deviation: 0, population std: 47875.00
+2025-11-05 17:47:34,793 - INFO - Step 1230, current temperature: 0.1034981692059372, current score: 23350.173168302445
+2025-11-05 17:47:34,793 - INFO - Seat deviation: 0, population std: 46700.25
+2025-11-05 17:47:38,759 - INFO - Step 1260, current temperature: 0.07811206448998588, current score: 19782.59218733176
+2025-11-05 17:47:38,759 - INFO - Seat deviation: 0, population std: 39565.09
+2025-11-05 17:47:42,397 - INFO - Step 1290, current temperature: 0.06014965986520386, current score: 16855.942851583604
+2025-11-05 17:47:42,397 - INFO - Seat deviation: 0, population std: 33711.79
+2025-11-05 17:47:46,003 - INFO - Step 1320, current temperature: 0.046317833301711665, current score: 15615.779179223571
+2025-11-05 17:47:46,003 - INFO - Seat deviation: 0, population std: 31231.46
+2025-11-05 17:47:49,427 - INFO - Step 1350, current temperature: 0.036390909154707496, current score: 15615.779179223571
+2025-11-05 17:47:49,428 - INFO - Seat deviation: 0, population std: 31231.46
+2025-11-05 17:47:53,221 - INFO - Step 1380, current temperature: 0.02774234446255857, current score: 13278.190010099912
+2025-11-05 17:47:53,221 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:47:56,537 - INFO - Step 1410, current temperature: 0.021796553618976464, current score: 13278.190010099912
+2025-11-05 17:47:56,537 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:48:00,205 - INFO - Step 1440, current temperature: 0.01695382496612866, current score: 13278.190010099912
+2025-11-05 17:48:00,205 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:48:07,025 - INFO - Step 1500, current temperature: 0.010360774712823918, current score: 13278.190010099912
+2025-11-05 17:48:07,025 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:48:07,587 - INFO - Optimization complete. Best score: 13278.190010099912
+2025-11-05 17:48:07,589 - INFO - Results saved to results/data/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.json
+2025-11-05 17:48:07,595 - INFO - Full results saved to results/data/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.pkl
+2025-11-05 17:48:07,595 - INFO - Creating visualizations...
+2025-11-05 17:48:08,528 - INFO - Comparison plot saved to results/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42_comparison.png
+2025-11-05 17:48:08,529 - INFO - Creating animation with 40 frames
+2025-11-05 17:48:08,719 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:48:25,297 - INFO - Animation saved to results/gifs/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.gif
+2025-11-05 17:48:25,297 - INFO - ================================================================================
+2025-11-05 17:48:25,297 - INFO - Experiment complete!
+2025-11-05 17:48:25,297 - INFO - Results: results/data/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.json
+2025-11-05 17:48:25,297 - INFO - Comparison: results/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42_comparison.png
+2025-11-05 17:48:25,297 - INFO - Animation: results/gifs/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.gif
+2025-11-05 17:48:25,298 - INFO - ================================================================================
