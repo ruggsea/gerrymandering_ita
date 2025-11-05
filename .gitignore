@@ -5,3 +5,8 @@
 .*
 *.gif
 emilia*/
+*.pkl
+results/data/*.json
+results/gifs/
+__pycache__/
+*.pyc
