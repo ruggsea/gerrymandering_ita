@@ -1,0 +1,15 @@
+{
+  "total_experiments": 15,
+  "algorithms_tested": 3,
+  "objectives_tested": 3,
+  "proportional_left": 4.46376290633663,
+  "proportional_right": 5.37878009629767,
+  "proportional_center": 1.1574569973656996,
+  "max_left_advantage": -2.4637629063366298,
+  "max_right_advantage": 5.62121990370233,
+  "min_left_advantage": -4.46376290633663,
+  "min_right_advantage": 3.62121990370233,
+  "best_pop_cv": 0.016639483007365518,
+  "worst_pop_cv": 0.7581843506370743,
+  "mean_pop_cv": 0.29682447490690567
+}
