@@ -76,3 +76,13 @@
 2025-11-05 17:24:46,400 - INFO - Seat deviation: 0, population std: 865531.76
 2025-11-05 17:24:51,012 - INFO - Step 840, phase 1, temp: 1.51, score: 0.0 (✗ infeasible)
 2025-11-05 17:24:51,013 - INFO - Seat deviation: 0, population std: 860664.23
+2025-11-05 17:24:55,567 - INFO - Step 870, phase 1, temp: 1.12, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:55,568 - INFO - Seat deviation: 0, population std: 892067.51
+2025-11-05 17:24:59,653 - INFO - Step 900, phase 1, temp: 0.85, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:59,653 - INFO - Seat deviation: 0, population std: 919646.55
+2025-11-05 17:25:07,244 - INFO - Step 960, phase 1, temp: 0.49, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:07,245 - INFO - Seat deviation: 0, population std: 976865.95
+2025-11-05 17:25:11,484 - INFO - Step 990, phase 1, temp: 0.37, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:11,485 - INFO - Seat deviation: 0, population std: 904198.10
+2025-11-05 17:25:15,398 - INFO - Step 1020, phase 1, temp: 0.28, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:15,399 - INFO - Seat deviation: 0, population std: 962928.82
