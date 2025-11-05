@@ -99,3 +99,29 @@
 2025-11-05 17:50:49,203 - INFO - Seat deviation: 0, population std: 40257.55
 2025-11-05 17:50:52,949 - INFO - Step 1380, current temperature: 0.05278259105795365, current score: 3137.5049195443967
 2025-11-05 17:50:52,950 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:50:56,460 - INFO - Step 1410, current temperature: 0.04147012800940076, current score: 3137.5049195443967
+2025-11-05 17:50:56,460 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:51:00,307 - INFO - Step 1440, current temperature: 0.03161444995100841, current score: 3137.5049195443967
+2025-11-05 17:51:00,307 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:51:04,219 - INFO - Step 1470, current temperature: 0.024101045588242408, current score: 2533.3842098487044
+2025-11-05 17:51:04,220 - INFO - Seat deviation: 0, population std: 25333.84
+2025-11-05 17:51:08,324 - INFO - Step 1500, current temperature: 0.01818952394722057, current score: 2533.3842098487044
+2025-11-05 17:51:08,324 - INFO - Seat deviation: 0, population std: 25333.84
+2025-11-05 17:51:11,631 - INFO - Step 1530, current temperature: 0.014435466017192563, current score: 2513.8480470787517
+2025-11-05 17:51:11,631 - INFO - Seat deviation: 0, population std: 25138.48
+2025-11-05 17:51:15,179 - INFO - Step 1560, current temperature: 0.011341630102073641, current score: 2060.9858788678202
+2025-11-05 17:51:15,180 - INFO - Seat deviation: 0, population std: 20609.86
+2025-11-05 17:51:16,975 - INFO - Optimization complete. Best score: 2060.9858788678202
+2025-11-05 17:51:16,977 - INFO - Results saved to results/data/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.json
+2025-11-05 17:51:16,984 - INFO - Full results saved to results/data/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.pkl
+2025-11-05 17:51:16,984 - INFO - Creating visualizations...
+2025-11-05 17:51:17,861 - INFO - Comparison plot saved to results/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42_comparison.png
+2025-11-05 17:51:17,862 - INFO - Creating animation with 40 frames
+2025-11-05 17:51:18,061 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:51:34,452 - INFO - Animation saved to results/gifs/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.gif
+2025-11-05 17:51:34,453 - INFO - ================================================================================
+2025-11-05 17:51:34,453 - INFO - Experiment complete!
+2025-11-05 17:51:34,453 - INFO - Results: results/data/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.json
+2025-11-05 17:51:34,453 - INFO - Comparison: results/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42_comparison.png
+2025-11-05 17:51:34,453 - INFO - Animation: results/gifs/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.gif
+2025-11-05 17:51:34,453 - INFO - ================================================================================
