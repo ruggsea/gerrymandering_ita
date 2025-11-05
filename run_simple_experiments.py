@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 """
-Batch experiment runner for systematic evaluation.
+Simple batch experiment runner: 4 experiments only.
+- 2 algorithms × 2 objectives = 4 experiments
+- Only LEFT vs RIGHT (no center)
 """
-import argparse
 import logging
 import json
 import pickle
 import importlib
 from pathlib import Path
 from datetime import datetime
-import sys
 
 from src.data_loader import load_and_prepare_data
-from src.visualizer_improved import create_animation_improved, plot_final_comparison_improved
-from experiments.experiment_configs import (
-    ALGORITHMS, OBJECTIVES, PAPER_EXPERIMENTS, TEST_EXPERIMENTS
+from src.visualizer_simple import create_animation_simple, plot_final_comparison_simple
+from experiments.simple_experiments import (
+    ALGORITHMS, OBJECTIVES, SIMPLE_EXPERIMENTS
 )
 
 
@@ -59,9 +59,7 @@ def run_single_experiment(
 
     # Create experiment name
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    experiment_name = f"{name}_{algorithm_name}_{objective_name}_{steps}s_{timestamp}"
-    if seed is not None:
-        experiment_name += f"_seed{seed}"
+    experiment_name = f"{name}_{timestamp}_seed{seed}"
 
     # Setup directories
     log_dir = output_dir / 'logs'
@@ -150,37 +148,25 @@ def run_single_experiment(
     # Create visualizations
     logging.info("Creating visualizations...")
 
-    # Define party colors
-    party_colors = {
-        'coalition_left': '#E74C3C',      # Red
-        'coalition_right': '#3498DB',     # Blue
-        'coalition_center': '#F39C12'     # Orange
-    }
-    party_cols = ['coalition_left', 'coalition_right', 'coalition_center']
-
-    # Comparison plot
+    # Comparison plot (LEFT vs RIGHT only)
     comparison_file = output_dir / f"{experiment_name}_comparison.png"
     initial_districts = history[0]['districts']
-    plot_final_comparison_improved(
+    plot_final_comparison_simple(
         gdf=gdf,
         initial_districts=initial_districts,
         final_districts=best_districts,
-        party_cols=party_cols,
-        party_colors=party_colors,
         output_path=str(comparison_file),
         n_districts=n_districts
     )
 
-    # Animated GIF
+    # Animated GIF (LEFT vs RIGHT only)
     if create_gif and len(history) > 1:
         gif_file = gif_dir / f"{experiment_name}.gif"
         try:
-            create_animation_improved(
+            create_animation_simple(
                 gdf=gdf,
                 history=history,
                 output_path=str(gif_file),
-                party_cols=party_cols,
-                party_colors=party_colors,
                 fps=3,
                 dpi=80
             )
@@ -199,70 +185,20 @@ def run_single_experiment(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='Run batch experiments for gerrymandering research'
-    )
-    parser.add_argument(
-        '--suite',
-        type=str,
-        default='paper',
-        choices=['paper', 'test'],
-        help='Experiment suite to run'
-    )
-    parser.add_argument(
-        '--experiments',
-        type=str,
-        nargs='+',
-        help='Specific experiment names to run (optional)'
-    )
-    parser.add_argument(
-        '--data_dir',
-        type=str,
-        default='.',
-        help='Directory containing data files'
-    )
-    parser.add_argument(
-        '--output_dir',
-        type=str,
-        default='results',
-        help='Directory for output files'
-    )
-    parser.add_argument(
-        '--n_districts',
-        type=int,
-        default=11,
-        help='Number of districts'
-    )
-
-    args = parser.parse_args()
-
     # Load data once
-    print("Loading Emilia-Romagna data...")
-    gdf = load_and_prepare_data(region='emilia', data_dir=args.data_dir)
+    print("="*80)
+    print("SIMPLE GERRYMANDERING EXPERIMENTS")
+    print("4 experiments: 2 algorithms × 2 objectives (LEFT vs RIGHT only)")
+    print("="*80)
+    print("\nLoading Emilia-Romagna data...")
+    gdf = load_and_prepare_data(region='emilia', data_dir='.')
     print(f"Loaded {len(gdf)} communes\n")
 
-    # Get experiment suite
-    if args.suite == 'paper':
-        experiments = PAPER_EXPERIMENTS
-    else:
-        experiments = TEST_EXPERIMENTS
-
-    # Filter experiments if specified
-    if args.experiments:
-        experiments = [e for e in experiments if e['name'] in args.experiments]
-
-    if not experiments:
-        print("No experiments to run!")
-        return
-
-    print(f"Running {len(experiments)} experiments...")
-    print("="*80)
-
-    output_dir = Path(args.output_dir)
+    output_dir = Path('results')
     results_summary = []
 
-    for i, exp_config in enumerate(experiments, 1):
-        print(f"\n[{i}/{len(experiments)}] Starting experiment: {exp_config['name']}")
+    for i, exp_config in enumerate(SIMPLE_EXPERIMENTS, 1):
+        print(f"\n[{i}/{len(SIMPLE_EXPERIMENTS)}] Starting experiment: {exp_config['name']}")
         print("-"*80)
 
         try:
@@ -270,7 +206,7 @@ def main():
                 experiment_config=exp_config,
                 gdf=gdf,
                 output_dir=output_dir,
-                n_districts=args.n_districts
+                n_districts=11
             )
             results_summary.append({
                 'name': exp_config['name'],
@@ -279,6 +215,8 @@ def main():
             })
         except Exception as e:
             print(f"ERROR: Experiment {exp_config['name']} failed: {e}")
+            import traceback
+            traceback.print_exc()
             results_summary.append({
                 'name': exp_config['name'],
                 'status': 'failed',
@@ -288,22 +226,21 @@ def main():
 
     # Save summary
     print("\n" + "="*80)
-    print("BATCH EXPERIMENTS COMPLETE")
+    print("ALL EXPERIMENTS COMPLETE")
     print("="*80)
 
-    summary_file = output_dir / 'batch_summary.json'
+    summary_file = output_dir / 'experiments_summary.json'
     with open(summary_file, 'w') as f:
         json.dump({
-            'suite': args.suite,
-            'total_experiments': len(experiments),
+            'total_experiments': len(SIMPLE_EXPERIMENTS),
             'successful': sum(1 for r in results_summary if r['status'] == 'success'),
             'failed': sum(1 for r in results_summary if r['status'] == 'failed'),
             'experiments': results_summary
         }, f, indent=2)
 
     print(f"\nSummary saved to: {summary_file}")
-    print(f"Successful: {sum(1 for r in results_summary if r['status'] == 'success')}/{len(experiments)}")
-    print(f"Failed: {sum(1 for r in results_summary if r['status'] == 'failed')}/{len(experiments)}")
+    print(f"Successful: {sum(1 for r in results_summary if r['status'] == 'success')}/{len(SIMPLE_EXPERIMENTS)}")
+    print(f"Failed: {sum(1 for r in results_summary if r['status'] == 'failed')}/{len(SIMPLE_EXPERIMENTS)}")
 
 
 if __name__ == '__main__':

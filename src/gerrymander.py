@@ -6,6 +6,7 @@ import geopandas as gpd
 import logging
 from typing import Dict, List, Tuple, Optional, Callable
 import copy
+from src.contiguity import is_valid_move, validate_all_districts_contiguous
 
 
 class GerrymanderOptimizer:
@@ -125,6 +126,17 @@ class GerrymanderOptimizer:
             count = np.sum(districts == d)
             logging.info(f"District {d} has {count} communes")
 
+        # Validate all districts are contiguous
+        is_valid, non_contiguous = validate_all_districts_contiguous(
+            districts, self.n_districts, self.neighbors
+        )
+
+        if not is_valid:
+            logging.warning(f"Initial districts not contiguous: {non_contiguous}")
+            logging.warning("This should be rare with nearest-neighbor initialization")
+        else:
+            logging.info("✓ All initial districts are contiguous")
+
         logging.info("Finished initializing the map")
         return districts
 
@@ -222,36 +234,46 @@ class GerrymanderOptimizer:
     def propose_move(self, districts: np.ndarray) -> Tuple[np.ndarray, int, int, int]:
         """
         Propose a new district assignment by moving one commune to a neighboring district.
+        Only accepts moves that preserve contiguity of both districts.
 
         Returns:
             new_districts, commune_idx, old_district, new_district
         """
-        new_districts = districts.copy()
+        # Try up to 100 times to find a valid contiguous move
+        for attempt in range(100):
+            new_districts = districts.copy()
 
-        # Select random commune
-        commune_idx = np.random.randint(len(self.gdf))
-        old_district = districts[commune_idx]
+            # Select random commune
+            commune_idx = np.random.randint(len(self.gdf))
+            old_district = districts[commune_idx]
+            commune_map_idx = self.gdf.index[commune_idx]
 
-        # Find neighboring districts
-        neighbors = self.neighbors[self.gdf.index[commune_idx]]
-        if not neighbors:
-            return new_districts, commune_idx, old_district, old_district
+            # Find neighboring districts
+            neighbors = self.neighbors[commune_map_idx]
+            if not neighbors:
+                continue
 
-        neighbor_districts = set()
-        for neighbor_idx in neighbors:
-            neighbor_loc = self.gdf.index.get_loc(neighbor_idx)
-            neighbor_districts.add(districts[neighbor_loc])
+            neighbor_districts = set()
+            for neighbor_idx in neighbors:
+                neighbor_loc = self.gdf.index.get_loc(neighbor_idx)
+                neighbor_districts.add(districts[neighbor_loc])
 
-        neighbor_districts.discard(old_district)
+            neighbor_districts.discard(old_district)
 
-        if not neighbor_districts:
-            return new_districts, commune_idx, old_district, old_district
+            if not neighbor_districts:
+                continue
 
-        # Move to random neighboring district
-        new_district = np.random.choice(list(neighbor_districts))
-        new_districts[commune_idx] = new_district
+            # Move to random neighboring district
+            new_district = np.random.choice(list(neighbor_districts))
+            new_districts[commune_idx] = new_district
 
-        return new_districts, commune_idx, old_district, new_district
+            # Check if move preserves contiguity
+            if is_valid_move(new_districts, commune_idx, old_district,
+                           new_district, self.neighbors, commune_map_idx):
+                return new_districts, commune_idx, old_district, new_district
+
+        # If no valid move found after 100 attempts, return unchanged
+        return districts, commune_idx, old_district, old_district
 
     def optimize(
         self,

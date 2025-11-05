@@ -16,7 +16,7 @@ import pickle
 
 from src.data_loader import load_and_prepare_data
 from src.gerrymander import GerrymanderOptimizer
-from src.visualizer import create_animation, plot_final_comparison
+from src.visualizer_improved import create_animation_improved, plot_final_comparison_improved
 
 
 def setup_logging(log_dir: Path, experiment_name: str):
@@ -244,14 +244,23 @@ def main():
     # Create visualizations
     logging.info("Creating visualizations...")
 
+    # Define party colors
+    party_colors = {
+        'coalition_left': '#E74C3C',      # Red
+        'coalition_right': '#3498DB',     # Blue
+        'coalition_center': '#F39C12'     # Orange
+    }
+    party_cols = ['coalition_left', 'coalition_right', 'coalition_center']
+
     # Comparison plot
     comparison_file = output_dir / f"{experiment_name}_comparison.png"
     initial_districts = history[0]['districts']
-    plot_final_comparison(
+    plot_final_comparison_improved(
         gdf=gdf,
         initial_districts=initial_districts,
         final_districts=best_districts,
-        party_cols=['coalition_left', 'coalition_right', 'coalition_center'],
+        party_cols=party_cols,
+        party_colors=party_colors,
         output_path=str(comparison_file),
         n_districts=args.n_districts
     )
@@ -259,10 +268,12 @@ def main():
     # Animated GIF
     if args.create_gif:
         gif_file = gif_dir / f"{experiment_name}.gif"
-        create_animation(
+        create_animation_improved(
             gdf=gdf,
             history=history,
             output_path=str(gif_file),
+            party_cols=party_cols,
+            party_colors=party_colors,
             fps=3,
             dpi=80
         )
