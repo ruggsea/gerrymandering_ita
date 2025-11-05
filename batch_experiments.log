@@ -1435,3 +1435,15 @@ Running 19 experiments...
 2025-11-05 17:50:26,732 - INFO - Seat deviation: 0, population std: 57573.53
 2025-11-05 17:50:30,611 - INFO - Step 1200, current temperature: 0.24318743203404006, current score: 5047.4510598898805
 2025-11-05 17:50:30,612 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:50:34,688 - INFO - Step 1230, current temperature: 0.18170286290799648, current score: 5047.4510598898805
+2025-11-05 17:50:34,688 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:50:38,279 - INFO - Step 1260, current temperature: 0.14275996750890363, current score: 5047.4510598898805
+2025-11-05 17:50:38,279 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:50:41,689 - INFO - Step 1290, current temperature: 0.11216338585409437, current score: 4754.037897521893
+2025-11-05 17:50:41,689 - INFO - Seat deviation: 0, population std: 47540.38
+2025-11-05 17:50:45,527 - INFO - Step 1320, current temperature: 0.08637064648724427, current score: 4265.6066621910795
+2025-11-05 17:50:45,528 - INFO - Seat deviation: 0, population std: 42656.07
+2025-11-05 17:50:49,203 - INFO - Step 1350, current temperature: 0.06785952895241562, current score: 4025.7553288094914
+2025-11-05 17:50:49,203 - INFO - Seat deviation: 0, population std: 40257.55
+2025-11-05 17:50:52,949 - INFO - Step 1380, current temperature: 0.05278259105795365, current score: 3137.5049195443967
+2025-11-05 17:50:52,950 - INFO - Seat deviation: 0, population std: 31375.05
