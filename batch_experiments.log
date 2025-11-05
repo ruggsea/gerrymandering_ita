@@ -1413,3 +1413,25 @@ Running 19 experiments...
 2025-11-05 17:49:37,350 - INFO - Seat deviation: 0, population std: 240151.71
 2025-11-05 17:49:40,720 - INFO - Step 780, current temperature: 8.362817674504694, current score: 21033.586745838445
 2025-11-05 17:49:40,721 - INFO - Seat deviation: 0, population std: 210335.87
+2025-11-05 17:49:50,013 - INFO - Step 870, current temperature: 4.222268634356518, current score: 15564.02743199207
+2025-11-05 17:49:50,014 - INFO - Seat deviation: 0, population std: 155640.27
+2025-11-05 17:49:53,787 - INFO - Step 900, current temperature: 3.251329021634329, current score: 13519.728484167861
+2025-11-05 17:49:53,788 - INFO - Seat deviation: 0, population std: 135197.28
+2025-11-05 17:49:57,642 - INFO - Step 930, current temperature: 2.4786269915882264, current score: 12539.782199289582
+2025-11-05 17:49:57,642 - INFO - Seat deviation: 0, population std: 125397.82
+2025-11-05 17:50:01,409 - INFO - Step 960, current temperature: 1.9086497258801656, current score: 11144.266438038148
+2025-11-05 17:50:01,409 - INFO - Seat deviation: 0, population std: 111442.66
+2025-11-05 17:50:08,183 - INFO - Step 1020, current temperature: 1.1664087517150468, current score: 9635.76939335845
+2025-11-05 17:50:08,183 - INFO - Seat deviation: 0, population std: 96357.69
+2025-11-05 17:50:12,289 - INFO - Step 1050, current temperature: 0.8803111816824589, current score: 9323.312765134984
+2025-11-05 17:50:12,289 - INFO - Seat deviation: 0, population std: 93233.13
+2025-11-05 17:50:16,010 - INFO - Step 1080, current temperature: 0.6778775916302141, current score: 8077.025502125363
+2025-11-05 17:50:16,010 - INFO - Seat deviation: 0, population std: 80770.26
+2025-11-05 17:50:19,208 - INFO - Step 1110, current temperature: 0.5379733392796987, current score: 7236.934821906919
+2025-11-05 17:50:19,208 - INFO - Seat deviation: 0, population std: 72369.35
+2025-11-05 17:50:23,128 - INFO - Step 1140, current temperature: 0.41012005571286086, current score: 5898.659647610389
+2025-11-05 17:50:23,128 - INFO - Seat deviation: 0, population std: 58986.60
+2025-11-05 17:50:26,732 - INFO - Step 1170, current temperature: 0.3190001392514312, current score: 5757.35300623013
+2025-11-05 17:50:26,732 - INFO - Seat deviation: 0, population std: 57573.53
+2025-11-05 17:50:30,611 - INFO - Step 1200, current temperature: 0.24318743203404006, current score: 5047.4510598898805
+2025-11-05 17:50:30,612 - INFO - Seat deviation: 0, population std: 50474.51
