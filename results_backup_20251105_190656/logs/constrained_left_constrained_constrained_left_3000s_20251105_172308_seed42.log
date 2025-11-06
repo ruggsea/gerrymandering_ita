@@ -1,0 +1,96 @@
+2025-11-05 17:23:08,017 - INFO - ================================================================================
+2025-11-05 17:23:08,017 - INFO - Experiment: constrained_left
+2025-11-05 17:23:08,017 - INFO - Algorithm: constrained
+2025-11-05 17:23:08,017 - INFO - Objective: constrained_left - Maximize left with population constraint
+2025-11-05 17:23:08,017 - INFO - Steps: 3000
+2025-11-05 17:23:08,017 - INFO - Random seed: 42
+2025-11-05 17:23:08,017 - INFO - ================================================================================
+2025-11-05 17:23:08,019 - INFO - Building adjacency graph
+2025-11-05 17:23:08,377 - INFO - Starting optimization...
+2025-11-05 17:23:08,377 - INFO - Initializing the map
+2025-11-05 17:23:08,377 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:23:08,378 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:23:08,589 - INFO - Assigned 50 communes
+2025-11-05 17:23:09,140 - INFO - Assigned 100 communes
+2025-11-05 17:23:09,996 - INFO - Assigned 150 communes
+2025-11-05 17:23:11,154 - INFO - Assigned 200 communes
+2025-11-05 17:23:12,738 - INFO - Assigned 250 communes
+2025-11-05 17:23:14,687 - INFO - Assigned 300 communes
+2025-11-05 17:23:15,518 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:23:15,518 - INFO - District 0 has 61 communes
+2025-11-05 17:23:15,518 - INFO - District 1 has 14 communes
+2025-11-05 17:23:15,518 - INFO - District 2 has 3 communes
+2025-11-05 17:23:15,518 - INFO - District 3 has 4 communes
+2025-11-05 17:23:15,519 - INFO - District 4 has 9 communes
+2025-11-05 17:23:15,519 - INFO - District 5 has 60 communes
+2025-11-05 17:23:15,519 - INFO - District 6 has 30 communes
+2025-11-05 17:23:15,519 - INFO - District 7 has 14 communes
+2025-11-05 17:23:15,519 - INFO - District 8 has 10 communes
+2025-11-05 17:23:15,519 - INFO - District 9 has 30 communes
+2025-11-05 17:23:15,519 - INFO - District 10 has 95 communes
+2025-11-05 17:23:15,519 - INFO - Finished initializing the map
+2025-11-05 17:23:15,701 - INFO - Generated a map with 11 districts
+2025-11-05 17:23:15,702 - INFO - Starting constrained optimization (population constraint: 15.0%)
+2025-11-05 17:23:15,702 - INFO - Phase 1: Achieving population balance
+2025-11-05 17:23:20,716 - INFO - Step 60, phase 1, temp: 710.55, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:20,717 - INFO - Seat deviation: 0, population std: 1161930.40
+2025-11-05 17:23:22,970 - INFO - Step 90, phase 1, temp: 611.12, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:22,970 - INFO - Seat deviation: 0, population std: 1170963.16
+2025-11-05 17:23:25,446 - INFO - Step 120, phase 1, temp: 520.34, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:25,446 - INFO - Seat deviation: 0, population std: 1186529.48
+2025-11-05 17:23:30,509 - INFO - Step 180, phase 1, temp: 366.03, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:30,509 - INFO - Seat deviation: 0, population std: 1172654.04
+2025-11-05 17:23:36,284 - INFO - Step 240, phase 1, temp: 244.87, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:36,285 - INFO - Seat deviation: 0, population std: 1219829.54
+2025-11-05 17:23:42,572 - INFO - Step 300, phase 1, temp: 158.94, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:42,572 - INFO - Seat deviation: 0, population std: 1195656.77
+2025-11-05 17:23:45,909 - INFO - Step 330, phase 1, temp: 127.41, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:45,909 - INFO - Seat deviation: 0, population std: 1139812.95
+2025-11-05 17:23:49,234 - INFO - Step 360, phase 1, temp: 101.12, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:49,234 - INFO - Seat deviation: 0, population std: 1136210.79
+2025-11-05 17:23:52,877 - INFO - Step 390, phase 1, temp: 78.65, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:52,877 - INFO - Seat deviation: 0, population std: 1156904.48
+2025-11-05 17:23:56,547 - INFO - Step 420, phase 1, temp: 61.18, score: 0.0 (✗ infeasible)
+2025-11-05 17:23:56,547 - INFO - Seat deviation: 0, population std: 1201432.44
+2025-11-05 17:24:00,189 - INFO - Step 450, phase 1, temp: 48.06, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:00,189 - INFO - Seat deviation: 0, population std: 1181441.31
+2025-11-05 17:24:04,167 - INFO - Step 480, phase 1, temp: 36.64, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:04,167 - INFO - Seat deviation: 0, population std: 1185309.52
+2025-11-05 17:24:12,148 - INFO - Step 540, phase 1, temp: 21.51, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:12,148 - INFO - Seat deviation: 0, population std: 1099374.86
+2025-11-05 17:24:15,785 - INFO - Step 570, phase 1, temp: 16.73, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:15,786 - INFO - Seat deviation: 0, population std: 1003856.13
+2025-11-05 17:24:18,948 - INFO - Step 600, phase 1, temp: 13.41, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:18,948 - INFO - Seat deviation: 0, population std: 1044081.97
+2025-11-05 17:24:26,387 - INFO - Step 660, phase 1, temp: 7.95, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:26,388 - INFO - Seat deviation: 0, population std: 1091329.16
+2025-11-05 17:24:30,421 - INFO - Step 690, phase 1, temp: 6.00, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:30,421 - INFO - Seat deviation: 0, population std: 973301.96
+2025-11-05 17:24:34,571 - INFO - Step 720, phase 1, temp: 4.48, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:34,571 - INFO - Seat deviation: 0, population std: 974455.05
+2025-11-05 17:24:37,975 - INFO - Step 750, phase 1, temp: 3.56, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:37,976 - INFO - Seat deviation: 0, population std: 929939.58
+2025-11-05 17:24:41,981 - INFO - Step 780, phase 1, temp: 2.71, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:41,982 - INFO - Seat deviation: 0, population std: 934269.90
+2025-11-05 17:24:46,399 - INFO - Step 810, phase 1, temp: 2.03, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:46,400 - INFO - Seat deviation: 0, population std: 865531.76
+2025-11-05 17:24:51,012 - INFO - Step 840, phase 1, temp: 1.51, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:51,013 - INFO - Seat deviation: 0, population std: 860664.23
+2025-11-05 17:24:55,567 - INFO - Step 870, phase 1, temp: 1.12, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:55,568 - INFO - Seat deviation: 0, population std: 892067.51
+2025-11-05 17:24:59,653 - INFO - Step 900, phase 1, temp: 0.85, score: 0.0 (✗ infeasible)
+2025-11-05 17:24:59,653 - INFO - Seat deviation: 0, population std: 919646.55
+2025-11-05 17:25:07,244 - INFO - Step 960, phase 1, temp: 0.49, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:07,245 - INFO - Seat deviation: 0, population std: 976865.95
+2025-11-05 17:25:11,484 - INFO - Step 990, phase 1, temp: 0.37, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:11,485 - INFO - Seat deviation: 0, population std: 904198.10
+2025-11-05 17:25:15,398 - INFO - Step 1020, phase 1, temp: 0.28, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:15,399 - INFO - Seat deviation: 0, population std: 962928.82
+2025-11-05 17:25:18,810 - INFO - Step 1050, phase 1, temp: 0.22, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:18,810 - INFO - Seat deviation: 0, population std: 869643.05
+2025-11-05 17:25:22,641 - INFO - Step 1080, phase 1, temp: 0.17, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:22,642 - INFO - Seat deviation: 0, population std: 851361.93
+2025-11-05 17:25:26,589 - INFO - Step 1110, phase 1, temp: 0.13, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:26,589 - INFO - Seat deviation: 0, population std: 846601.56
+2025-11-05 17:25:30,433 - INFO - Step 1140, phase 1, temp: 0.10, score: 0.0 (✗ infeasible)
+2025-11-05 17:25:30,433 - INFO - Seat deviation: 0, population std: 848561.26

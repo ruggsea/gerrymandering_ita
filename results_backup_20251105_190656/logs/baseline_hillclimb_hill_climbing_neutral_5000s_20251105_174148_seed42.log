@@ -1,0 +1,713 @@
+2025-11-05 17:41:48,812 - INFO - ================================================================================
+2025-11-05 17:41:48,812 - INFO - Experiment: baseline_hillclimb
+2025-11-05 17:41:48,812 - INFO - Algorithm: hill_climbing
+2025-11-05 17:41:48,812 - INFO - Objective: neutral - Population balance + proportionality
+2025-11-05 17:41:48,812 - INFO - Steps: 5000
+2025-11-05 17:41:48,812 - INFO - Random seed: 42
+2025-11-05 17:41:48,812 - INFO - ================================================================================
+2025-11-05 17:41:48,813 - INFO - Building adjacency graph
+2025-11-05 17:41:49,174 - INFO - Starting optimization...
+2025-11-05 17:41:49,174 - INFO - Starting hill climbing with restarts every 200 steps
+2025-11-05 17:41:49,174 - INFO - Initializing the map
+2025-11-05 17:41:49,174 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:41:49,174 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:41:49,389 - INFO - Assigned 50 communes
+2025-11-05 17:41:49,909 - INFO - Assigned 100 communes
+2025-11-05 17:41:50,779 - INFO - Assigned 150 communes
+2025-11-05 17:41:51,940 - INFO - Assigned 200 communes
+2025-11-05 17:41:53,573 - INFO - Assigned 250 communes
+2025-11-05 17:41:55,631 - INFO - Assigned 300 communes
+2025-11-05 17:41:56,467 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:41:56,468 - INFO - District 0 has 61 communes
+2025-11-05 17:41:56,468 - INFO - District 1 has 14 communes
+2025-11-05 17:41:56,468 - INFO - District 2 has 3 communes
+2025-11-05 17:41:56,468 - INFO - District 3 has 4 communes
+2025-11-05 17:41:56,468 - INFO - District 4 has 9 communes
+2025-11-05 17:41:56,468 - INFO - District 5 has 60 communes
+2025-11-05 17:41:56,468 - INFO - District 6 has 30 communes
+2025-11-05 17:41:56,468 - INFO - District 7 has 14 communes
+2025-11-05 17:41:56,468 - INFO - District 8 has 10 communes
+2025-11-05 17:41:56,468 - INFO - District 9 has 30 communes
+2025-11-05 17:41:56,468 - INFO - District 10 has 95 communes
+2025-11-05 17:41:56,468 - INFO - Finished initializing the map
+2025-11-05 17:41:56,472 - INFO - Restart 1, initial score: 1122622.3565212341
+2025-11-05 17:41:56,540 - INFO - Step 50, current score: 1035085.7473045929
+2025-11-05 17:41:56,540 - INFO - Seat deviation: 0, population std: 1035085.75
+2025-11-05 17:41:56,603 - INFO - Step 100, current score: 931640.4317971109
+2025-11-05 17:41:56,604 - INFO - Seat deviation: 0, population std: 931640.43
+2025-11-05 17:41:56,668 - INFO - Step 150, current score: 900797.0449349127
+2025-11-05 17:41:56,668 - INFO - Seat deviation: 0, population std: 900797.04
+2025-11-05 17:41:56,743 - INFO - Initializing the map
+2025-11-05 17:41:56,743 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:41:56,744 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:41:56,970 - INFO - Assigned 50 communes
+2025-11-05 17:41:57,522 - INFO - Assigned 100 communes
+2025-11-05 17:41:58,353 - INFO - Assigned 150 communes
+2025-11-05 17:41:59,468 - INFO - Assigned 200 communes
+2025-11-05 17:42:01,058 - INFO - Assigned 250 communes
+2025-11-05 17:42:03,026 - INFO - Assigned 300 communes
+2025-11-05 17:42:03,847 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:03,847 - INFO - District 0 has 8 communes
+2025-11-05 17:42:03,848 - INFO - District 1 has 1 communes
+2025-11-05 17:42:03,848 - INFO - District 2 has 29 communes
+2025-11-05 17:42:03,848 - INFO - District 3 has 2 communes
+2025-11-05 17:42:03,848 - INFO - District 4 has 116 communes
+2025-11-05 17:42:03,848 - INFO - District 5 has 6 communes
+2025-11-05 17:42:03,848 - INFO - District 6 has 9 communes
+2025-11-05 17:42:03,848 - INFO - District 7 has 94 communes
+2025-11-05 17:42:03,848 - INFO - District 8 has 43 communes
+2025-11-05 17:42:03,848 - INFO - District 9 has 11 communes
+2025-11-05 17:42:03,848 - INFO - District 10 has 11 communes
+2025-11-05 17:42:03,848 - INFO - Finished initializing the map
+2025-11-05 17:42:03,852 - INFO - Restart 2, initial score: 1355162.81640487
+2025-11-05 17:42:03,858 - INFO - Step 200, current score: 1347672.8580264228
+2025-11-05 17:42:03,858 - INFO - Seat deviation: 0, population std: 1347672.86
+2025-11-05 17:42:03,940 - INFO - Step 250, current score: 1197433.9424959063
+2025-11-05 17:42:03,940 - INFO - Seat deviation: 0, population std: 1197433.94
+2025-11-05 17:42:04,001 - INFO - Step 300, current score: 1097659.1880697007
+2025-11-05 17:42:04,002 - INFO - Seat deviation: 0, population std: 1097659.19
+2025-11-05 17:42:04,163 - INFO - Initializing the map
+2025-11-05 17:42:04,164 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:04,164 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:04,372 - INFO - Assigned 50 communes
+2025-11-05 17:42:04,912 - INFO - Assigned 100 communes
+2025-11-05 17:42:05,741 - INFO - Assigned 150 communes
+2025-11-05 17:42:06,877 - INFO - Assigned 200 communes
+2025-11-05 17:42:08,432 - INFO - Assigned 250 communes
+2025-11-05 17:42:10,498 - INFO - Assigned 300 communes
+2025-11-05 17:42:11,332 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:11,332 - INFO - District 0 has 21 communes
+2025-11-05 17:42:11,333 - INFO - District 1 has 10 communes
+2025-11-05 17:42:11,333 - INFO - District 2 has 62 communes
+2025-11-05 17:42:11,333 - INFO - District 3 has 36 communes
+2025-11-05 17:42:11,333 - INFO - District 4 has 145 communes
+2025-11-05 17:42:11,333 - INFO - District 5 has 9 communes
+2025-11-05 17:42:11,333 - INFO - District 6 has 2 communes
+2025-11-05 17:42:11,333 - INFO - District 7 has 3 communes
+2025-11-05 17:42:11,333 - INFO - District 8 has 40 communes
+2025-11-05 17:42:11,333 - INFO - District 9 has 1 communes
+2025-11-05 17:42:11,333 - INFO - District 10 has 1 communes
+2025-11-05 17:42:11,333 - INFO - Finished initializing the map
+2025-11-05 17:42:11,336 - INFO - Restart 3, initial score: 1534680.8730148007
+2025-11-05 17:42:11,392 - INFO - Step 450, current score: 1466049.9253137875
+2025-11-05 17:42:11,392 - INFO - Seat deviation: 0, population std: 1466049.93
+2025-11-05 17:42:11,577 - INFO - Initializing the map
+2025-11-05 17:42:11,577 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:11,578 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:11,802 - INFO - Assigned 50 communes
+2025-11-05 17:42:12,353 - INFO - Assigned 100 communes
+2025-11-05 17:42:13,148 - INFO - Assigned 150 communes
+2025-11-05 17:42:14,378 - INFO - Assigned 200 communes
+2025-11-05 17:42:15,984 - INFO - Assigned 250 communes
+2025-11-05 17:42:17,948 - INFO - Assigned 300 communes
+2025-11-05 17:42:18,797 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:18,797 - INFO - District 0 has 18 communes
+2025-11-05 17:42:18,797 - INFO - District 1 has 8 communes
+2025-11-05 17:42:18,797 - INFO - District 2 has 9 communes
+2025-11-05 17:42:18,797 - INFO - District 3 has 2 communes
+2025-11-05 17:42:18,797 - INFO - District 4 has 30 communes
+2025-11-05 17:42:18,798 - INFO - District 5 has 1 communes
+2025-11-05 17:42:18,798 - INFO - District 6 has 37 communes
+2025-11-05 17:42:18,798 - INFO - District 7 has 132 communes
+2025-11-05 17:42:18,798 - INFO - District 8 has 30 communes
+2025-11-05 17:42:18,798 - INFO - District 9 has 39 communes
+2025-11-05 17:42:18,798 - INFO - District 10 has 24 communes
+2025-11-05 17:42:18,798 - INFO - Finished initializing the map
+2025-11-05 17:42:18,802 - INFO - Restart 4, initial score: 1282037.4118158452
+2025-11-05 17:42:18,867 - INFO - Step 650, current score: 1204360.6415452512
+2025-11-05 17:42:18,867 - INFO - Seat deviation: 0, population std: 1204360.64
+2025-11-05 17:42:18,962 - INFO - Step 700, current score: 1105240.1420742823
+2025-11-05 17:42:18,963 - INFO - Seat deviation: 0, population std: 1105240.14
+2025-11-05 17:42:19,127 - INFO - Initializing the map
+2025-11-05 17:42:19,128 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:19,128 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:19,347 - INFO - Assigned 50 communes
+2025-11-05 17:42:19,872 - INFO - Assigned 100 communes
+2025-11-05 17:42:20,693 - INFO - Assigned 150 communes
+2025-11-05 17:42:21,847 - INFO - Assigned 200 communes
+2025-11-05 17:42:23,421 - INFO - Assigned 250 communes
+2025-11-05 17:42:25,411 - INFO - Assigned 300 communes
+2025-11-05 17:42:26,224 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:26,225 - INFO - District 0 has 99 communes
+2025-11-05 17:42:26,225 - INFO - District 1 has 5 communes
+2025-11-05 17:42:26,225 - INFO - District 2 has 52 communes
+2025-11-05 17:42:26,225 - INFO - District 3 has 25 communes
+2025-11-05 17:42:26,225 - INFO - District 4 has 20 communes
+2025-11-05 17:42:26,225 - INFO - District 5 has 9 communes
+2025-11-05 17:42:26,225 - INFO - District 6 has 19 communes
+2025-11-05 17:42:26,225 - INFO - District 7 has 38 communes
+2025-11-05 17:42:26,225 - INFO - District 8 has 26 communes
+2025-11-05 17:42:26,225 - INFO - District 9 has 14 communes
+2025-11-05 17:42:26,225 - INFO - District 10 has 23 communes
+2025-11-05 17:42:26,226 - INFO - Finished initializing the map
+2025-11-05 17:42:26,229 - INFO - Restart 5, initial score: 816585.0401088994
+2025-11-05 17:42:26,287 - INFO - Step 850, current score: 787364.7051606667
+2025-11-05 17:42:26,287 - INFO - Seat deviation: 0, population std: 787364.71
+2025-11-05 17:42:26,506 - INFO - Initializing the map
+2025-11-05 17:42:26,506 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:26,507 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:26,728 - INFO - Assigned 50 communes
+2025-11-05 17:42:27,282 - INFO - Assigned 100 communes
+2025-11-05 17:42:28,150 - INFO - Assigned 150 communes
+2025-11-05 17:42:29,330 - INFO - Assigned 200 communes
+2025-11-05 17:42:30,922 - INFO - Assigned 250 communes
+2025-11-05 17:42:32,857 - INFO - Assigned 300 communes
+2025-11-05 17:42:33,682 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:33,683 - INFO - District 0 has 1 communes
+2025-11-05 17:42:33,683 - INFO - District 1 has 27 communes
+2025-11-05 17:42:33,683 - INFO - District 2 has 26 communes
+2025-11-05 17:42:33,683 - INFO - District 3 has 18 communes
+2025-11-05 17:42:33,683 - INFO - District 4 has 1 communes
+2025-11-05 17:42:33,683 - INFO - District 5 has 40 communes
+2025-11-05 17:42:33,683 - INFO - District 6 has 12 communes
+2025-11-05 17:42:33,683 - INFO - District 7 has 82 communes
+2025-11-05 17:42:33,683 - INFO - District 8 has 8 communes
+2025-11-05 17:42:33,683 - INFO - District 9 has 114 communes
+2025-11-05 17:42:33,683 - INFO - District 10 has 1 communes
+2025-11-05 17:42:33,683 - INFO - Finished initializing the map
+2025-11-05 17:42:33,687 - INFO - Restart 6, initial score: 1522265.0049328164
+2025-11-05 17:42:33,692 - INFO - Step 1000, current score: 1522265.0049328164
+2025-11-05 17:42:33,692 - INFO - Seat deviation: 0, population std: 1522265.00
+2025-11-05 17:42:33,972 - INFO - Initializing the map
+2025-11-05 17:42:33,972 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:33,973 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:34,185 - INFO - Assigned 50 communes
+2025-11-05 17:42:34,731 - INFO - Assigned 100 communes
+2025-11-05 17:42:35,537 - INFO - Assigned 150 communes
+2025-11-05 17:42:36,625 - INFO - Assigned 200 communes
+2025-11-05 17:42:38,247 - INFO - Assigned 250 communes
+2025-11-05 17:42:40,254 - INFO - Assigned 300 communes
+2025-11-05 17:42:41,064 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:41,065 - INFO - District 0 has 4 communes
+2025-11-05 17:42:41,065 - INFO - District 1 has 41 communes
+2025-11-05 17:42:41,065 - INFO - District 2 has 2 communes
+2025-11-05 17:42:41,065 - INFO - District 3 has 12 communes
+2025-11-05 17:42:41,065 - INFO - District 4 has 21 communes
+2025-11-05 17:42:41,065 - INFO - District 5 has 6 communes
+2025-11-05 17:42:41,065 - INFO - District 6 has 10 communes
+2025-11-05 17:42:41,065 - INFO - District 7 has 64 communes
+2025-11-05 17:42:41,066 - INFO - District 8 has 165 communes
+2025-11-05 17:42:41,066 - INFO - District 9 has 1 communes
+2025-11-05 17:42:41,066 - INFO - District 10 has 4 communes
+2025-11-05 17:42:41,066 - INFO - Finished initializing the map
+2025-11-05 17:42:41,069 - INFO - Restart 7, initial score: 1567069.4908322054
+2025-11-05 17:42:41,218 - INFO - Step 1350, current score: 1394268.821218236
+2025-11-05 17:42:41,218 - INFO - Seat deviation: 0, population std: 1394268.82
+2025-11-05 17:42:41,269 - INFO - Initializing the map
+2025-11-05 17:42:41,270 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:41,270 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:41,495 - INFO - Assigned 50 communes
+2025-11-05 17:42:42,079 - INFO - Assigned 100 communes
+2025-11-05 17:42:42,888 - INFO - Assigned 150 communes
+2025-11-05 17:42:44,051 - INFO - Assigned 200 communes
+2025-11-05 17:42:45,598 - INFO - Assigned 250 communes
+2025-11-05 17:42:47,551 - INFO - Assigned 300 communes
+2025-11-05 17:42:48,355 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:48,355 - INFO - District 0 has 25 communes
+2025-11-05 17:42:48,355 - INFO - District 1 has 14 communes
+2025-11-05 17:42:48,355 - INFO - District 2 has 6 communes
+2025-11-05 17:42:48,355 - INFO - District 3 has 9 communes
+2025-11-05 17:42:48,355 - INFO - District 4 has 9 communes
+2025-11-05 17:42:48,355 - INFO - District 5 has 30 communes
+2025-11-05 17:42:48,355 - INFO - District 6 has 21 communes
+2025-11-05 17:42:48,356 - INFO - District 7 has 27 communes
+2025-11-05 17:42:48,356 - INFO - District 8 has 9 communes
+2025-11-05 17:42:48,356 - INFO - District 9 has 114 communes
+2025-11-05 17:42:48,356 - INFO - District 10 has 66 communes
+2025-11-05 17:42:48,356 - INFO - Finished initializing the map
+2025-11-05 17:42:48,360 - INFO - Restart 8, initial score: 1153372.675691449
+2025-11-05 17:42:48,365 - INFO - Step 1400, current score: 1153372.675691449
+2025-11-05 17:42:48,365 - INFO - Seat deviation: 0, population std: 1153372.68
+2025-11-05 17:42:48,645 - INFO - Initializing the map
+2025-11-05 17:42:48,645 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:48,645 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:48,862 - INFO - Assigned 50 communes
+2025-11-05 17:42:49,426 - INFO - Assigned 100 communes
+2025-11-05 17:42:50,236 - INFO - Assigned 150 communes
+2025-11-05 17:42:51,373 - INFO - Assigned 200 communes
+2025-11-05 17:42:52,911 - INFO - Assigned 250 communes
+2025-11-05 17:42:54,843 - INFO - Assigned 300 communes
+2025-11-05 17:42:55,726 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:55,727 - INFO - District 0 has 1 communes
+2025-11-05 17:42:55,727 - INFO - District 1 has 29 communes
+2025-11-05 17:42:55,727 - INFO - District 2 has 59 communes
+2025-11-05 17:42:55,727 - INFO - District 3 has 1 communes
+2025-11-05 17:42:55,727 - INFO - District 4 has 37 communes
+2025-11-05 17:42:55,727 - INFO - District 5 has 2 communes
+2025-11-05 17:42:55,727 - INFO - District 6 has 46 communes
+2025-11-05 17:42:55,727 - INFO - District 7 has 30 communes
+2025-11-05 17:42:55,727 - INFO - District 8 has 110 communes
+2025-11-05 17:42:55,727 - INFO - District 9 has 10 communes
+2025-11-05 17:42:55,727 - INFO - District 10 has 5 communes
+2025-11-05 17:42:55,727 - INFO - Finished initializing the map
+2025-11-05 17:42:55,731 - INFO - Restart 9, initial score: 1199741.9097667397
+2025-11-05 17:42:55,852 - INFO - Step 1700, current score: 1103450.109606237
+2025-11-05 17:42:55,852 - INFO - Seat deviation: 0, population std: 1103450.11
+2025-11-05 17:42:55,997 - INFO - Initializing the map
+2025-11-05 17:42:55,997 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:55,998 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:56,224 - INFO - Assigned 50 communes
+2025-11-05 17:42:56,771 - INFO - Assigned 100 communes
+2025-11-05 17:42:57,573 - INFO - Assigned 150 communes
+2025-11-05 17:42:58,710 - INFO - Assigned 200 communes
+2025-11-05 17:43:00,339 - INFO - Assigned 250 communes
+2025-11-05 17:43:02,323 - INFO - Assigned 300 communes
+2025-11-05 17:43:03,230 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:03,231 - INFO - District 0 has 25 communes
+2025-11-05 17:43:03,231 - INFO - District 1 has 40 communes
+2025-11-05 17:43:03,231 - INFO - District 2 has 68 communes
+2025-11-05 17:43:03,231 - INFO - District 3 has 12 communes
+2025-11-05 17:43:03,231 - INFO - District 4 has 14 communes
+2025-11-05 17:43:03,231 - INFO - District 5 has 1 communes
+2025-11-05 17:43:03,231 - INFO - District 6 has 21 communes
+2025-11-05 17:43:03,231 - INFO - District 7 has 72 communes
+2025-11-05 17:43:03,231 - INFO - District 8 has 2 communes
+2025-11-05 17:43:03,231 - INFO - District 9 has 13 communes
+2025-11-05 17:43:03,231 - INFO - District 10 has 62 communes
+2025-11-05 17:43:03,231 - INFO - Finished initializing the map
+2025-11-05 17:43:03,234 - INFO - Restart 10, initial score: 991922.6281359844
+2025-11-05 17:43:03,240 - INFO - Step 1800, current score: 986807.5199544964
+2025-11-05 17:43:03,240 - INFO - Seat deviation: 0, population std: 986807.52
+2025-11-05 17:43:03,318 - INFO - Step 1850, current score: 919183.8587322097
+2025-11-05 17:43:03,318 - INFO - Seat deviation: 0, population std: 919183.86
+2025-11-05 17:43:03,414 - INFO - Step 1900, current score: 813226.2291652797
+2025-11-05 17:43:03,415 - INFO - Seat deviation: 0, population std: 813226.23
+2025-11-05 17:43:03,523 - INFO - Step 1950, current score: 758687.4804645539
+2025-11-05 17:43:03,523 - INFO - Seat deviation: 0, population std: 758687.48
+2025-11-05 17:43:03,613 - INFO - Initializing the map
+2025-11-05 17:43:03,613 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:03,613 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:03,831 - INFO - Assigned 50 communes
+2025-11-05 17:43:04,353 - INFO - Assigned 100 communes
+2025-11-05 17:43:05,195 - INFO - Assigned 150 communes
+2025-11-05 17:43:06,321 - INFO - Assigned 200 communes
+2025-11-05 17:43:08,010 - INFO - Assigned 250 communes
+2025-11-05 17:43:09,994 - INFO - Assigned 300 communes
+2025-11-05 17:43:10,825 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:10,826 - INFO - District 0 has 38 communes
+2025-11-05 17:43:10,827 - INFO - District 1 has 4 communes
+2025-11-05 17:43:10,827 - INFO - District 2 has 22 communes
+2025-11-05 17:43:10,828 - INFO - District 3 has 3 communes
+2025-11-05 17:43:10,828 - INFO - District 4 has 87 communes
+2025-11-05 17:43:10,829 - INFO - District 5 has 63 communes
+2025-11-05 17:43:10,829 - INFO - District 6 has 4 communes
+2025-11-05 17:43:10,830 - INFO - District 7 has 88 communes
+2025-11-05 17:43:10,830 - INFO - District 8 has 1 communes
+2025-11-05 17:43:10,830 - INFO - District 9 has 18 communes
+2025-11-05 17:43:10,831 - INFO - District 10 has 2 communes
+2025-11-05 17:43:10,831 - INFO - Finished initializing the map
+2025-11-05 17:43:10,836 - INFO - Restart 11, initial score: 1239433.0710902459
+2025-11-05 17:43:10,885 - INFO - Step 2050, current score: 1194761.7910954687
+2025-11-05 17:43:10,885 - INFO - Seat deviation: 0, population std: 1194761.79
+2025-11-05 17:43:10,956 - INFO - Step 2100, current score: 1154968.0259052503
+2025-11-05 17:43:10,956 - INFO - Seat deviation: 0, population std: 1154968.03
+2025-11-05 17:43:11,031 - INFO - Step 2150, current score: 1096879.8145072553
+2025-11-05 17:43:11,031 - INFO - Seat deviation: 0, population std: 1096879.81
+2025-11-05 17:43:11,106 - INFO - Initializing the map
+2025-11-05 17:43:11,106 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:11,107 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:11,333 - INFO - Assigned 50 communes
+2025-11-05 17:43:11,882 - INFO - Assigned 100 communes
+2025-11-05 17:43:12,704 - INFO - Assigned 150 communes
+2025-11-05 17:43:13,870 - INFO - Assigned 200 communes
+2025-11-05 17:43:15,449 - INFO - Assigned 250 communes
+2025-11-05 17:43:17,396 - INFO - Assigned 300 communes
+2025-11-05 17:43:18,224 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:18,224 - INFO - District 0 has 2 communes
+2025-11-05 17:43:18,224 - INFO - District 1 has 4 communes
+2025-11-05 17:43:18,224 - INFO - District 2 has 31 communes
+2025-11-05 17:43:18,225 - INFO - District 3 has 5 communes
+2025-11-05 17:43:18,225 - INFO - District 4 has 99 communes
+2025-11-05 17:43:18,225 - INFO - District 5 has 18 communes
+2025-11-05 17:43:18,225 - INFO - District 6 has 5 communes
+2025-11-05 17:43:18,225 - INFO - District 7 has 33 communes
+2025-11-05 17:43:18,225 - INFO - District 8 has 11 communes
+2025-11-05 17:43:18,225 - INFO - District 9 has 114 communes
+2025-11-05 17:43:18,225 - INFO - District 10 has 8 communes
+2025-11-05 17:43:18,225 - INFO - Finished initializing the map
+2025-11-05 17:43:18,228 - INFO - Restart 12, initial score: 1355856.8881640255
+2025-11-05 17:43:18,233 - INFO - Step 2200, current score: 1355323.204782004
+2025-11-05 17:43:18,233 - INFO - Seat deviation: 0, population std: 1355323.20
+2025-11-05 17:43:18,291 - INFO - Step 2250, current score: 1291591.6767108496
+2025-11-05 17:43:18,292 - INFO - Seat deviation: 0, population std: 1291591.68
+2025-11-05 17:43:18,408 - INFO - Step 2350, current score: 1171167.736263108
+2025-11-05 17:43:18,409 - INFO - Seat deviation: 0, population std: 1171167.74
+2025-11-05 17:43:18,480 - INFO - Initializing the map
+2025-11-05 17:43:18,480 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:18,481 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:18,687 - INFO - Assigned 50 communes
+2025-11-05 17:43:19,223 - INFO - Assigned 100 communes
+2025-11-05 17:43:20,033 - INFO - Assigned 150 communes
+2025-11-05 17:43:21,152 - INFO - Assigned 200 communes
+2025-11-05 17:43:22,737 - INFO - Assigned 250 communes
+2025-11-05 17:43:24,718 - INFO - Assigned 300 communes
+2025-11-05 17:43:25,563 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:25,563 - INFO - District 0 has 60 communes
+2025-11-05 17:43:25,564 - INFO - District 1 has 13 communes
+2025-11-05 17:43:25,564 - INFO - District 2 has 29 communes
+2025-11-05 17:43:25,564 - INFO - District 3 has 14 communes
+2025-11-05 17:43:25,564 - INFO - District 4 has 3 communes
+2025-11-05 17:43:25,564 - INFO - District 5 has 18 communes
+2025-11-05 17:43:25,564 - INFO - District 6 has 14 communes
+2025-11-05 17:43:25,564 - INFO - District 7 has 19 communes
+2025-11-05 17:43:25,564 - INFO - District 8 has 19 communes
+2025-11-05 17:43:25,564 - INFO - District 9 has 96 communes
+2025-11-05 17:43:25,564 - INFO - District 10 has 45 communes
+2025-11-05 17:43:25,564 - INFO - Finished initializing the map
+2025-11-05 17:43:25,567 - INFO - Restart 13, initial score: 856521.8718558628
+2025-11-05 17:43:25,627 - INFO - Step 2450, current score: 799767.5941601683
+2025-11-05 17:43:25,628 - INFO - Seat deviation: 0, population std: 799767.59
+2025-11-05 17:43:25,772 - INFO - Step 2550, current score: 692701.4109911337
+2025-11-05 17:43:25,772 - INFO - Seat deviation: 0, population std: 692701.41
+2025-11-05 17:43:25,839 - INFO - Initializing the map
+2025-11-05 17:43:25,839 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:25,839 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:26,058 - INFO - Assigned 50 communes
+2025-11-05 17:43:26,598 - INFO - Assigned 100 communes
+2025-11-05 17:43:27,391 - INFO - Assigned 150 communes
+2025-11-05 17:43:28,521 - INFO - Assigned 200 communes
+2025-11-05 17:43:30,070 - INFO - Assigned 250 communes
+2025-11-05 17:43:31,992 - INFO - Assigned 300 communes
+2025-11-05 17:43:32,823 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:32,823 - INFO - District 0 has 30 communes
+2025-11-05 17:43:32,823 - INFO - District 1 has 138 communes
+2025-11-05 17:43:32,824 - INFO - District 2 has 1 communes
+2025-11-05 17:43:32,824 - INFO - District 3 has 1 communes
+2025-11-05 17:43:32,824 - INFO - District 4 has 9 communes
+2025-11-05 17:43:32,824 - INFO - District 5 has 95 communes
+2025-11-05 17:43:32,824 - INFO - District 6 has 2 communes
+2025-11-05 17:43:32,825 - INFO - District 7 has 9 communes
+2025-11-05 17:43:32,825 - INFO - District 8 has 14 communes
+2025-11-05 17:43:32,825 - INFO - District 9 has 15 communes
+2025-11-05 17:43:32,826 - INFO - District 10 has 16 communes
+2025-11-05 17:43:32,826 - INFO - Finished initializing the map
+2025-11-05 17:43:32,829 - INFO - Restart 14, initial score: 1485568.013892947
+2025-11-05 17:43:32,835 - INFO - Step 2600, current score: 1485568.013892947
+2025-11-05 17:43:32,835 - INFO - Seat deviation: 0, population std: 1485568.01
+2025-11-05 17:43:32,946 - INFO - Step 2750, current score: 1395242.8447275008
+2025-11-05 17:43:32,946 - INFO - Seat deviation: 0, population std: 1395242.84
+2025-11-05 17:43:32,991 - INFO - Initializing the map
+2025-11-05 17:43:32,991 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:32,991 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:33,222 - INFO - Assigned 50 communes
+2025-11-05 17:43:33,754 - INFO - Assigned 100 communes
+2025-11-05 17:43:34,583 - INFO - Assigned 150 communes
+2025-11-05 17:43:35,721 - INFO - Assigned 200 communes
+2025-11-05 17:43:37,281 - INFO - Assigned 250 communes
+2025-11-05 17:43:39,261 - INFO - Assigned 300 communes
+2025-11-05 17:43:40,084 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:40,085 - INFO - District 0 has 10 communes
+2025-11-05 17:43:40,085 - INFO - District 1 has 33 communes
+2025-11-05 17:43:40,085 - INFO - District 2 has 50 communes
+2025-11-05 17:43:40,085 - INFO - District 3 has 9 communes
+2025-11-05 17:43:40,085 - INFO - District 4 has 8 communes
+2025-11-05 17:43:40,085 - INFO - District 5 has 6 communes
+2025-11-05 17:43:40,085 - INFO - District 6 has 5 communes
+2025-11-05 17:43:40,085 - INFO - District 7 has 21 communes
+2025-11-05 17:43:40,085 - INFO - District 8 has 23 communes
+2025-11-05 17:43:40,085 - INFO - District 9 has 104 communes
+2025-11-05 17:43:40,085 - INFO - District 10 has 61 communes
+2025-11-05 17:43:40,085 - INFO - Finished initializing the map
+2025-11-05 17:43:40,088 - INFO - Restart 15, initial score: 1257575.6132396602
+2025-11-05 17:43:40,093 - INFO - Step 2800, current score: 1257575.6132396602
+2025-11-05 17:43:40,094 - INFO - Seat deviation: 0, population std: 1257575.61
+2025-11-05 17:43:40,146 - INFO - Step 2850, current score: 1193727.049772426
+2025-11-05 17:43:40,146 - INFO - Seat deviation: 0, population std: 1193727.05
+2025-11-05 17:43:40,285 - INFO - Step 2950, current score: 1031796.9137208322
+2025-11-05 17:43:40,286 - INFO - Seat deviation: 0, population std: 1031796.91
+2025-11-05 17:43:40,344 - INFO - Initializing the map
+2025-11-05 17:43:40,344 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:40,344 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:40,567 - INFO - Assigned 50 communes
+2025-11-05 17:43:41,096 - INFO - Assigned 100 communes
+2025-11-05 17:43:41,933 - INFO - Assigned 150 communes
+2025-11-05 17:43:43,087 - INFO - Assigned 200 communes
+2025-11-05 17:43:44,633 - INFO - Assigned 250 communes
+2025-11-05 17:43:46,575 - INFO - Assigned 300 communes
+2025-11-05 17:43:47,396 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:47,396 - INFO - District 0 has 15 communes
+2025-11-05 17:43:47,396 - INFO - District 1 has 5 communes
+2025-11-05 17:43:47,396 - INFO - District 2 has 25 communes
+2025-11-05 17:43:47,397 - INFO - District 3 has 9 communes
+2025-11-05 17:43:47,397 - INFO - District 4 has 45 communes
+2025-11-05 17:43:47,397 - INFO - District 5 has 100 communes
+2025-11-05 17:43:47,397 - INFO - District 6 has 48 communes
+2025-11-05 17:43:47,397 - INFO - District 7 has 4 communes
+2025-11-05 17:43:47,397 - INFO - District 8 has 48 communes
+2025-11-05 17:43:47,397 - INFO - District 9 has 3 communes
+2025-11-05 17:43:47,397 - INFO - District 10 has 28 communes
+2025-11-05 17:43:47,397 - INFO - Finished initializing the map
+2025-11-05 17:43:47,400 - INFO - Restart 16, initial score: 1245255.7443338216
+2025-11-05 17:43:47,474 - INFO - Step 3050, current score: 1183998.6904717952
+2025-11-05 17:43:47,474 - INFO - Seat deviation: 0, population std: 1183998.69
+2025-11-05 17:43:47,606 - INFO - Step 3150, current score: 1060938.3814238214
+2025-11-05 17:43:47,607 - INFO - Seat deviation: 0, population std: 1060938.38
+2025-11-05 17:43:47,698 - INFO - Initializing the map
+2025-11-05 17:43:47,698 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:47,698 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:47,911 - INFO - Assigned 50 communes
+2025-11-05 17:43:48,466 - INFO - Assigned 100 communes
+2025-11-05 17:43:49,282 - INFO - Assigned 150 communes
+2025-11-05 17:43:50,406 - INFO - Assigned 200 communes
+2025-11-05 17:43:51,909 - INFO - Assigned 250 communes
+2025-11-05 17:43:54,057 - INFO - Assigned 300 communes
+2025-11-05 17:43:54,873 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:54,873 - INFO - District 0 has 36 communes
+2025-11-05 17:43:54,873 - INFO - District 1 has 95 communes
+2025-11-05 17:43:54,873 - INFO - District 2 has 3 communes
+2025-11-05 17:43:54,873 - INFO - District 3 has 9 communes
+2025-11-05 17:43:54,874 - INFO - District 4 has 26 communes
+2025-11-05 17:43:54,874 - INFO - District 5 has 17 communes
+2025-11-05 17:43:54,874 - INFO - District 6 has 40 communes
+2025-11-05 17:43:54,874 - INFO - District 7 has 2 communes
+2025-11-05 17:43:54,874 - INFO - District 8 has 18 communes
+2025-11-05 17:43:54,874 - INFO - District 9 has 30 communes
+2025-11-05 17:43:54,874 - INFO - District 10 has 54 communes
+2025-11-05 17:43:54,874 - INFO - Finished initializing the map
+2025-11-05 17:43:54,877 - INFO - Restart 17, initial score: 916745.2959163432
+2025-11-05 17:43:54,883 - INFO - Step 3200, current score: 915502.8144259496
+2025-11-05 17:43:54,883 - INFO - Seat deviation: 0, population std: 915502.81
+2025-11-05 17:43:55,009 - INFO - Step 3300, current score: 829784.9565853126
+2025-11-05 17:43:55,009 - INFO - Seat deviation: 0, population std: 829784.96
+2025-11-05 17:43:55,084 - INFO - Step 3350, current score: 787123.5911439126
+2025-11-05 17:43:55,084 - INFO - Seat deviation: 0, population std: 787123.59
+2025-11-05 17:43:55,149 - INFO - Initializing the map
+2025-11-05 17:43:55,149 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:55,149 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:55,364 - INFO - Assigned 50 communes
+2025-11-05 17:43:55,910 - INFO - Assigned 100 communes
+2025-11-05 17:43:56,724 - INFO - Assigned 150 communes
+2025-11-05 17:43:57,844 - INFO - Assigned 200 communes
+2025-11-05 17:43:59,387 - INFO - Assigned 250 communes
+2025-11-05 17:44:01,369 - INFO - Assigned 300 communes
+2025-11-05 17:44:02,191 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:02,192 - INFO - District 0 has 33 communes
+2025-11-05 17:44:02,192 - INFO - District 1 has 43 communes
+2025-11-05 17:44:02,192 - INFO - District 2 has 43 communes
+2025-11-05 17:44:02,192 - INFO - District 3 has 25 communes
+2025-11-05 17:44:02,192 - INFO - District 4 has 1 communes
+2025-11-05 17:44:02,193 - INFO - District 5 has 102 communes
+2025-11-05 17:44:02,193 - INFO - District 6 has 14 communes
+2025-11-05 17:44:02,193 - INFO - District 7 has 23 communes
+2025-11-05 17:44:02,193 - INFO - District 8 has 29 communes
+2025-11-05 17:44:02,193 - INFO - District 9 has 6 communes
+2025-11-05 17:44:02,193 - INFO - District 10 has 11 communes
+2025-11-05 17:44:02,193 - INFO - Finished initializing the map
+2025-11-05 17:44:02,197 - INFO - Restart 18, initial score: 937618.0799263332
+2025-11-05 17:44:02,351 - INFO - Step 3550, current score: 783428.0987104736
+2025-11-05 17:44:02,352 - INFO - Seat deviation: 0, population std: 783428.10
+2025-11-05 17:44:02,415 - INFO - Initializing the map
+2025-11-05 17:44:02,416 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:02,416 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:02,637 - INFO - Assigned 50 communes
+2025-11-05 17:44:03,166 - INFO - Assigned 100 communes
+2025-11-05 17:44:03,991 - INFO - Assigned 150 communes
+2025-11-05 17:44:05,132 - INFO - Assigned 200 communes
+2025-11-05 17:44:06,705 - INFO - Assigned 250 communes
+2025-11-05 17:44:08,609 - INFO - Assigned 300 communes
+2025-11-05 17:44:09,444 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:09,444 - INFO - District 0 has 1 communes
+2025-11-05 17:44:09,444 - INFO - District 1 has 28 communes
+2025-11-05 17:44:09,444 - INFO - District 2 has 55 communes
+2025-11-05 17:44:09,445 - INFO - District 3 has 29 communes
+2025-11-05 17:44:09,445 - INFO - District 4 has 166 communes
+2025-11-05 17:44:09,445 - INFO - District 5 has 3 communes
+2025-11-05 17:44:09,445 - INFO - District 6 has 10 communes
+2025-11-05 17:44:09,445 - INFO - District 7 has 14 communes
+2025-11-05 17:44:09,445 - INFO - District 8 has 12 communes
+2025-11-05 17:44:09,445 - INFO - District 9 has 3 communes
+2025-11-05 17:44:09,445 - INFO - District 10 has 9 communes
+2025-11-05 17:44:09,446 - INFO - Finished initializing the map
+2025-11-05 17:44:09,449 - INFO - Restart 19, initial score: 1791891.630507629
+2025-11-05 17:44:09,454 - INFO - Step 3600, current score: 1762343.329679296
+2025-11-05 17:44:09,454 - INFO - Seat deviation: 0, population std: 1762343.33
+2025-11-05 17:44:09,520 - INFO - Step 3650, current score: 1659255.305558879
+2025-11-05 17:44:09,520 - INFO - Seat deviation: 0, population std: 1659255.31
+2025-11-05 17:44:09,604 - INFO - Step 3700, current score: 1535631.1964992285
+2025-11-05 17:44:09,604 - INFO - Seat deviation: 0, population std: 1535631.20
+2025-11-05 17:44:09,754 - INFO - Initializing the map
+2025-11-05 17:44:09,755 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:09,755 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:09,973 - INFO - Assigned 50 communes
+2025-11-05 17:44:10,523 - INFO - Assigned 100 communes
+2025-11-05 17:44:11,358 - INFO - Assigned 150 communes
+2025-11-05 17:44:12,473 - INFO - Assigned 200 communes
+2025-11-05 17:44:14,037 - INFO - Assigned 250 communes
+2025-11-05 17:44:16,048 - INFO - Assigned 300 communes
+2025-11-05 17:44:16,875 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:16,875 - INFO - District 0 has 3 communes
+2025-11-05 17:44:16,875 - INFO - District 1 has 37 communes
+2025-11-05 17:44:16,875 - INFO - District 2 has 5 communes
+2025-11-05 17:44:16,876 - INFO - District 3 has 18 communes
+2025-11-05 17:44:16,876 - INFO - District 4 has 9 communes
+2025-11-05 17:44:16,876 - INFO - District 5 has 25 communes
+2025-11-05 17:44:16,876 - INFO - District 6 has 66 communes
+2025-11-05 17:44:16,876 - INFO - District 7 has 36 communes
+2025-11-05 17:44:16,876 - INFO - District 8 has 11 communes
+2025-11-05 17:44:16,876 - INFO - District 9 has 117 communes
+2025-11-05 17:44:16,876 - INFO - District 10 has 3 communes
+2025-11-05 17:44:16,876 - INFO - Finished initializing the map
+2025-11-05 17:44:16,880 - INFO - Restart 20, initial score: 1242135.5273184741
+2025-11-05 17:44:16,935 - INFO - Step 3850, current score: 1213680.906976271
+2025-11-05 17:44:16,936 - INFO - Seat deviation: 0, population std: 1213680.91
+2025-11-05 17:44:17,000 - INFO - Step 3900, current score: 1170919.676241488
+2025-11-05 17:44:17,001 - INFO - Seat deviation: 0, population std: 1170919.68
+2025-11-05 17:44:17,059 - INFO - Step 3950, current score: 1119354.976446386
+2025-11-05 17:44:17,059 - INFO - Seat deviation: 0, population std: 1119354.98
+2025-11-05 17:44:17,122 - INFO - Initializing the map
+2025-11-05 17:44:17,122 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:17,122 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:17,353 - INFO - Assigned 50 communes
+2025-11-05 17:44:17,891 - INFO - Assigned 100 communes
+2025-11-05 17:44:18,698 - INFO - Assigned 150 communes
+2025-11-05 17:44:19,830 - INFO - Assigned 200 communes
+2025-11-05 17:44:21,383 - INFO - Assigned 250 communes
+2025-11-05 17:44:23,375 - INFO - Assigned 300 communes
+2025-11-05 17:44:24,257 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:24,258 - INFO - District 0 has 26 communes
+2025-11-05 17:44:24,258 - INFO - District 1 has 64 communes
+2025-11-05 17:44:24,258 - INFO - District 2 has 1 communes
+2025-11-05 17:44:24,258 - INFO - District 3 has 123 communes
+2025-11-05 17:44:24,258 - INFO - District 4 has 10 communes
+2025-11-05 17:44:24,258 - INFO - District 5 has 37 communes
+2025-11-05 17:44:24,258 - INFO - District 6 has 45 communes
+2025-11-05 17:44:24,258 - INFO - District 7 has 9 communes
+2025-11-05 17:44:24,258 - INFO - District 8 has 6 communes
+2025-11-05 17:44:24,258 - INFO - District 9 has 1 communes
+2025-11-05 17:44:24,258 - INFO - District 10 has 8 communes
+2025-11-05 17:44:24,258 - INFO - Finished initializing the map
+2025-11-05 17:44:24,262 - INFO - Restart 21, initial score: 1362248.4730661018
+2025-11-05 17:44:24,268 - INFO - Step 4000, current score: 1362248.4730661018
+2025-11-05 17:44:24,268 - INFO - Seat deviation: 0, population std: 1362248.47
+2025-11-05 17:44:24,337 - INFO - Step 4050, current score: 1305353.7648898158
+2025-11-05 17:44:24,337 - INFO - Seat deviation: 0, population std: 1305353.76
+2025-11-05 17:44:24,475 - INFO - Step 4150, current score: 1207966.7540859415
+2025-11-05 17:44:24,475 - INFO - Seat deviation: 0, population std: 1207966.75
+2025-11-05 17:44:24,556 - INFO - Initializing the map
+2025-11-05 17:44:24,556 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:24,556 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:24,796 - INFO - Assigned 50 communes
+2025-11-05 17:44:25,350 - INFO - Assigned 100 communes
+2025-11-05 17:44:26,182 - INFO - Assigned 150 communes
+2025-11-05 17:44:27,302 - INFO - Assigned 200 communes
+2025-11-05 17:44:28,868 - INFO - Assigned 250 communes
+2025-11-05 17:44:30,823 - INFO - Assigned 300 communes
+2025-11-05 17:44:31,635 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:31,636 - INFO - District 0 has 6 communes
+2025-11-05 17:44:31,636 - INFO - District 1 has 9 communes
+2025-11-05 17:44:31,636 - INFO - District 2 has 47 communes
+2025-11-05 17:44:31,636 - INFO - District 3 has 27 communes
+2025-11-05 17:44:31,636 - INFO - District 4 has 77 communes
+2025-11-05 17:44:31,636 - INFO - District 5 has 59 communes
+2025-11-05 17:44:31,636 - INFO - District 6 has 1 communes
+2025-11-05 17:44:31,636 - INFO - District 7 has 29 communes
+2025-11-05 17:44:31,636 - INFO - District 8 has 24 communes
+2025-11-05 17:44:31,636 - INFO - District 9 has 30 communes
+2025-11-05 17:44:31,637 - INFO - District 10 has 21 communes
+2025-11-05 17:44:31,637 - INFO - Finished initializing the map
+2025-11-05 17:44:31,640 - INFO - Restart 22, initial score: 1049324.0859581155
+2025-11-05 17:44:31,721 - INFO - Step 4250, current score: 995906.6926564128
+2025-11-05 17:44:31,721 - INFO - Seat deviation: 0, population std: 995906.69
+2025-11-05 17:44:31,795 - INFO - Step 4300, current score: 938288.6866593487
+2025-11-05 17:44:31,795 - INFO - Seat deviation: 0, population std: 938288.69
+2025-11-05 17:44:31,892 - INFO - Step 4350, current score: 901390.9225751753
+2025-11-05 17:44:31,892 - INFO - Seat deviation: 0, population std: 901390.92
+2025-11-05 17:44:31,970 - INFO - Initializing the map
+2025-11-05 17:44:31,971 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:31,971 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:32,190 - INFO - Assigned 50 communes
+2025-11-05 17:44:32,728 - INFO - Assigned 100 communes
+2025-11-05 17:44:33,573 - INFO - Assigned 150 communes
+2025-11-05 17:44:34,797 - INFO - Assigned 200 communes
+2025-11-05 17:44:36,426 - INFO - Assigned 250 communes
+2025-11-05 17:44:38,372 - INFO - Assigned 300 communes
+2025-11-05 17:44:39,210 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:39,210 - INFO - District 0 has 40 communes
+2025-11-05 17:44:39,210 - INFO - District 1 has 13 communes
+2025-11-05 17:44:39,210 - INFO - District 2 has 35 communes
+2025-11-05 17:44:39,210 - INFO - District 3 has 14 communes
+2025-11-05 17:44:39,211 - INFO - District 4 has 73 communes
+2025-11-05 17:44:39,211 - INFO - District 5 has 24 communes
+2025-11-05 17:44:39,211 - INFO - District 6 has 15 communes
+2025-11-05 17:44:39,211 - INFO - District 7 has 23 communes
+2025-11-05 17:44:39,211 - INFO - District 8 has 83 communes
+2025-11-05 17:44:39,211 - INFO - District 9 has 9 communes
+2025-11-05 17:44:39,211 - INFO - District 10 has 1 communes
+2025-11-05 17:44:39,212 - INFO - Finished initializing the map
+2025-11-05 17:44:39,216 - INFO - Restart 23, initial score: 873172.7981003417
+2025-11-05 17:44:39,290 - INFO - Step 4450, current score: 810202.2054071206
+2025-11-05 17:44:39,291 - INFO - Seat deviation: 0, population std: 810202.21
+2025-11-05 17:44:39,363 - INFO - Step 4500, current score: 765128.7027099179
+2025-11-05 17:44:39,363 - INFO - Seat deviation: 0, population std: 765128.70
+2025-11-05 17:44:39,437 - INFO - Step 4550, current score: 731953.5690043449
+2025-11-05 17:44:39,437 - INFO - Seat deviation: 0, population std: 731953.57
+2025-11-05 17:44:39,506 - INFO - Initializing the map
+2025-11-05 17:44:39,506 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:39,506 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:39,720 - INFO - Assigned 50 communes
+2025-11-05 17:44:40,250 - INFO - Assigned 100 communes
+2025-11-05 17:44:41,117 - INFO - Assigned 150 communes
+2025-11-05 17:44:42,312 - INFO - Assigned 200 communes
+2025-11-05 17:44:43,872 - INFO - Assigned 250 communes
+2025-11-05 17:44:45,847 - INFO - Assigned 300 communes
+2025-11-05 17:44:46,680 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:46,680 - INFO - District 0 has 45 communes
+2025-11-05 17:44:46,680 - INFO - District 1 has 37 communes
+2025-11-05 17:44:46,681 - INFO - District 2 has 26 communes
+2025-11-05 17:44:46,681 - INFO - District 3 has 20 communes
+2025-11-05 17:44:46,681 - INFO - District 4 has 25 communes
+2025-11-05 17:44:46,681 - INFO - District 5 has 12 communes
+2025-11-05 17:44:46,681 - INFO - District 6 has 37 communes
+2025-11-05 17:44:46,682 - INFO - District 7 has 19 communes
+2025-11-05 17:44:46,682 - INFO - District 8 has 47 communes
+2025-11-05 17:44:46,682 - INFO - District 9 has 22 communes
+2025-11-05 17:44:46,682 - INFO - District 10 has 40 communes
+2025-11-05 17:44:46,682 - INFO - Finished initializing the map
+2025-11-05 17:44:46,685 - INFO - Restart 24, initial score: 612865.2219566848
+2025-11-05 17:44:46,690 - INFO - Step 4600, current score: 607595.9008195692
+2025-11-05 17:44:46,690 - INFO - Seat deviation: 0, population std: 607595.90
+2025-11-05 17:44:46,775 - INFO - Step 4650, current score: 527905.286513696
+2025-11-05 17:44:46,775 - INFO - Seat deviation: 0, population std: 527905.29
+2025-11-05 17:44:46,841 - INFO - Step 4700, current score: 473232.6303077764
+2025-11-05 17:44:46,842 - INFO - Seat deviation: 0, population std: 473232.63
+2025-11-05 17:44:47,001 - INFO - Initializing the map
+2025-11-05 17:44:47,001 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:47,002 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:47,222 - INFO - Assigned 50 communes
+2025-11-05 17:44:47,770 - INFO - Assigned 100 communes
+2025-11-05 17:44:48,590 - INFO - Assigned 150 communes
+2025-11-05 17:44:49,736 - INFO - Assigned 200 communes
+2025-11-05 17:44:51,311 - INFO - Assigned 250 communes
+2025-11-05 17:44:53,319 - INFO - Assigned 300 communes
+2025-11-05 17:44:54,122 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:54,123 - INFO - District 0 has 4 communes
+2025-11-05 17:44:54,123 - INFO - District 1 has 30 communes
+2025-11-05 17:44:54,123 - INFO - District 2 has 10 communes
+2025-11-05 17:44:54,123 - INFO - District 3 has 17 communes
+2025-11-05 17:44:54,123 - INFO - District 4 has 6 communes
+2025-11-05 17:44:54,123 - INFO - District 5 has 8 communes
+2025-11-05 17:44:54,123 - INFO - District 6 has 23 communes
+2025-11-05 17:44:54,124 - INFO - District 7 has 36 communes
+2025-11-05 17:44:54,124 - INFO - District 8 has 76 communes
+2025-11-05 17:44:54,124 - INFO - District 9 has 37 communes
+2025-11-05 17:44:54,124 - INFO - District 10 has 83 communes
+2025-11-05 17:44:54,124 - INFO - Finished initializing the map
+2025-11-05 17:44:54,127 - INFO - Restart 25, initial score: 1011398.2693814711
+2025-11-05 17:44:54,132 - INFO - Step 4800, current score: 1011398.2693814711
+2025-11-05 17:44:54,133 - INFO - Seat deviation: 0, population std: 1011398.27
+2025-11-05 17:44:54,316 - INFO - Step 4950, current score: 838345.7879285081
+2025-11-05 17:44:54,316 - INFO - Seat deviation: 0, population std: 838345.79
+2025-11-05 17:44:54,397 - INFO - Hill climbing complete. Best score: 386837.9638075144, Restarts: 25
+2025-11-05 17:44:54,399 - INFO - Results saved to results/data/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.json
+2025-11-05 17:44:54,405 - INFO - Full results saved to results/data/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.pkl
+2025-11-05 17:44:54,405 - INFO - Creating visualizations...
+2025-11-05 17:44:55,307 - INFO - Comparison plot saved to results/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42_comparison.png
+2025-11-05 17:44:55,308 - INFO - Creating animation with 57 frames
+2025-11-05 17:44:55,584 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:45:18,968 - INFO - Animation saved to results/gifs/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.gif
+2025-11-05 17:45:18,971 - INFO - ================================================================================
+2025-11-05 17:45:18,971 - INFO - Experiment complete!
+2025-11-05 17:45:18,971 - INFO - Results: results/data/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.json
+2025-11-05 17:45:18,971 - INFO - Comparison: results/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42_comparison.png
+2025-11-05 17:45:18,972 - INFO - Animation: results/gifs/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.gif
+2025-11-05 17:45:18,972 - INFO - ================================================================================

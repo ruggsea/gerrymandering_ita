@@ -168,11 +168,12 @@ class GerrymanderOptimizer:
         # Seat deviation: difference between proportional and actual seats
         seat_dev = 0
         if self.target_party and self.target_party in self.gdf.columns:
+            # Use coalition columns
+            coalition_cols = ['coalition_left', 'coalition_right', 'coalition_center']
+
             # Calculate what seats each party would win
             party_votes_total = self.gdf[self.target_party].sum()
-            total_votes = self.gdf.select_dtypes(include=[np.number]).filter(
-                regex='^[A-Z]'
-            ).sum(axis=0).sum()
+            total_votes = sum(self.gdf[col].sum() for col in coalition_cols if col in self.gdf.columns)
 
             proportional_seats = (party_votes_total / total_votes) * self.n_districts
 
@@ -180,15 +181,18 @@ class GerrymanderOptimizer:
             actual_seats = 0
             for d in range(self.n_districts):
                 mask = districts == d
-                district_votes = self.gdf.iloc[np.where(mask)[0]][self.target_party].sum()
+                district_gdf = self.gdf.iloc[np.where(mask)[0]]
+                district_votes = district_gdf[self.target_party].sum()
 
-                # Check if target party wins this district
-                district_total = 0
-                for col in self.gdf.select_dtypes(include=[np.number]).filter(regex='^[A-Z]').columns:
-                    other_votes = self.gdf.iloc[np.where(mask)[0]][col].sum()
-                    if other_votes > district_votes:
-                        break
-                else:
+                # Find which coalition has the most votes in this district
+                max_votes = 0
+                for col in coalition_cols:
+                    if col in district_gdf.columns:
+                        col_votes = district_gdf[col].sum()
+                        max_votes = max(max_votes, col_votes)
+
+                # Target party wins if it has the maximum
+                if district_votes >= max_votes and max_votes > 0:
                     actual_seats += 1
 
             seat_dev = abs(actual_seats - proportional_seats)
@@ -196,21 +200,26 @@ class GerrymanderOptimizer:
         # Partisan advantage: maximize (or minimize) seats for target party
         partisan_score = 0
         if self.target_party and self.weights['partisan_advantage'] != 0:
+            coalition_cols = ['coalition_left', 'coalition_right', 'coalition_center']
+
             actual_seats = 0
             for d in range(self.n_districts):
                 mask = districts == d
-                district_votes = self.gdf.iloc[np.where(mask)[0]][self.target_party].sum()
+                district_gdf = self.gdf.iloc[np.where(mask)[0]]
+                district_votes = district_gdf[self.target_party].sum()
 
-                # Find max votes for any party in this district
+                # Find max votes for any coalition in this district
                 max_votes = 0
-                for col in self.gdf.select_dtypes(include=[np.number]).filter(regex='^[A-Z]').columns:
-                    other_votes = self.gdf.iloc[np.where(mask)[0]][col].sum()
-                    max_votes = max(max_votes, other_votes)
+                for col in coalition_cols:
+                    if col in district_gdf.columns:
+                        col_votes = district_gdf[col].sum()
+                        max_votes = max(max_votes, col_votes)
 
-                if district_votes >= max_votes:
+                # Target coalition wins if it has the maximum
+                if district_votes >= max_votes and max_votes > 0:
                     actual_seats += 1
 
-            # Negative because we want to maximize seats
+            # Negative because we want to maximize seats (minimize negative)
             partisan_score = -actual_seats if self.weights['partisan_advantage'] > 0 else actual_seats
 
         components = {
@@ -223,10 +232,11 @@ class GerrymanderOptimizer:
             return components
 
         # Combine scores with weights
+        # Note: partisan_score is already signed correctly (negative to maximize)
         total_score = (
             self.weights['population_balance'] * pop_std +
             self.weights['seat_deviation'] * seat_dev +
-            self.weights['partisan_advantage'] * abs(partisan_score)
+            self.weights['partisan_advantage'] * partisan_score
         )
 
         return total_score
@@ -337,12 +347,26 @@ class GerrymanderOptimizer:
             # Log progress
             if step % save_frequency == 0:
                 components = self.compute_score(current_districts, return_components=True)
+
+                # Calculate actual seats for target party
+                actual_seats = 0
+                if self.target_party:
+                    coalition_cols = ['coalition_left', 'coalition_right', 'coalition_center']
+                    for d in range(self.n_districts):
+                        mask = current_districts == d
+                        district_gdf = self.gdf.iloc[np.where(mask)[0]]
+                        district_votes = district_gdf[self.target_party].sum()
+                        max_votes = max(district_gdf[col].sum() for col in coalition_cols if col in district_gdf.columns)
+                        if district_votes >= max_votes and max_votes > 0:
+                            actual_seats += 1
+
                 logging.info(
-                    f"Step {step}, current temperature: {temperature}, current score: {current_score}"
+                    f"Step {step}, temp: {temperature:.2f}, score: {current_score:.1f}, "
+                    f"{self.target_party if self.target_party else 'neutral'} seats: {actual_seats}/{self.n_districts}"
                 )
                 logging.info(
-                    f"Seat deviation: {components['seat_deviation']:.0f}, "
-                    f"population std: {components['population_std']:.2f}"
+                    f"  Components - partisan: {components['partisan_advantage']:.1f}, "
+                    f"pop_std: {components['population_std']:.0f}, seat_dev: {components['seat_deviation']:.2f}"
                 )
 
                 # Save to history

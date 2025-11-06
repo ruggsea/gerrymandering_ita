@@ -1,0 +1,40 @@
+2025-11-05 13:33:08,727 - INFO - ================================================================================
+2025-11-05 13:33:08,727 - INFO - Experiment: constrained_left
+2025-11-05 13:33:08,727 - INFO - Algorithm: constrained
+2025-11-05 13:33:08,727 - INFO - Objective: constrained_left - Maximize left with population constraint
+2025-11-05 13:33:08,727 - INFO - Steps: 3000
+2025-11-05 13:33:08,727 - INFO - Random seed: 42
+2025-11-05 13:33:08,727 - INFO - ================================================================================
+2025-11-05 13:33:08,729 - INFO - Building adjacency graph
+2025-11-05 13:33:09,086 - INFO - Starting optimization...
+2025-11-05 13:33:09,087 - INFO - Initializing the map
+2025-11-05 13:33:09,087 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 13:33:09,087 - INFO - Assigning the remaining communes to districts
+2025-11-05 13:33:09,311 - INFO - Assigned 50 communes
+2025-11-05 13:33:09,862 - INFO - Assigned 100 communes
+2025-11-05 13:33:10,748 - INFO - Assigned 150 communes
+2025-11-05 13:33:11,942 - INFO - Assigned 200 communes
+2025-11-05 13:33:13,516 - INFO - Assigned 250 communes
+2025-11-05 13:33:15,554 - INFO - Assigned 300 communes
+2025-11-05 13:33:16,387 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 13:33:16,387 - INFO - District 0 has 61 communes
+2025-11-05 13:33:16,387 - INFO - District 1 has 14 communes
+2025-11-05 13:33:16,388 - INFO - District 2 has 3 communes
+2025-11-05 13:33:16,388 - INFO - District 3 has 4 communes
+2025-11-05 13:33:16,388 - INFO - District 4 has 9 communes
+2025-11-05 13:33:16,388 - INFO - District 5 has 60 communes
+2025-11-05 13:33:16,388 - INFO - District 6 has 30 communes
+2025-11-05 13:33:16,388 - INFO - District 7 has 14 communes
+2025-11-05 13:33:16,388 - INFO - District 8 has 10 communes
+2025-11-05 13:33:16,388 - INFO - District 9 has 30 communes
+2025-11-05 13:33:16,388 - INFO - District 10 has 95 communes
+2025-11-05 13:33:16,388 - INFO - Finished initializing the map
+2025-11-05 13:33:16,537 - INFO - Generated a map with 11 districts
+2025-11-05 13:33:16,537 - INFO - Starting constrained optimization (population constraint: 15.0%)
+2025-11-05 13:33:16,537 - INFO - Phase 1: Achieving population balance
+2025-11-05 13:33:21,434 - INFO - Step 60, phase 1, temp: 710.55, score: 0.0 (✗ infeasible)
+2025-11-05 13:33:21,435 - INFO - Seat deviation: 0, population std: 1161930.40
+2025-11-05 13:33:23,695 - INFO - Step 90, phase 1, temp: 611.12, score: 0.0 (✗ infeasible)
+2025-11-05 13:33:23,696 - INFO - Seat deviation: 0, population std: 1170963.16
+2025-11-05 13:33:26,131 - INFO - Step 120, phase 1, temp: 520.34, score: 0.0 (✗ infeasible)
+2025-11-05 13:33:26,132 - INFO - Seat deviation: 0, population std: 1186529.48

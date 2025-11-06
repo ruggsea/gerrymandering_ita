@@ -1,0 +1,18 @@
+{
+  "suite": "test",
+  "total_experiments": 2,
+  "successful": 2,
+  "failed": 0,
+  "experiments": [
+    {
+      "name": "test_sa",
+      "status": "success",
+      "result_file": "test_sa_simulated_annealing_neutral_100s_20251105_132904_seed42"
+    },
+    {
+      "name": "test_greedy",
+      "status": "success",
+      "result_file": "test_greedy_greedy_neutral_100s_20251105_132913_seed42"
+    }
+  ]
+}
