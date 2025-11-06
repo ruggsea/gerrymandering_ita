@@ -1,0 +1,1585 @@
+Loading Emilia-Romagna data...
+Loaded 330 communes
+
+Running 19 experiments...
+================================================================================
+
+[1/19] Starting experiment: baseline_sa_short
+--------------------------------------------------------------------------------
+2025-11-05 17:40:28,545 - INFO - ================================================================================
+2025-11-05 17:40:28,545 - INFO - Experiment: baseline_sa_short
+2025-11-05 17:40:28,546 - INFO - Algorithm: simulated_annealing
+2025-11-05 17:40:28,546 - INFO - Objective: neutral - Population balance + proportionality
+2025-11-05 17:40:28,546 - INFO - Steps: 1000
+2025-11-05 17:40:28,546 - INFO - Random seed: 42
+2025-11-05 17:40:28,546 - INFO - ================================================================================
+2025-11-05 17:40:28,547 - INFO - Building adjacency graph
+2025-11-05 17:40:28,899 - INFO - Starting optimization...
+2025-11-05 17:40:28,899 - INFO - Initializing the map
+2025-11-05 17:40:28,899 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:40:28,899 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:40:29,146 - INFO - Assigned 50 communes
+2025-11-05 17:40:29,705 - INFO - Assigned 100 communes
+2025-11-05 17:40:30,530 - INFO - Assigned 150 communes
+2025-11-05 17:40:31,678 - INFO - Assigned 200 communes
+2025-11-05 17:40:33,256 - INFO - Assigned 250 communes
+2025-11-05 17:40:35,204 - INFO - Assigned 300 communes
+2025-11-05 17:40:36,022 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:40:36,022 - INFO - District 0 has 61 communes
+2025-11-05 17:40:36,022 - INFO - District 1 has 14 communes
+2025-11-05 17:40:36,022 - INFO - District 2 has 3 communes
+2025-11-05 17:40:36,022 - INFO - District 3 has 4 communes
+2025-11-05 17:40:36,022 - INFO - District 4 has 9 communes
+2025-11-05 17:40:36,022 - INFO - District 5 has 60 communes
+2025-11-05 17:40:36,022 - INFO - District 6 has 30 communes
+2025-11-05 17:40:36,022 - INFO - District 7 has 14 communes
+2025-11-05 17:40:36,023 - INFO - District 8 has 10 communes
+2025-11-05 17:40:36,023 - INFO - District 9 has 30 communes
+2025-11-05 17:40:36,023 - INFO - District 10 has 95 communes
+2025-11-05 17:40:36,023 - INFO - Finished initializing the map
+2025-11-05 17:40:36,026 - INFO - Generated a map with 11 districts, starting the simulation
+2025-11-05 17:40:36,026 - INFO - Step 0, current temperature: 1000.0, current score: 1122622.3565212341
+2025-11-05 17:40:36,043 - INFO - Step 10, current temperature: 950.9900498999999, current score: 1099074.4128381258
+2025-11-05 17:40:36,043 - INFO - Seat deviation: 0, population std: 1099074.41
+2025-11-05 17:40:36,057 - INFO - Step 20, current temperature: 913.5172474836407, current score: 1066308.63116293
+2025-11-05 17:40:36,057 - INFO - Seat deviation: 0, population std: 1066308.63
+2025-11-05 17:40:36,074 - INFO - Step 30, current temperature: 868.7458127689781, current score: 1041219.2853413462
+2025-11-05 17:40:36,074 - INFO - Seat deviation: 0, population std: 1041219.29
+2025-11-05 17:40:36,087 - INFO - Step 40, current temperature: 834.5137614500875, current score: 1037774.3746259098
+2025-11-05 17:40:36,087 - INFO - Seat deviation: 0, population std: 1037774.37
+2025-11-05 17:40:36,100 - INFO - Step 50, current temperature: 801.6305895390458, current score: 1015586.6965624166
+2025-11-05 17:40:36,101 - INFO - Seat deviation: 0, population std: 1015586.70
+2025-11-05 17:40:36,113 - INFO - Step 60, current temperature: 770.0431458051551, current score: 982839.9563619049
+2025-11-05 17:40:36,114 - INFO - Seat deviation: 0, population std: 982839.96
+2025-11-05 17:40:36,126 - INFO - Step 70, current temperature: 739.7003733882801, current score: 962656.9219567733
+2025-11-05 17:40:36,126 - INFO - Seat deviation: 0, population std: 962656.92
+2025-11-05 17:40:36,152 - INFO - Step 90, current temperature: 675.7290490602829, current score: 943048.0413301126
+2025-11-05 17:40:36,152 - INFO - Seat deviation: 0, population std: 943048.04
+2025-11-05 17:40:36,166 - INFO - Step 100, current temperature: 649.102628368402, current score: 937946.4035255756
+2025-11-05 17:40:36,166 - INFO - Seat deviation: 0, population std: 937946.40
+2025-11-05 17:40:36,181 - INFO - Step 110, current temperature: 617.2901409422876, current score: 929651.4837713101
+2025-11-05 17:40:36,181 - INFO - Seat deviation: 0, population std: 929651.48
+2025-11-05 17:40:36,201 - INFO - Step 120, current temperature: 575.3547499769281, current score: 918024.243648093
+2025-11-05 17:40:36,201 - INFO - Seat deviation: 0, population std: 918024.24
+2025-11-05 17:40:36,229 - INFO - Step 140, current temperature: 515.1371174238031, current score: 879987.3789507223
+2025-11-05 17:40:36,230 - INFO - Seat deviation: 0, population std: 879987.38
+2025-11-05 17:40:36,266 - INFO - Step 160, current temperature: 452.0436502664752, current score: 854361.0663155448
+2025-11-05 17:40:36,266 - INFO - Seat deviation: 0, population std: 854361.07
+2025-11-05 17:40:36,294 - INFO - Step 170, current temperature: 412.949671133888, current score: 842338.7398991724
+2025-11-05 17:40:36,294 - INFO - Seat deviation: 0, population std: 842338.74
+2025-11-05 17:40:36,316 - INFO - Step 180, current temperature: 381.0471181045495, current score: 827026.5050400402
+2025-11-05 17:40:36,316 - INFO - Seat deviation: 0, population std: 827026.51
+2025-11-05 17:40:36,346 - INFO - Step 200, current temperature: 344.61218334751743, current score: 781877.941564712
+2025-11-05 17:40:36,347 - INFO - Seat deviation: 0, population std: 781877.94
+2025-11-05 17:40:36,391 - INFO - Step 230, current temperature: 296.3865873992079, current score: 755251.8943101749
+2025-11-05 17:40:36,392 - INFO - Seat deviation: 0, population std: 755251.89
+2025-11-05 17:40:36,415 - INFO - Step 240, current temperature: 273.48915102221605, current score: 732197.6262536441
+2025-11-05 17:40:36,416 - INFO - Seat deviation: 0, population std: 732197.63
+2025-11-05 17:40:36,436 - INFO - Step 250, current temperature: 254.9097606963091, current score: 720415.3398841395
+2025-11-05 17:40:36,436 - INFO - Seat deviation: 0, population std: 720415.34
+2025-11-05 17:40:36,461 - INFO - Step 260, current temperature: 237.5925547882929, current score: 696195.7796276053
+2025-11-05 17:40:36,461 - INFO - Seat deviation: 0, population std: 696195.78
+2025-11-05 17:40:36,482 - INFO - Step 270, current temperature: 221.45178723886076, current score: 690185.3682706738
+2025-11-05 17:40:36,482 - INFO - Seat deviation: 0, population std: 690185.37
+2025-11-05 17:40:36,508 - INFO - Step 290, current temperature: 200.27702685748915, current score: 646949.1795395722
+2025-11-05 17:40:36,508 - INFO - Seat deviation: 0, population std: 646949.18
+2025-11-05 17:40:36,533 - INFO - Step 300, current temperature: 184.8045639485462, current score: 634135.4795866275
+2025-11-05 17:40:36,533 - INFO - Seat deviation: 0, population std: 634135.48
+2025-11-05 17:40:36,578 - INFO - Step 330, current temperature: 160.54819111089634, current score: 600167.7131432954
+2025-11-05 17:40:36,578 - INFO - Seat deviation: 0, population std: 600167.71
+2025-11-05 17:40:36,598 - INFO - Step 340, current temperature: 151.15293495314702, current score: 578418.8062314349
+2025-11-05 17:40:36,599 - INFO - Seat deviation: 0, population std: 578418.81
+2025-11-05 17:40:36,629 - INFO - Step 360, current temperature: 135.33300490703203, current score: 561989.7225870515
+2025-11-05 17:40:36,629 - INFO - Seat deviation: 0, population std: 561989.72
+2025-11-05 17:40:36,672 - INFO - Step 380, current temperature: 116.3942815290034, current score: 521484.18963937415
+2025-11-05 17:40:36,673 - INFO - Seat deviation: 0, population std: 521484.19
+2025-11-05 17:40:36,700 - INFO - Step 390, current temperature: 106.32818368521116, current score: 517956.28800228646
+2025-11-05 17:40:36,701 - INFO - Seat deviation: 0, population std: 517956.29
+2025-11-05 17:40:36,714 - INFO - Step 400, current temperature: 102.13842899856093, current score: 511312.5536170418
+2025-11-05 17:40:36,714 - INFO - Seat deviation: 0, population std: 511312.55
+2025-11-05 17:40:36,738 - INFO - Step 410, current temperature: 94.2476934556249, current score: 502964.0586562986
+2025-11-05 17:40:36,739 - INFO - Seat deviation: 0, population std: 502964.06
+2025-11-05 17:40:36,765 - INFO - Step 420, current temperature: 86.0968935072644, current score: 489893.62988270517
+2025-11-05 17:40:36,766 - INFO - Seat deviation: 0, population std: 489893.63
+2025-11-05 17:40:36,784 - INFO - Step 430, current temperature: 81.05851616218126, current score: 483566.9113027954
+2025-11-05 17:40:36,784 - INFO - Seat deviation: 0, population std: 483566.91
+2025-11-05 17:40:36,808 - INFO - Step 440, current temperature: 74.04835256958404, current score: 463059.50982668047
+2025-11-05 17:40:36,808 - INFO - Seat deviation: 0, population std: 463059.51
+2025-11-05 17:40:36,880 - INFO - Step 480, current temperature: 55.88571986991975, current score: 449793.5173725608
+2025-11-05 17:40:36,880 - INFO - Seat deviation: 0, population std: 449793.52
+2025-11-05 17:40:36,902 - INFO - Step 490, current temperature: 52.08914293358932, current score: 437844.61925895186
+2025-11-05 17:40:36,902 - INFO - Seat deviation: 0, population std: 437844.62
+2025-11-05 17:40:36,929 - INFO - Step 500, current temperature: 47.10848717170972, current score: 416795.38775237533
+2025-11-05 17:40:36,930 - INFO - Seat deviation: 0, population std: 416795.39
+2025-11-05 17:40:36,959 - INFO - Step 510, current temperature: 42.604071378876476, current score: 409305.2535220428
+2025-11-05 17:40:36,960 - INFO - Seat deviation: 0, population std: 409305.25
+2025-11-05 17:40:36,981 - INFO - Step 520, current temperature: 39.70977861200673, current score: 402910.7116611437
+2025-11-05 17:40:36,981 - INFO - Seat deviation: 0, population std: 402910.71
+2025-11-05 17:40:37,006 - INFO - Step 530, current temperature: 36.275567655825135, current score: 395977.87998369324
+2025-11-05 17:40:37,006 - INFO - Seat deviation: 0, population std: 395977.88
+2025-11-05 17:40:37,028 - INFO - Step 540, current temperature: 33.8111995876502, current score: 381986.30520170863
+2025-11-05 17:40:37,029 - INFO - Seat deviation: 0, population std: 381986.31
+2025-11-05 17:40:37,045 - INFO - Step 550, current temperature: 32.15411438303832, current score: 375095.6211031312
+2025-11-05 17:40:37,046 - INFO - Seat deviation: 0, population std: 375095.62
+2025-11-05 17:40:37,065 - INFO - Step 560, current temperature: 29.96973580906776, current score: 361873.67032183806
+2025-11-05 17:40:37,066 - INFO - Seat deviation: 0, population std: 361873.67
+2025-11-05 17:40:37,089 - INFO - Step 570, current temperature: 27.654414711223723, current score: 354859.7090815906
+2025-11-05 17:40:37,089 - INFO - Seat deviation: 0, population std: 354859.71
+2025-11-05 17:40:37,125 - INFO - Step 590, current temperature: 24.02465698495244, current score: 349013.5848590974
+2025-11-05 17:40:37,125 - INFO - Seat deviation: 0, population std: 349013.58
+2025-11-05 17:40:37,150 - INFO - Step 600, current temperature: 22.16862476831553, current score: 342506.7093378917
+2025-11-05 17:40:37,150 - INFO - Seat deviation: 0, population std: 342506.71
+2025-11-05 17:40:37,173 - INFO - Step 610, current temperature: 20.662606957299527, current score: 337336.4862534658
+2025-11-05 17:40:37,173 - INFO - Seat deviation: 0, population std: 337336.49
+2025-11-05 17:40:37,190 - INFO - Step 620, current temperature: 19.4534342851725, current score: 336129.0678826407
+2025-11-05 17:40:37,190 - INFO - Seat deviation: 0, population std: 336129.07
+2025-11-05 17:40:37,211 - INFO - Step 630, current temperature: 17.95055327504512, current score: 329572.72428461094
+2025-11-05 17:40:37,211 - INFO - Seat deviation: 0, population std: 329572.72
+2025-11-05 17:40:37,238 - INFO - Step 640, current temperature: 16.398140018627668, current score: 322472.74510374333
+2025-11-05 17:40:37,238 - INFO - Seat deviation: 0, population std: 322472.75
+2025-11-05 17:40:37,263 - INFO - Step 650, current temperature: 15.284138081489733, current score: 315557.30884293956
+2025-11-05 17:40:37,263 - INFO - Seat deviation: 0, population std: 315557.31
+2025-11-05 17:40:37,287 - INFO - Step 660, current temperature: 14.103357323598376, current score: 314938.6361410428
+2025-11-05 17:40:37,288 - INFO - Seat deviation: 0, population std: 314938.64
+2025-11-05 17:40:37,313 - INFO - Step 670, current temperature: 12.883660162531838, current score: 308127.9047208365
+2025-11-05 17:40:37,313 - INFO - Seat deviation: 0, population std: 308127.90
+2025-11-05 17:40:37,338 - INFO - Step 680, current temperature: 11.888329059788607, current score: 283309.50883990363
+2025-11-05 17:40:37,338 - INFO - Seat deviation: 0, population std: 283309.51
+2025-11-05 17:40:37,366 - INFO - Step 690, current temperature: 10.860193639877869, current score: 283041.85110882
+2025-11-05 17:40:37,367 - INFO - Seat deviation: 0, population std: 283041.85
+2025-11-05 17:40:37,391 - INFO - Step 700, current temperature: 10.122410163290047, current score: 271483.8534696747
+2025-11-05 17:40:37,391 - INFO - Seat deviation: 0, population std: 271483.85
+2025-11-05 17:40:37,414 - INFO - Step 710, current temperature: 9.340400272999146, current score: 259768.94586679104
+2025-11-05 17:40:37,414 - INFO - Seat deviation: 0, population std: 259768.95
+2025-11-05 17:40:37,434 - INFO - Step 720, current temperature: 8.705863430043493, current score: 250315.68344759126
+2025-11-05 17:40:37,434 - INFO - Seat deviation: 0, population std: 250315.68
+2025-11-05 17:40:37,464 - INFO - Step 730, current temperature: 7.873426833606004, current score: 238655.48442590205
+2025-11-05 17:40:37,465 - INFO - Seat deviation: 0, population std: 238655.48
+2025-11-05 17:40:37,492 - INFO - Step 740, current temperature: 7.265162837676358, current score: 233436.5102171898
+2025-11-05 17:40:37,492 - INFO - Seat deviation: 0, population std: 233436.51
+2025-11-05 17:40:37,514 - INFO - Step 750, current temperature: 6.703890462620752, current score: 227039.78849375554
+2025-11-05 17:40:37,515 - INFO - Seat deviation: 0, population std: 227039.79
+2025-11-05 17:40:37,535 - INFO - Step 760, current temperature: 6.248463996372963, current score: 223539.02017812984
+2025-11-05 17:40:37,535 - INFO - Seat deviation: 0, population std: 223539.02
+2025-11-05 17:40:37,558 - INFO - Step 770, current temperature: 5.823976768663666, current score: 199616.54230780978
+2025-11-05 17:40:37,558 - INFO - Seat deviation: 0, population std: 199616.54
+2025-11-05 17:40:37,590 - INFO - Step 780, current temperature: 5.267100194847118, current score: 198145.74685779837
+2025-11-05 17:40:37,591 - INFO - Seat deviation: 0, population std: 198145.75
+2025-11-05 17:40:37,637 - INFO - Step 800, current temperature: 4.484713392037912, current score: 190843.619236508
+2025-11-05 17:40:37,637 - INFO - Seat deviation: 0, population std: 190843.62
+2025-11-05 17:40:37,658 - INFO - Step 810, current temperature: 4.180045948012953, current score: 183444.63172258466
+2025-11-05 17:40:37,658 - INFO - Seat deviation: 0, population std: 183444.63
+2025-11-05 17:40:37,679 - INFO - Step 820, current temperature: 3.9354302836382797, current score: 183444.63172258466
+2025-11-05 17:40:37,680 - INFO - Seat deviation: 0, population std: 183444.63
+2025-11-05 17:40:37,696 - INFO - Step 830, current temperature: 3.7425550418151383, current score: 183444.63172258466
+2025-11-05 17:40:37,697 - INFO - Seat deviation: 0, population std: 183444.63
+2025-11-05 17:40:37,719 - INFO - Step 840, current temperature: 3.4883058671104856, current score: 178273.91768292
+2025-11-05 17:40:37,719 - INFO - Seat deviation: 0, population std: 178273.92
+2025-11-05 17:40:37,745 - INFO - Step 850, current temperature: 3.186627574103806, current score: 174549.25044347846
+2025-11-05 17:40:37,745 - INFO - Seat deviation: 0, population std: 174549.25
+2025-11-05 17:40:37,773 - INFO - Step 860, current temperature: 2.9110392502507807, current score: 174549.25044347846
+2025-11-05 17:40:37,773 - INFO - Seat deviation: 0, population std: 174549.25
+2025-11-05 17:40:37,795 - INFO - Step 870, current temperature: 2.7132788115558966, current score: 163998.42841934957
+2025-11-05 17:40:37,795 - INFO - Seat deviation: 0, population std: 163998.43
+2025-11-05 17:40:37,822 - INFO - Step 880, current temperature: 2.4786269915882264, current score: 162918.90915036167
+2025-11-05 17:40:37,822 - INFO - Seat deviation: 0, population std: 162918.91
+2025-11-05 17:40:37,851 - INFO - Step 890, current temperature: 2.2642685068943345, current score: 159186.2584996187
+2025-11-05 17:40:37,851 - INFO - Seat deviation: 0, population std: 159186.26
+2025-11-05 17:40:37,879 - INFO - Step 900, current temperature: 2.0684483339820052, current score: 155067.8285549385
+2025-11-05 17:40:37,879 - INFO - Seat deviation: 0, population std: 155067.83
+2025-11-05 17:40:37,906 - INFO - Step 910, current temperature: 1.9086497258801656, current score: 155067.8285549385
+2025-11-05 17:40:37,907 - INFO - Seat deviation: 0, population std: 155067.83
+2025-11-05 17:40:37,951 - INFO - Step 930, current temperature: 1.658131457401052, current score: 144289.4631855707
+2025-11-05 17:40:37,951 - INFO - Seat deviation: 0, population std: 144289.46
+2025-11-05 17:40:37,990 - INFO - Step 950, current temperature: 1.4550452127653408, current score: 141687.29052394407
+2025-11-05 17:40:37,991 - INFO - Seat deviation: 0, population std: 141687.29
+2025-11-05 17:40:38,034 - INFO - Step 970, current temperature: 1.2514237916196427, current score: 140085.43493823585
+2025-11-05 17:40:38,035 - INFO - Seat deviation: 0, population std: 140085.43
+2025-11-05 17:40:38,095 - INFO - Step 990, current temperature: 1.0338870717575122, current score: 133015.39594285586
+2025-11-05 17:40:38,096 - INFO - Seat deviation: 0, population std: 133015.40
+2025-11-05 17:40:38,119 - INFO - Optimization complete. Best score: 130357.05821675182
+2025-11-05 17:40:38,121 - INFO - Results saved to results/data/baseline_sa_short_simulated_annealing_neutral_1000s_20251105_174028_seed42.json
+2025-11-05 17:40:38,128 - INFO - Full results saved to results/data/baseline_sa_short_simulated_annealing_neutral_1000s_20251105_174028_seed42.pkl
+2025-11-05 17:40:38,128 - INFO - Creating visualizations...
+2025-11-05 17:40:39,055 - INFO - Comparison plot saved to results/baseline_sa_short_simulated_annealing_neutral_1000s_20251105_174028_seed42_comparison.png
+2025-11-05 17:40:39,055 - INFO - ================================================================================
+2025-11-05 17:40:39,056 - INFO - Experiment complete!
+2025-11-05 17:40:39,056 - INFO - Results: results/data/baseline_sa_short_simulated_annealing_neutral_1000s_20251105_174028_seed42.json
+2025-11-05 17:40:39,056 - INFO - Comparison: results/baseline_sa_short_simulated_annealing_neutral_1000s_20251105_174028_seed42_comparison.png
+2025-11-05 17:40:39,056 - INFO - ================================================================================
+
+[2/19] Starting experiment: baseline_sa_long
+--------------------------------------------------------------------------------
+2025-11-05 17:40:39,057 - INFO - ================================================================================
+2025-11-05 17:40:39,057 - INFO - Experiment: baseline_sa_long
+2025-11-05 17:40:39,057 - INFO - Algorithm: simulated_annealing
+2025-11-05 17:40:39,057 - INFO - Objective: neutral - Population balance + proportionality
+2025-11-05 17:40:39,057 - INFO - Steps: 5000
+2025-11-05 17:40:39,057 - INFO - Random seed: 42
+2025-11-05 17:40:39,057 - INFO - ================================================================================
+2025-11-05 17:40:39,058 - INFO - Building adjacency graph
+2025-11-05 17:40:39,398 - INFO - Starting optimization...
+2025-11-05 17:40:39,399 - INFO - Initializing the map
+2025-11-05 17:40:39,399 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:40:39,399 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:40:39,613 - INFO - Assigned 50 communes
+2025-11-05 17:40:40,138 - INFO - Assigned 100 communes
+2025-11-05 17:40:40,949 - INFO - Assigned 150 communes
+2025-11-05 17:40:42,094 - INFO - Assigned 200 communes
+2025-11-05 17:40:43,636 - INFO - Assigned 250 communes
+2025-11-05 17:40:45,592 - INFO - Assigned 300 communes
+2025-11-05 17:40:46,409 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:40:46,409 - INFO - District 0 has 61 communes
+2025-11-05 17:40:46,409 - INFO - District 1 has 14 communes
+2025-11-05 17:40:46,410 - INFO - District 2 has 3 communes
+2025-11-05 17:40:46,410 - INFO - District 3 has 4 communes
+2025-11-05 17:40:46,410 - INFO - District 4 has 9 communes
+2025-11-05 17:40:46,410 - INFO - District 5 has 60 communes
+2025-11-05 17:40:46,410 - INFO - District 6 has 30 communes
+2025-11-05 17:40:46,410 - INFO - District 7 has 14 communes
+2025-11-05 17:40:46,410 - INFO - District 8 has 10 communes
+2025-11-05 17:40:46,410 - INFO - District 9 has 30 communes
+2025-11-05 17:40:46,410 - INFO - District 10 has 95 communes
+2025-11-05 17:40:46,410 - INFO - Finished initializing the map
+2025-11-05 17:40:46,415 - INFO - Generated a map with 11 districts, starting the simulation
+2025-11-05 17:40:46,415 - INFO - Step 0, current temperature: 1000.0, current score: 1122622.3565212341
+2025-11-05 17:40:46,475 - INFO - Step 50, current temperature: 801.6305895390458, current score: 1015586.6965624166
+2025-11-05 17:40:46,475 - INFO - Seat deviation: 0, population std: 1015586.70
+2025-11-05 17:40:46,562 - INFO - Step 100, current temperature: 649.102628368402, current score: 937946.4035255756
+2025-11-05 17:40:46,562 - INFO - Seat deviation: 0, population std: 937946.40
+2025-11-05 17:40:46,721 - INFO - Step 200, current temperature: 344.61218334751743, current score: 781877.941564712
+2025-11-05 17:40:46,721 - INFO - Seat deviation: 0, population std: 781877.94
+2025-11-05 17:40:46,798 - INFO - Step 250, current temperature: 254.9097606963091, current score: 720415.3398841395
+2025-11-05 17:40:46,799 - INFO - Seat deviation: 0, population std: 720415.34
+2025-11-05 17:40:46,884 - INFO - Step 300, current temperature: 184.8045639485462, current score: 634135.4795866275
+2025-11-05 17:40:46,884 - INFO - Seat deviation: 0, population std: 634135.48
+2025-11-05 17:40:47,042 - INFO - Step 400, current temperature: 102.13842899856093, current score: 511312.5536170418
+2025-11-05 17:40:47,042 - INFO - Seat deviation: 0, population std: 511312.55
+2025-11-05 17:40:47,249 - INFO - Step 500, current temperature: 47.10848717170972, current score: 416795.38775237533
+2025-11-05 17:40:47,249 - INFO - Seat deviation: 0, population std: 416795.39
+2025-11-05 17:40:47,341 - INFO - Step 550, current temperature: 32.15411438303832, current score: 375095.6211031312
+2025-11-05 17:40:47,342 - INFO - Seat deviation: 0, population std: 375095.62
+2025-11-05 17:40:47,444 - INFO - Step 600, current temperature: 22.16862476831553, current score: 342506.7093378917
+2025-11-05 17:40:47,444 - INFO - Seat deviation: 0, population std: 342506.71
+2025-11-05 17:40:47,547 - INFO - Step 650, current temperature: 15.284138081489733, current score: 315557.30884293956
+2025-11-05 17:40:47,547 - INFO - Seat deviation: 0, population std: 315557.31
+2025-11-05 17:40:47,659 - INFO - Step 700, current temperature: 10.122410163290047, current score: 271483.8534696747
+2025-11-05 17:40:47,659 - INFO - Seat deviation: 0, population std: 271483.85
+2025-11-05 17:40:47,764 - INFO - Step 750, current temperature: 6.703890462620752, current score: 227039.78849375554
+2025-11-05 17:40:47,765 - INFO - Seat deviation: 0, population std: 227039.79
+2025-11-05 17:40:47,863 - INFO - Step 800, current temperature: 4.484713392037912, current score: 190843.619236508
+2025-11-05 17:40:47,863 - INFO - Seat deviation: 0, population std: 190843.62
+2025-11-05 17:40:47,955 - INFO - Step 850, current temperature: 3.186627574103806, current score: 174549.25044347846
+2025-11-05 17:40:47,956 - INFO - Seat deviation: 0, population std: 174549.25
+2025-11-05 17:40:48,071 - INFO - Step 900, current temperature: 2.0684483339820052, current score: 155067.8285549385
+2025-11-05 17:40:48,071 - INFO - Seat deviation: 0, population std: 155067.83
+2025-11-05 17:40:48,189 - INFO - Step 950, current temperature: 1.4550452127653408, current score: 141687.29052394407
+2025-11-05 17:40:48,189 - INFO - Seat deviation: 0, population std: 141687.29
+2025-11-05 17:40:48,302 - INFO - Step 1000, current temperature: 0.9540138101018626, current score: 129009.98498501854
+2025-11-05 17:40:48,303 - INFO - Seat deviation: 0, population std: 129009.98
+2025-11-05 17:40:48,416 - INFO - Step 1050, current temperature: 0.6255079511483562, current score: 97902.2971390735
+2025-11-05 17:40:48,416 - INFO - Seat deviation: 0, population std: 97902.30
+2025-11-05 17:40:48,516 - INFO - Step 1100, current temperature: 0.42267389300912483, current score: 74234.45379225681
+2025-11-05 17:40:48,516 - INFO - Seat deviation: 0, population std: 74234.45
+2025-11-05 17:40:48,803 - INFO - Step 1250, current temperature: 0.13713465517678244, current score: 47976.583280692845
+2025-11-05 17:40:48,803 - INFO - Seat deviation: 0, population std: 47976.58
+2025-11-05 17:40:48,917 - INFO - Step 1300, current temperature: 0.08991360112691314, current score: 39241.41231378103
+2025-11-05 17:40:48,917 - INFO - Seat deviation: 0, population std: 39241.41
+2025-11-05 17:40:49,023 - INFO - Step 1350, current temperature: 0.06075723218707461, current score: 33362.82390514358
+2025-11-05 17:40:49,023 - INFO - Seat deviation: 0, population std: 33362.82
+2025-11-05 17:40:49,329 - INFO - Step 1500, current temperature: 0.018935664689280325, current score: 30131.066541455508
+2025-11-05 17:40:49,329 - INFO - Seat deviation: 0, population std: 30131.07
+2025-11-05 17:40:49,426 - INFO - Step 1550, current temperature: 0.012924624943244216, current score: 26546.893264872426
+2025-11-05 17:40:49,427 - INFO - Seat deviation: 0, population std: 26546.89
+2025-11-05 17:40:49,502 - INFO - Optimization complete. Best score: 26546.893264872426
+2025-11-05 17:40:49,503 - INFO - Results saved to results/data/baseline_sa_long_simulated_annealing_neutral_5000s_20251105_174039_seed42.json
+2025-11-05 17:40:49,509 - INFO - Full results saved to results/data/baseline_sa_long_simulated_annealing_neutral_5000s_20251105_174039_seed42.pkl
+2025-11-05 17:40:49,509 - INFO - Creating visualizations...
+2025-11-05 17:40:50,407 - INFO - Comparison plot saved to results/baseline_sa_long_simulated_annealing_neutral_5000s_20251105_174039_seed42_comparison.png
+2025-11-05 17:40:50,408 - INFO - Creating animation with 24 frames
+2025-11-05 17:40:50,544 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:41:00,565 - INFO - Animation saved to results/gifs/baseline_sa_long_simulated_annealing_neutral_5000s_20251105_174039_seed42.gif
+2025-11-05 17:41:00,568 - INFO - ================================================================================
+2025-11-05 17:41:00,568 - INFO - Experiment complete!
+2025-11-05 17:41:00,568 - INFO - Results: results/data/baseline_sa_long_simulated_annealing_neutral_5000s_20251105_174039_seed42.json
+2025-11-05 17:41:00,568 - INFO - Comparison: results/baseline_sa_long_simulated_annealing_neutral_5000s_20251105_174039_seed42_comparison.png
+2025-11-05 17:41:00,568 - INFO - Animation: results/gifs/baseline_sa_long_simulated_annealing_neutral_5000s_20251105_174039_seed42.gif
+2025-11-05 17:41:00,568 - INFO - ================================================================================
+
+[3/19] Starting experiment: baseline_greedy
+--------------------------------------------------------------------------------
+2025-11-05 17:41:00,570 - INFO - ================================================================================
+2025-11-05 17:41:00,570 - INFO - Experiment: baseline_greedy
+2025-11-05 17:41:00,570 - INFO - Algorithm: greedy
+2025-11-05 17:41:00,570 - INFO - Objective: neutral - Population balance + proportionality
+2025-11-05 17:41:00,570 - INFO - Steps: 5000
+2025-11-05 17:41:00,570 - INFO - Random seed: 42
+2025-11-05 17:41:00,570 - INFO - ================================================================================
+2025-11-05 17:41:00,572 - INFO - Building adjacency graph
+2025-11-05 17:41:00,920 - INFO - Starting optimization...
+2025-11-05 17:41:00,921 - INFO - Initializing the map
+2025-11-05 17:41:00,921 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:41:00,921 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:41:01,149 - INFO - Assigned 50 communes
+2025-11-05 17:41:01,680 - INFO - Assigned 100 communes
+2025-11-05 17:41:02,488 - INFO - Assigned 150 communes
+2025-11-05 17:41:03,695 - INFO - Assigned 200 communes
+2025-11-05 17:41:05,280 - INFO - Assigned 250 communes
+2025-11-05 17:41:07,315 - INFO - Assigned 300 communes
+2025-11-05 17:41:08,148 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:41:08,148 - INFO - District 0 has 61 communes
+2025-11-05 17:41:08,149 - INFO - District 1 has 14 communes
+2025-11-05 17:41:08,149 - INFO - District 2 has 3 communes
+2025-11-05 17:41:08,149 - INFO - District 3 has 4 communes
+2025-11-05 17:41:08,149 - INFO - District 4 has 9 communes
+2025-11-05 17:41:08,149 - INFO - District 5 has 60 communes
+2025-11-05 17:41:08,149 - INFO - District 6 has 30 communes
+2025-11-05 17:41:08,149 - INFO - District 7 has 14 communes
+2025-11-05 17:41:08,149 - INFO - District 8 has 10 communes
+2025-11-05 17:41:08,149 - INFO - District 9 has 30 communes
+2025-11-05 17:41:08,149 - INFO - District 10 has 95 communes
+2025-11-05 17:41:08,149 - INFO - Finished initializing the map
+2025-11-05 17:41:08,153 - INFO - Generated a map with 11 districts, starting greedy optimization
+2025-11-05 17:41:08,153 - INFO - Step 0, current score: 1122622.3565212341
+2025-11-05 17:41:08,226 - INFO - Step 50, current score: 1035085.7473045929, improvements: 12
+2025-11-05 17:41:08,226 - INFO - Seat deviation: 0, population std: 1035085.75
+2025-11-05 17:41:08,295 - INFO - Step 100, current score: 931640.4317971109, improvements: 26
+2025-11-05 17:41:08,295 - INFO - Seat deviation: 0, population std: 931640.43
+2025-11-05 17:41:08,363 - INFO - Step 150, current score: 900797.0449349127, improvements: 34
+2025-11-05 17:41:08,364 - INFO - Seat deviation: 0, population std: 900797.04
+2025-11-05 17:41:08,440 - INFO - Step 200, current score: 857677.2104743762, improvements: 46
+2025-11-05 17:41:08,440 - INFO - Seat deviation: 0, population std: 857677.21
+2025-11-05 17:41:08,877 - INFO - Step 500, current score: 528665.608991869, improvements: 126
+2025-11-05 17:41:08,878 - INFO - Seat deviation: 0, population std: 528665.61
+2025-11-05 17:41:09,064 - INFO - Step 600, current score: 457962.19734584505, improvements: 148
+2025-11-05 17:41:09,064 - INFO - Seat deviation: 0, population std: 457962.20
+2025-11-05 17:41:09,148 - INFO - Step 650, current score: 439282.32308558817, improvements: 158
+2025-11-05 17:41:09,148 - INFO - Seat deviation: 0, population std: 439282.32
+2025-11-05 17:41:09,575 - INFO - Step 850, current score: 273420.5456488697, improvements: 203
+2025-11-05 17:41:09,575 - INFO - Seat deviation: 0, population std: 273420.55
+2025-11-05 17:41:09,683 - INFO - Step 900, current score: 232717.82117291976, improvements: 214
+2025-11-05 17:41:09,684 - INFO - Seat deviation: 0, population std: 232717.82
+2025-11-05 17:41:09,882 - INFO - Step 1000, current score: 164126.81884838096, improvements: 235
+2025-11-05 17:41:09,882 - INFO - Seat deviation: 0, population std: 164126.82
+2025-11-05 17:41:10,069 - INFO - Step 1100, current score: 139020.16195704127, improvements: 247
+2025-11-05 17:41:10,070 - INFO - Seat deviation: 0, population std: 139020.16
+2025-11-05 17:41:10,168 - INFO - Step 1150, current score: 131594.45639476881, improvements: 256
+2025-11-05 17:41:10,169 - INFO - Seat deviation: 0, population std: 131594.46
+2025-11-05 17:41:10,278 - INFO - Step 1200, current score: 108910.24799188042, improvements: 262
+2025-11-05 17:41:10,279 - INFO - Seat deviation: 0, population std: 108910.25
+2025-11-05 17:41:10,379 - INFO - Step 1250, current score: 87976.92045189095, improvements: 268
+2025-11-05 17:41:10,379 - INFO - Seat deviation: 0, population std: 87976.92
+2025-11-05 17:41:10,590 - INFO - Step 1350, current score: 82249.91022718605, improvements: 275
+2025-11-05 17:41:10,591 - INFO - Seat deviation: 0, population std: 82249.91
+2025-11-05 17:41:10,698 - INFO - Step 1400, current score: 79879.1785944599, improvements: 279
+2025-11-05 17:41:10,698 - INFO - Seat deviation: 0, population std: 79879.18
+2025-11-05 17:41:10,807 - INFO - Step 1450, current score: 73939.6924491242, improvements: 280
+2025-11-05 17:41:10,807 - INFO - Seat deviation: 0, population std: 73939.69
+2025-11-05 17:41:10,909 - INFO - Step 1500, current score: 73758.13914667428, improvements: 281
+2025-11-05 17:41:10,909 - INFO - Seat deviation: 0, population std: 73758.14
+2025-11-05 17:41:11,012 - INFO - Step 1550, current score: 66375.35363520369, improvements: 287
+2025-11-05 17:41:11,013 - INFO - Seat deviation: 0, population std: 66375.35
+2025-11-05 17:41:11,114 - INFO - Step 1600, current score: 63019.666663512, improvements: 290
+2025-11-05 17:41:11,115 - INFO - Seat deviation: 0, population std: 63019.67
+2025-11-05 17:41:11,226 - INFO - Step 1650, current score: 63019.666663512, improvements: 290
+2025-11-05 17:41:11,226 - INFO - Seat deviation: 0, population std: 63019.67
+2025-11-05 17:41:11,540 - INFO - Step 1800, current score: 55350.492528137795, improvements: 295
+2025-11-05 17:41:11,541 - INFO - Seat deviation: 0, population std: 55350.49
+2025-11-05 17:41:11,635 - INFO - Step 1850, current score: 42597.35251289026, improvements: 298
+2025-11-05 17:41:11,635 - INFO - Seat deviation: 0, population std: 42597.35
+2025-11-05 17:41:11,756 - INFO - Step 1900, current score: 40330.77610796839, improvements: 301
+2025-11-05 17:41:11,756 - INFO - Seat deviation: 0, population std: 40330.78
+2025-11-05 17:41:11,859 - INFO - Step 1950, current score: 35695.77685764906, improvements: 303
+2025-11-05 17:41:11,859 - INFO - Seat deviation: 0, population std: 35695.78
+2025-11-05 17:41:11,958 - INFO - Step 2000, current score: 30861.839576028662, improvements: 305
+2025-11-05 17:41:11,959 - INFO - Seat deviation: 0, population std: 30861.84
+2025-11-05 17:41:12,078 - INFO - Step 2050, current score: 30861.839576028662, improvements: 305
+2025-11-05 17:41:12,078 - INFO - Seat deviation: 0, population std: 30861.84
+2025-11-05 17:41:12,194 - INFO - Step 2100, current score: 24580.091297599916, improvements: 307
+2025-11-05 17:41:12,195 - INFO - Seat deviation: 0, population std: 24580.09
+2025-11-05 17:41:12,301 - INFO - Step 2150, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,301 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,541 - INFO - Step 2250, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,542 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,637 - INFO - Step 2300, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,637 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,845 - INFO - Step 2400, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,846 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,954 - INFO - Step 2450, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,955 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,075 - INFO - Step 2500, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,075 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,187 - INFO - Step 2550, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,188 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,295 - INFO - Step 2600, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,295 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,416 - INFO - Step 2650, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,416 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,505 - INFO - Step 2700, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,506 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,607 - INFO - Step 2750, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,607 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,701 - INFO - Step 2800, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,702 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,825 - INFO - Step 2850, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,825 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,941 - INFO - Step 2900, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,942 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,127 - INFO - Step 3000, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,127 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,229 - INFO - Step 3050, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,229 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,343 - INFO - Step 3100, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,343 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,676 - INFO - Step 3250, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,677 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,770 - INFO - Step 3300, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,770 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,955 - INFO - Step 3400, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,956 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,068 - INFO - Step 3450, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,068 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,370 - INFO - Step 3600, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,370 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,464 - INFO - Step 3650, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,465 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,664 - INFO - Step 3750, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,665 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,781 - INFO - Step 3800, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,781 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,881 - INFO - Step 3850, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,881 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,980 - INFO - Step 3900, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,981 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,089 - INFO - Step 3950, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,089 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,383 - INFO - Step 4100, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,383 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,494 - INFO - Step 4150, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,495 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,802 - INFO - Step 4300, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,802 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,887 - INFO - Step 4350, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,888 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,000 - INFO - Step 4400, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,001 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,212 - INFO - Step 4500, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,212 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,368 - INFO - Step 4550, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,369 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,476 - INFO - Step 4600, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,477 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,579 - INFO - Step 4650, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,580 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,685 - INFO - Step 4700, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,685 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,795 - INFO - Step 4750, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,795 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,889 - INFO - Step 4800, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,889 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,022 - INFO - Step 4850, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:18,022 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,126 - INFO - Step 4900, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:18,126 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,226 - INFO - Step 4950, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:18,227 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,385 - INFO - Greedy optimization complete. Best score: 22625.636429384936, Total improvements: 308
+2025-11-05 17:41:18,387 - INFO - Results saved to results/data/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.json
+2025-11-05 17:41:18,394 - INFO - Full results saved to results/data/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.pkl
+2025-11-05 17:41:18,394 - INFO - Creating visualizations...
+2025-11-05 17:41:19,330 - INFO - Comparison plot saved to results/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42_comparison.png
+2025-11-05 17:41:19,330 - INFO - Creating animation with 71 frames
+2025-11-05 17:41:19,685 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:41:48,807 - INFO - Animation saved to results/gifs/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.gif
+2025-11-05 17:41:48,810 - INFO - ================================================================================
+2025-11-05 17:41:48,810 - INFO - Experiment complete!
+2025-11-05 17:41:48,810 - INFO - Results: results/data/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.json
+2025-11-05 17:41:48,811 - INFO - Comparison: results/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42_comparison.png
+2025-11-05 17:41:48,811 - INFO - Animation: results/gifs/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.gif
+2025-11-05 17:41:48,811 - INFO - ================================================================================
+
+[4/19] Starting experiment: baseline_hillclimb
+--------------------------------------------------------------------------------
+2025-11-05 17:41:48,812 - INFO - ================================================================================
+2025-11-05 17:41:48,812 - INFO - Experiment: baseline_hillclimb
+2025-11-05 17:41:48,812 - INFO - Algorithm: hill_climbing
+2025-11-05 17:41:48,812 - INFO - Objective: neutral - Population balance + proportionality
+2025-11-05 17:41:48,812 - INFO - Steps: 5000
+2025-11-05 17:41:48,812 - INFO - Random seed: 42
+2025-11-05 17:41:48,812 - INFO - ================================================================================
+2025-11-05 17:41:48,813 - INFO - Building adjacency graph
+2025-11-05 17:41:49,174 - INFO - Starting optimization...
+2025-11-05 17:41:49,174 - INFO - Starting hill climbing with restarts every 200 steps
+2025-11-05 17:41:49,174 - INFO - Initializing the map
+2025-11-05 17:41:49,174 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:41:49,174 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:41:49,389 - INFO - Assigned 50 communes
+2025-11-05 17:41:49,909 - INFO - Assigned 100 communes
+2025-11-05 17:41:50,779 - INFO - Assigned 150 communes
+2025-11-05 17:41:51,940 - INFO - Assigned 200 communes
+2025-11-05 17:41:53,573 - INFO - Assigned 250 communes
+2025-11-05 17:41:55,631 - INFO - Assigned 300 communes
+2025-11-05 17:41:56,467 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:41:56,468 - INFO - District 0 has 61 communes
+2025-11-05 17:41:56,468 - INFO - District 1 has 14 communes
+2025-11-05 17:41:56,468 - INFO - District 2 has 3 communes
+2025-11-05 17:41:56,468 - INFO - District 3 has 4 communes
+2025-11-05 17:41:56,468 - INFO - District 4 has 9 communes
+2025-11-05 17:41:56,468 - INFO - District 5 has 60 communes
+2025-11-05 17:41:56,468 - INFO - District 6 has 30 communes
+2025-11-05 17:41:56,468 - INFO - District 7 has 14 communes
+2025-11-05 17:41:56,468 - INFO - District 8 has 10 communes
+2025-11-05 17:41:56,468 - INFO - District 9 has 30 communes
+2025-11-05 17:41:56,468 - INFO - District 10 has 95 communes
+2025-11-05 17:41:56,468 - INFO - Finished initializing the map
+2025-11-05 17:41:56,472 - INFO - Restart 1, initial score: 1122622.3565212341
+2025-11-05 17:41:56,540 - INFO - Step 50, current score: 1035085.7473045929
+2025-11-05 17:41:56,540 - INFO - Seat deviation: 0, population std: 1035085.75
+2025-11-05 17:41:56,603 - INFO - Step 100, current score: 931640.4317971109
+2025-11-05 17:41:56,604 - INFO - Seat deviation: 0, population std: 931640.43
+2025-11-05 17:41:56,668 - INFO - Step 150, current score: 900797.0449349127
+2025-11-05 17:41:56,668 - INFO - Seat deviation: 0, population std: 900797.04
+2025-11-05 17:41:56,743 - INFO - Initializing the map
+2025-11-05 17:41:56,743 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:41:56,744 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:41:56,970 - INFO - Assigned 50 communes
+2025-11-05 17:41:57,522 - INFO - Assigned 100 communes
+2025-11-05 17:41:58,353 - INFO - Assigned 150 communes
+2025-11-05 17:41:59,468 - INFO - Assigned 200 communes
+2025-11-05 17:42:01,058 - INFO - Assigned 250 communes
+2025-11-05 17:42:03,026 - INFO - Assigned 300 communes
+2025-11-05 17:42:03,847 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:03,847 - INFO - District 0 has 8 communes
+2025-11-05 17:42:03,848 - INFO - District 1 has 1 communes
+2025-11-05 17:42:03,848 - INFO - District 2 has 29 communes
+2025-11-05 17:42:03,848 - INFO - District 3 has 2 communes
+2025-11-05 17:42:03,848 - INFO - District 4 has 116 communes
+2025-11-05 17:42:03,848 - INFO - District 5 has 6 communes
+2025-11-05 17:42:03,848 - INFO - District 6 has 9 communes
+2025-11-05 17:42:03,848 - INFO - District 7 has 94 communes
+2025-11-05 17:42:03,848 - INFO - District 8 has 43 communes
+2025-11-05 17:42:03,848 - INFO - District 9 has 11 communes
+2025-11-05 17:42:03,848 - INFO - District 10 has 11 communes
+2025-11-05 17:42:03,848 - INFO - Finished initializing the map
+2025-11-05 17:42:03,852 - INFO - Restart 2, initial score: 1355162.81640487
+2025-11-05 17:42:03,858 - INFO - Step 200, current score: 1347672.8580264228
+2025-11-05 17:42:03,858 - INFO - Seat deviation: 0, population std: 1347672.86
+2025-11-05 17:42:03,940 - INFO - Step 250, current score: 1197433.9424959063
+2025-11-05 17:42:03,940 - INFO - Seat deviation: 0, population std: 1197433.94
+2025-11-05 17:42:04,001 - INFO - Step 300, current score: 1097659.1880697007
+2025-11-05 17:42:04,002 - INFO - Seat deviation: 0, population std: 1097659.19
+2025-11-05 17:42:04,163 - INFO - Initializing the map
+2025-11-05 17:42:04,164 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:04,164 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:04,372 - INFO - Assigned 50 communes
+2025-11-05 17:42:04,912 - INFO - Assigned 100 communes
+2025-11-05 17:42:05,741 - INFO - Assigned 150 communes
+2025-11-05 17:42:06,877 - INFO - Assigned 200 communes
+2025-11-05 17:42:08,432 - INFO - Assigned 250 communes
+2025-11-05 17:42:10,498 - INFO - Assigned 300 communes
+2025-11-05 17:42:11,332 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:11,332 - INFO - District 0 has 21 communes
+2025-11-05 17:42:11,333 - INFO - District 1 has 10 communes
+2025-11-05 17:42:11,333 - INFO - District 2 has 62 communes
+2025-11-05 17:42:11,333 - INFO - District 3 has 36 communes
+2025-11-05 17:42:11,333 - INFO - District 4 has 145 communes
+2025-11-05 17:42:11,333 - INFO - District 5 has 9 communes
+2025-11-05 17:42:11,333 - INFO - District 6 has 2 communes
+2025-11-05 17:42:11,333 - INFO - District 7 has 3 communes
+2025-11-05 17:42:11,333 - INFO - District 8 has 40 communes
+2025-11-05 17:42:11,333 - INFO - District 9 has 1 communes
+2025-11-05 17:42:11,333 - INFO - District 10 has 1 communes
+2025-11-05 17:42:11,333 - INFO - Finished initializing the map
+2025-11-05 17:42:11,336 - INFO - Restart 3, initial score: 1534680.8730148007
+2025-11-05 17:42:11,392 - INFO - Step 450, current score: 1466049.9253137875
+2025-11-05 17:42:11,392 - INFO - Seat deviation: 0, population std: 1466049.93
+2025-11-05 17:42:11,577 - INFO - Initializing the map
+2025-11-05 17:42:11,577 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:11,578 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:11,802 - INFO - Assigned 50 communes
+2025-11-05 17:42:12,353 - INFO - Assigned 100 communes
+2025-11-05 17:42:13,148 - INFO - Assigned 150 communes
+2025-11-05 17:42:14,378 - INFO - Assigned 200 communes
+2025-11-05 17:42:15,984 - INFO - Assigned 250 communes
+2025-11-05 17:42:17,948 - INFO - Assigned 300 communes
+2025-11-05 17:42:18,797 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:18,797 - INFO - District 0 has 18 communes
+2025-11-05 17:42:18,797 - INFO - District 1 has 8 communes
+2025-11-05 17:42:18,797 - INFO - District 2 has 9 communes
+2025-11-05 17:42:18,797 - INFO - District 3 has 2 communes
+2025-11-05 17:42:18,797 - INFO - District 4 has 30 communes
+2025-11-05 17:42:18,798 - INFO - District 5 has 1 communes
+2025-11-05 17:42:18,798 - INFO - District 6 has 37 communes
+2025-11-05 17:42:18,798 - INFO - District 7 has 132 communes
+2025-11-05 17:42:18,798 - INFO - District 8 has 30 communes
+2025-11-05 17:42:18,798 - INFO - District 9 has 39 communes
+2025-11-05 17:42:18,798 - INFO - District 10 has 24 communes
+2025-11-05 17:42:18,798 - INFO - Finished initializing the map
+2025-11-05 17:42:18,802 - INFO - Restart 4, initial score: 1282037.4118158452
+2025-11-05 17:42:18,867 - INFO - Step 650, current score: 1204360.6415452512
+2025-11-05 17:42:18,867 - INFO - Seat deviation: 0, population std: 1204360.64
+2025-11-05 17:42:18,962 - INFO - Step 700, current score: 1105240.1420742823
+2025-11-05 17:42:18,963 - INFO - Seat deviation: 0, population std: 1105240.14
+2025-11-05 17:42:19,127 - INFO - Initializing the map
+2025-11-05 17:42:19,128 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:19,128 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:19,347 - INFO - Assigned 50 communes
+2025-11-05 17:42:19,872 - INFO - Assigned 100 communes
+2025-11-05 17:42:20,693 - INFO - Assigned 150 communes
+2025-11-05 17:42:21,847 - INFO - Assigned 200 communes
+2025-11-05 17:42:23,421 - INFO - Assigned 250 communes
+2025-11-05 17:42:25,411 - INFO - Assigned 300 communes
+2025-11-05 17:42:26,224 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:26,225 - INFO - District 0 has 99 communes
+2025-11-05 17:42:26,225 - INFO - District 1 has 5 communes
+2025-11-05 17:42:26,225 - INFO - District 2 has 52 communes
+2025-11-05 17:42:26,225 - INFO - District 3 has 25 communes
+2025-11-05 17:42:26,225 - INFO - District 4 has 20 communes
+2025-11-05 17:42:26,225 - INFO - District 5 has 9 communes
+2025-11-05 17:42:26,225 - INFO - District 6 has 19 communes
+2025-11-05 17:42:26,225 - INFO - District 7 has 38 communes
+2025-11-05 17:42:26,225 - INFO - District 8 has 26 communes
+2025-11-05 17:42:26,225 - INFO - District 9 has 14 communes
+2025-11-05 17:42:26,225 - INFO - District 10 has 23 communes
+2025-11-05 17:42:26,226 - INFO - Finished initializing the map
+2025-11-05 17:42:26,229 - INFO - Restart 5, initial score: 816585.0401088994
+2025-11-05 17:42:26,287 - INFO - Step 850, current score: 787364.7051606667
+2025-11-05 17:42:26,287 - INFO - Seat deviation: 0, population std: 787364.71
+2025-11-05 17:42:26,506 - INFO - Initializing the map
+2025-11-05 17:42:26,506 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:26,507 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:26,728 - INFO - Assigned 50 communes
+2025-11-05 17:42:27,282 - INFO - Assigned 100 communes
+2025-11-05 17:42:28,150 - INFO - Assigned 150 communes
+2025-11-05 17:42:29,330 - INFO - Assigned 200 communes
+2025-11-05 17:42:30,922 - INFO - Assigned 250 communes
+2025-11-05 17:42:32,857 - INFO - Assigned 300 communes
+2025-11-05 17:42:33,682 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:33,683 - INFO - District 0 has 1 communes
+2025-11-05 17:42:33,683 - INFO - District 1 has 27 communes
+2025-11-05 17:42:33,683 - INFO - District 2 has 26 communes
+2025-11-05 17:42:33,683 - INFO - District 3 has 18 communes
+2025-11-05 17:42:33,683 - INFO - District 4 has 1 communes
+2025-11-05 17:42:33,683 - INFO - District 5 has 40 communes
+2025-11-05 17:42:33,683 - INFO - District 6 has 12 communes
+2025-11-05 17:42:33,683 - INFO - District 7 has 82 communes
+2025-11-05 17:42:33,683 - INFO - District 8 has 8 communes
+2025-11-05 17:42:33,683 - INFO - District 9 has 114 communes
+2025-11-05 17:42:33,683 - INFO - District 10 has 1 communes
+2025-11-05 17:42:33,683 - INFO - Finished initializing the map
+2025-11-05 17:42:33,687 - INFO - Restart 6, initial score: 1522265.0049328164
+2025-11-05 17:42:33,692 - INFO - Step 1000, current score: 1522265.0049328164
+2025-11-05 17:42:33,692 - INFO - Seat deviation: 0, population std: 1522265.00
+2025-11-05 17:42:33,972 - INFO - Initializing the map
+2025-11-05 17:42:33,972 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:33,973 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:34,185 - INFO - Assigned 50 communes
+2025-11-05 17:42:34,731 - INFO - Assigned 100 communes
+2025-11-05 17:42:35,537 - INFO - Assigned 150 communes
+2025-11-05 17:42:36,625 - INFO - Assigned 200 communes
+2025-11-05 17:42:38,247 - INFO - Assigned 250 communes
+2025-11-05 17:42:40,254 - INFO - Assigned 300 communes
+2025-11-05 17:42:41,064 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:41,065 - INFO - District 0 has 4 communes
+2025-11-05 17:42:41,065 - INFO - District 1 has 41 communes
+2025-11-05 17:42:41,065 - INFO - District 2 has 2 communes
+2025-11-05 17:42:41,065 - INFO - District 3 has 12 communes
+2025-11-05 17:42:41,065 - INFO - District 4 has 21 communes
+2025-11-05 17:42:41,065 - INFO - District 5 has 6 communes
+2025-11-05 17:42:41,065 - INFO - District 6 has 10 communes
+2025-11-05 17:42:41,065 - INFO - District 7 has 64 communes
+2025-11-05 17:42:41,066 - INFO - District 8 has 165 communes
+2025-11-05 17:42:41,066 - INFO - District 9 has 1 communes
+2025-11-05 17:42:41,066 - INFO - District 10 has 4 communes
+2025-11-05 17:42:41,066 - INFO - Finished initializing the map
+2025-11-05 17:42:41,069 - INFO - Restart 7, initial score: 1567069.4908322054
+2025-11-05 17:42:41,218 - INFO - Step 1350, current score: 1394268.821218236
+2025-11-05 17:42:41,218 - INFO - Seat deviation: 0, population std: 1394268.82
+2025-11-05 17:42:41,269 - INFO - Initializing the map
+2025-11-05 17:42:41,270 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:41,270 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:41,495 - INFO - Assigned 50 communes
+2025-11-05 17:42:42,079 - INFO - Assigned 100 communes
+2025-11-05 17:42:42,888 - INFO - Assigned 150 communes
+2025-11-05 17:42:44,051 - INFO - Assigned 200 communes
+2025-11-05 17:42:45,598 - INFO - Assigned 250 communes
+2025-11-05 17:42:47,551 - INFO - Assigned 300 communes
+2025-11-05 17:42:48,355 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:48,355 - INFO - District 0 has 25 communes
+2025-11-05 17:42:48,355 - INFO - District 1 has 14 communes
+2025-11-05 17:42:48,355 - INFO - District 2 has 6 communes
+2025-11-05 17:42:48,355 - INFO - District 3 has 9 communes
+2025-11-05 17:42:48,355 - INFO - District 4 has 9 communes
+2025-11-05 17:42:48,355 - INFO - District 5 has 30 communes
+2025-11-05 17:42:48,355 - INFO - District 6 has 21 communes
+2025-11-05 17:42:48,356 - INFO - District 7 has 27 communes
+2025-11-05 17:42:48,356 - INFO - District 8 has 9 communes
+2025-11-05 17:42:48,356 - INFO - District 9 has 114 communes
+2025-11-05 17:42:48,356 - INFO - District 10 has 66 communes
+2025-11-05 17:42:48,356 - INFO - Finished initializing the map
+2025-11-05 17:42:48,360 - INFO - Restart 8, initial score: 1153372.675691449
+2025-11-05 17:42:48,365 - INFO - Step 1400, current score: 1153372.675691449
+2025-11-05 17:42:48,365 - INFO - Seat deviation: 0, population std: 1153372.68
+2025-11-05 17:42:48,645 - INFO - Initializing the map
+2025-11-05 17:42:48,645 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:48,645 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:48,862 - INFO - Assigned 50 communes
+2025-11-05 17:42:49,426 - INFO - Assigned 100 communes
+2025-11-05 17:42:50,236 - INFO - Assigned 150 communes
+2025-11-05 17:42:51,373 - INFO - Assigned 200 communes
+2025-11-05 17:42:52,911 - INFO - Assigned 250 communes
+2025-11-05 17:42:54,843 - INFO - Assigned 300 communes
+2025-11-05 17:42:55,726 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:42:55,727 - INFO - District 0 has 1 communes
+2025-11-05 17:42:55,727 - INFO - District 1 has 29 communes
+2025-11-05 17:42:55,727 - INFO - District 2 has 59 communes
+2025-11-05 17:42:55,727 - INFO - District 3 has 1 communes
+2025-11-05 17:42:55,727 - INFO - District 4 has 37 communes
+2025-11-05 17:42:55,727 - INFO - District 5 has 2 communes
+2025-11-05 17:42:55,727 - INFO - District 6 has 46 communes
+2025-11-05 17:42:55,727 - INFO - District 7 has 30 communes
+2025-11-05 17:42:55,727 - INFO - District 8 has 110 communes
+2025-11-05 17:42:55,727 - INFO - District 9 has 10 communes
+2025-11-05 17:42:55,727 - INFO - District 10 has 5 communes
+2025-11-05 17:42:55,727 - INFO - Finished initializing the map
+2025-11-05 17:42:55,731 - INFO - Restart 9, initial score: 1199741.9097667397
+2025-11-05 17:42:55,852 - INFO - Step 1700, current score: 1103450.109606237
+2025-11-05 17:42:55,852 - INFO - Seat deviation: 0, population std: 1103450.11
+2025-11-05 17:42:55,997 - INFO - Initializing the map
+2025-11-05 17:42:55,997 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:42:55,998 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:42:56,224 - INFO - Assigned 50 communes
+2025-11-05 17:42:56,771 - INFO - Assigned 100 communes
+2025-11-05 17:42:57,573 - INFO - Assigned 150 communes
+2025-11-05 17:42:58,710 - INFO - Assigned 200 communes
+2025-11-05 17:43:00,339 - INFO - Assigned 250 communes
+2025-11-05 17:43:02,323 - INFO - Assigned 300 communes
+2025-11-05 17:43:03,230 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:03,231 - INFO - District 0 has 25 communes
+2025-11-05 17:43:03,231 - INFO - District 1 has 40 communes
+2025-11-05 17:43:03,231 - INFO - District 2 has 68 communes
+2025-11-05 17:43:03,231 - INFO - District 3 has 12 communes
+2025-11-05 17:43:03,231 - INFO - District 4 has 14 communes
+2025-11-05 17:43:03,231 - INFO - District 5 has 1 communes
+2025-11-05 17:43:03,231 - INFO - District 6 has 21 communes
+2025-11-05 17:43:03,231 - INFO - District 7 has 72 communes
+2025-11-05 17:43:03,231 - INFO - District 8 has 2 communes
+2025-11-05 17:43:03,231 - INFO - District 9 has 13 communes
+2025-11-05 17:43:03,231 - INFO - District 10 has 62 communes
+2025-11-05 17:43:03,231 - INFO - Finished initializing the map
+2025-11-05 17:43:03,234 - INFO - Restart 10, initial score: 991922.6281359844
+2025-11-05 17:43:03,240 - INFO - Step 1800, current score: 986807.5199544964
+2025-11-05 17:43:03,240 - INFO - Seat deviation: 0, population std: 986807.52
+2025-11-05 17:43:03,318 - INFO - Step 1850, current score: 919183.8587322097
+2025-11-05 17:43:03,318 - INFO - Seat deviation: 0, population std: 919183.86
+2025-11-05 17:43:03,414 - INFO - Step 1900, current score: 813226.2291652797
+2025-11-05 17:43:03,415 - INFO - Seat deviation: 0, population std: 813226.23
+2025-11-05 17:43:03,523 - INFO - Step 1950, current score: 758687.4804645539
+2025-11-05 17:43:03,523 - INFO - Seat deviation: 0, population std: 758687.48
+2025-11-05 17:43:03,613 - INFO - Initializing the map
+2025-11-05 17:43:03,613 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:03,613 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:03,831 - INFO - Assigned 50 communes
+2025-11-05 17:43:04,353 - INFO - Assigned 100 communes
+2025-11-05 17:43:05,195 - INFO - Assigned 150 communes
+2025-11-05 17:43:06,321 - INFO - Assigned 200 communes
+2025-11-05 17:43:08,010 - INFO - Assigned 250 communes
+2025-11-05 17:43:09,994 - INFO - Assigned 300 communes
+2025-11-05 17:43:10,825 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:10,826 - INFO - District 0 has 38 communes
+2025-11-05 17:43:10,827 - INFO - District 1 has 4 communes
+2025-11-05 17:43:10,827 - INFO - District 2 has 22 communes
+2025-11-05 17:43:10,828 - INFO - District 3 has 3 communes
+2025-11-05 17:43:10,828 - INFO - District 4 has 87 communes
+2025-11-05 17:43:10,829 - INFO - District 5 has 63 communes
+2025-11-05 17:43:10,829 - INFO - District 6 has 4 communes
+2025-11-05 17:43:10,830 - INFO - District 7 has 88 communes
+2025-11-05 17:43:10,830 - INFO - District 8 has 1 communes
+2025-11-05 17:43:10,830 - INFO - District 9 has 18 communes
+2025-11-05 17:43:10,831 - INFO - District 10 has 2 communes
+2025-11-05 17:43:10,831 - INFO - Finished initializing the map
+2025-11-05 17:43:10,836 - INFO - Restart 11, initial score: 1239433.0710902459
+2025-11-05 17:43:10,885 - INFO - Step 2050, current score: 1194761.7910954687
+2025-11-05 17:43:10,885 - INFO - Seat deviation: 0, population std: 1194761.79
+2025-11-05 17:43:10,956 - INFO - Step 2100, current score: 1154968.0259052503
+2025-11-05 17:43:10,956 - INFO - Seat deviation: 0, population std: 1154968.03
+2025-11-05 17:43:11,031 - INFO - Step 2150, current score: 1096879.8145072553
+2025-11-05 17:43:11,031 - INFO - Seat deviation: 0, population std: 1096879.81
+2025-11-05 17:43:11,106 - INFO - Initializing the map
+2025-11-05 17:43:11,106 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:11,107 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:11,333 - INFO - Assigned 50 communes
+2025-11-05 17:43:11,882 - INFO - Assigned 100 communes
+2025-11-05 17:43:12,704 - INFO - Assigned 150 communes
+2025-11-05 17:43:13,870 - INFO - Assigned 200 communes
+2025-11-05 17:43:15,449 - INFO - Assigned 250 communes
+2025-11-05 17:43:17,396 - INFO - Assigned 300 communes
+2025-11-05 17:43:18,224 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:18,224 - INFO - District 0 has 2 communes
+2025-11-05 17:43:18,224 - INFO - District 1 has 4 communes
+2025-11-05 17:43:18,224 - INFO - District 2 has 31 communes
+2025-11-05 17:43:18,225 - INFO - District 3 has 5 communes
+2025-11-05 17:43:18,225 - INFO - District 4 has 99 communes
+2025-11-05 17:43:18,225 - INFO - District 5 has 18 communes
+2025-11-05 17:43:18,225 - INFO - District 6 has 5 communes
+2025-11-05 17:43:18,225 - INFO - District 7 has 33 communes
+2025-11-05 17:43:18,225 - INFO - District 8 has 11 communes
+2025-11-05 17:43:18,225 - INFO - District 9 has 114 communes
+2025-11-05 17:43:18,225 - INFO - District 10 has 8 communes
+2025-11-05 17:43:18,225 - INFO - Finished initializing the map
+2025-11-05 17:43:18,228 - INFO - Restart 12, initial score: 1355856.8881640255
+2025-11-05 17:43:18,233 - INFO - Step 2200, current score: 1355323.204782004
+2025-11-05 17:43:18,233 - INFO - Seat deviation: 0, population std: 1355323.20
+2025-11-05 17:43:18,291 - INFO - Step 2250, current score: 1291591.6767108496
+2025-11-05 17:43:18,292 - INFO - Seat deviation: 0, population std: 1291591.68
+2025-11-05 17:43:18,408 - INFO - Step 2350, current score: 1171167.736263108
+2025-11-05 17:43:18,409 - INFO - Seat deviation: 0, population std: 1171167.74
+2025-11-05 17:43:18,480 - INFO - Initializing the map
+2025-11-05 17:43:18,480 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:18,481 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:18,687 - INFO - Assigned 50 communes
+2025-11-05 17:43:19,223 - INFO - Assigned 100 communes
+2025-11-05 17:43:20,033 - INFO - Assigned 150 communes
+2025-11-05 17:43:21,152 - INFO - Assigned 200 communes
+2025-11-05 17:43:22,737 - INFO - Assigned 250 communes
+2025-11-05 17:43:24,718 - INFO - Assigned 300 communes
+2025-11-05 17:43:25,563 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:25,563 - INFO - District 0 has 60 communes
+2025-11-05 17:43:25,564 - INFO - District 1 has 13 communes
+2025-11-05 17:43:25,564 - INFO - District 2 has 29 communes
+2025-11-05 17:43:25,564 - INFO - District 3 has 14 communes
+2025-11-05 17:43:25,564 - INFO - District 4 has 3 communes
+2025-11-05 17:43:25,564 - INFO - District 5 has 18 communes
+2025-11-05 17:43:25,564 - INFO - District 6 has 14 communes
+2025-11-05 17:43:25,564 - INFO - District 7 has 19 communes
+2025-11-05 17:43:25,564 - INFO - District 8 has 19 communes
+2025-11-05 17:43:25,564 - INFO - District 9 has 96 communes
+2025-11-05 17:43:25,564 - INFO - District 10 has 45 communes
+2025-11-05 17:43:25,564 - INFO - Finished initializing the map
+2025-11-05 17:43:25,567 - INFO - Restart 13, initial score: 856521.8718558628
+2025-11-05 17:43:25,627 - INFO - Step 2450, current score: 799767.5941601683
+2025-11-05 17:43:25,628 - INFO - Seat deviation: 0, population std: 799767.59
+2025-11-05 17:43:25,772 - INFO - Step 2550, current score: 692701.4109911337
+2025-11-05 17:43:25,772 - INFO - Seat deviation: 0, population std: 692701.41
+2025-11-05 17:43:25,839 - INFO - Initializing the map
+2025-11-05 17:43:25,839 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:25,839 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:26,058 - INFO - Assigned 50 communes
+2025-11-05 17:43:26,598 - INFO - Assigned 100 communes
+2025-11-05 17:43:27,391 - INFO - Assigned 150 communes
+2025-11-05 17:43:28,521 - INFO - Assigned 200 communes
+2025-11-05 17:43:30,070 - INFO - Assigned 250 communes
+2025-11-05 17:43:31,992 - INFO - Assigned 300 communes
+2025-11-05 17:43:32,823 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:32,823 - INFO - District 0 has 30 communes
+2025-11-05 17:43:32,823 - INFO - District 1 has 138 communes
+2025-11-05 17:43:32,824 - INFO - District 2 has 1 communes
+2025-11-05 17:43:32,824 - INFO - District 3 has 1 communes
+2025-11-05 17:43:32,824 - INFO - District 4 has 9 communes
+2025-11-05 17:43:32,824 - INFO - District 5 has 95 communes
+2025-11-05 17:43:32,824 - INFO - District 6 has 2 communes
+2025-11-05 17:43:32,825 - INFO - District 7 has 9 communes
+2025-11-05 17:43:32,825 - INFO - District 8 has 14 communes
+2025-11-05 17:43:32,825 - INFO - District 9 has 15 communes
+2025-11-05 17:43:32,826 - INFO - District 10 has 16 communes
+2025-11-05 17:43:32,826 - INFO - Finished initializing the map
+2025-11-05 17:43:32,829 - INFO - Restart 14, initial score: 1485568.013892947
+2025-11-05 17:43:32,835 - INFO - Step 2600, current score: 1485568.013892947
+2025-11-05 17:43:32,835 - INFO - Seat deviation: 0, population std: 1485568.01
+2025-11-05 17:43:32,946 - INFO - Step 2750, current score: 1395242.8447275008
+2025-11-05 17:43:32,946 - INFO - Seat deviation: 0, population std: 1395242.84
+2025-11-05 17:43:32,991 - INFO - Initializing the map
+2025-11-05 17:43:32,991 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:32,991 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:33,222 - INFO - Assigned 50 communes
+2025-11-05 17:43:33,754 - INFO - Assigned 100 communes
+2025-11-05 17:43:34,583 - INFO - Assigned 150 communes
+2025-11-05 17:43:35,721 - INFO - Assigned 200 communes
+2025-11-05 17:43:37,281 - INFO - Assigned 250 communes
+2025-11-05 17:43:39,261 - INFO - Assigned 300 communes
+2025-11-05 17:43:40,084 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:40,085 - INFO - District 0 has 10 communes
+2025-11-05 17:43:40,085 - INFO - District 1 has 33 communes
+2025-11-05 17:43:40,085 - INFO - District 2 has 50 communes
+2025-11-05 17:43:40,085 - INFO - District 3 has 9 communes
+2025-11-05 17:43:40,085 - INFO - District 4 has 8 communes
+2025-11-05 17:43:40,085 - INFO - District 5 has 6 communes
+2025-11-05 17:43:40,085 - INFO - District 6 has 5 communes
+2025-11-05 17:43:40,085 - INFO - District 7 has 21 communes
+2025-11-05 17:43:40,085 - INFO - District 8 has 23 communes
+2025-11-05 17:43:40,085 - INFO - District 9 has 104 communes
+2025-11-05 17:43:40,085 - INFO - District 10 has 61 communes
+2025-11-05 17:43:40,085 - INFO - Finished initializing the map
+2025-11-05 17:43:40,088 - INFO - Restart 15, initial score: 1257575.6132396602
+2025-11-05 17:43:40,093 - INFO - Step 2800, current score: 1257575.6132396602
+2025-11-05 17:43:40,094 - INFO - Seat deviation: 0, population std: 1257575.61
+2025-11-05 17:43:40,146 - INFO - Step 2850, current score: 1193727.049772426
+2025-11-05 17:43:40,146 - INFO - Seat deviation: 0, population std: 1193727.05
+2025-11-05 17:43:40,285 - INFO - Step 2950, current score: 1031796.9137208322
+2025-11-05 17:43:40,286 - INFO - Seat deviation: 0, population std: 1031796.91
+2025-11-05 17:43:40,344 - INFO - Initializing the map
+2025-11-05 17:43:40,344 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:40,344 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:40,567 - INFO - Assigned 50 communes
+2025-11-05 17:43:41,096 - INFO - Assigned 100 communes
+2025-11-05 17:43:41,933 - INFO - Assigned 150 communes
+2025-11-05 17:43:43,087 - INFO - Assigned 200 communes
+2025-11-05 17:43:44,633 - INFO - Assigned 250 communes
+2025-11-05 17:43:46,575 - INFO - Assigned 300 communes
+2025-11-05 17:43:47,396 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:47,396 - INFO - District 0 has 15 communes
+2025-11-05 17:43:47,396 - INFO - District 1 has 5 communes
+2025-11-05 17:43:47,396 - INFO - District 2 has 25 communes
+2025-11-05 17:43:47,397 - INFO - District 3 has 9 communes
+2025-11-05 17:43:47,397 - INFO - District 4 has 45 communes
+2025-11-05 17:43:47,397 - INFO - District 5 has 100 communes
+2025-11-05 17:43:47,397 - INFO - District 6 has 48 communes
+2025-11-05 17:43:47,397 - INFO - District 7 has 4 communes
+2025-11-05 17:43:47,397 - INFO - District 8 has 48 communes
+2025-11-05 17:43:47,397 - INFO - District 9 has 3 communes
+2025-11-05 17:43:47,397 - INFO - District 10 has 28 communes
+2025-11-05 17:43:47,397 - INFO - Finished initializing the map
+2025-11-05 17:43:47,400 - INFO - Restart 16, initial score: 1245255.7443338216
+2025-11-05 17:43:47,474 - INFO - Step 3050, current score: 1183998.6904717952
+2025-11-05 17:43:47,474 - INFO - Seat deviation: 0, population std: 1183998.69
+2025-11-05 17:43:47,606 - INFO - Step 3150, current score: 1060938.3814238214
+2025-11-05 17:43:47,607 - INFO - Seat deviation: 0, population std: 1060938.38
+2025-11-05 17:43:47,698 - INFO - Initializing the map
+2025-11-05 17:43:47,698 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:47,698 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:47,911 - INFO - Assigned 50 communes
+2025-11-05 17:43:48,466 - INFO - Assigned 100 communes
+2025-11-05 17:43:49,282 - INFO - Assigned 150 communes
+2025-11-05 17:43:50,406 - INFO - Assigned 200 communes
+2025-11-05 17:43:51,909 - INFO - Assigned 250 communes
+2025-11-05 17:43:54,057 - INFO - Assigned 300 communes
+2025-11-05 17:43:54,873 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:43:54,873 - INFO - District 0 has 36 communes
+2025-11-05 17:43:54,873 - INFO - District 1 has 95 communes
+2025-11-05 17:43:54,873 - INFO - District 2 has 3 communes
+2025-11-05 17:43:54,873 - INFO - District 3 has 9 communes
+2025-11-05 17:43:54,874 - INFO - District 4 has 26 communes
+2025-11-05 17:43:54,874 - INFO - District 5 has 17 communes
+2025-11-05 17:43:54,874 - INFO - District 6 has 40 communes
+2025-11-05 17:43:54,874 - INFO - District 7 has 2 communes
+2025-11-05 17:43:54,874 - INFO - District 8 has 18 communes
+2025-11-05 17:43:54,874 - INFO - District 9 has 30 communes
+2025-11-05 17:43:54,874 - INFO - District 10 has 54 communes
+2025-11-05 17:43:54,874 - INFO - Finished initializing the map
+2025-11-05 17:43:54,877 - INFO - Restart 17, initial score: 916745.2959163432
+2025-11-05 17:43:54,883 - INFO - Step 3200, current score: 915502.8144259496
+2025-11-05 17:43:54,883 - INFO - Seat deviation: 0, population std: 915502.81
+2025-11-05 17:43:55,009 - INFO - Step 3300, current score: 829784.9565853126
+2025-11-05 17:43:55,009 - INFO - Seat deviation: 0, population std: 829784.96
+2025-11-05 17:43:55,084 - INFO - Step 3350, current score: 787123.5911439126
+2025-11-05 17:43:55,084 - INFO - Seat deviation: 0, population std: 787123.59
+2025-11-05 17:43:55,149 - INFO - Initializing the map
+2025-11-05 17:43:55,149 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:43:55,149 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:43:55,364 - INFO - Assigned 50 communes
+2025-11-05 17:43:55,910 - INFO - Assigned 100 communes
+2025-11-05 17:43:56,724 - INFO - Assigned 150 communes
+2025-11-05 17:43:57,844 - INFO - Assigned 200 communes
+2025-11-05 17:43:59,387 - INFO - Assigned 250 communes
+2025-11-05 17:44:01,369 - INFO - Assigned 300 communes
+2025-11-05 17:44:02,191 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:02,192 - INFO - District 0 has 33 communes
+2025-11-05 17:44:02,192 - INFO - District 1 has 43 communes
+2025-11-05 17:44:02,192 - INFO - District 2 has 43 communes
+2025-11-05 17:44:02,192 - INFO - District 3 has 25 communes
+2025-11-05 17:44:02,192 - INFO - District 4 has 1 communes
+2025-11-05 17:44:02,193 - INFO - District 5 has 102 communes
+2025-11-05 17:44:02,193 - INFO - District 6 has 14 communes
+2025-11-05 17:44:02,193 - INFO - District 7 has 23 communes
+2025-11-05 17:44:02,193 - INFO - District 8 has 29 communes
+2025-11-05 17:44:02,193 - INFO - District 9 has 6 communes
+2025-11-05 17:44:02,193 - INFO - District 10 has 11 communes
+2025-11-05 17:44:02,193 - INFO - Finished initializing the map
+2025-11-05 17:44:02,197 - INFO - Restart 18, initial score: 937618.0799263332
+2025-11-05 17:44:02,351 - INFO - Step 3550, current score: 783428.0987104736
+2025-11-05 17:44:02,352 - INFO - Seat deviation: 0, population std: 783428.10
+2025-11-05 17:44:02,415 - INFO - Initializing the map
+2025-11-05 17:44:02,416 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:02,416 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:02,637 - INFO - Assigned 50 communes
+2025-11-05 17:44:03,166 - INFO - Assigned 100 communes
+2025-11-05 17:44:03,991 - INFO - Assigned 150 communes
+2025-11-05 17:44:05,132 - INFO - Assigned 200 communes
+2025-11-05 17:44:06,705 - INFO - Assigned 250 communes
+2025-11-05 17:44:08,609 - INFO - Assigned 300 communes
+2025-11-05 17:44:09,444 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:09,444 - INFO - District 0 has 1 communes
+2025-11-05 17:44:09,444 - INFO - District 1 has 28 communes
+2025-11-05 17:44:09,444 - INFO - District 2 has 55 communes
+2025-11-05 17:44:09,445 - INFO - District 3 has 29 communes
+2025-11-05 17:44:09,445 - INFO - District 4 has 166 communes
+2025-11-05 17:44:09,445 - INFO - District 5 has 3 communes
+2025-11-05 17:44:09,445 - INFO - District 6 has 10 communes
+2025-11-05 17:44:09,445 - INFO - District 7 has 14 communes
+2025-11-05 17:44:09,445 - INFO - District 8 has 12 communes
+2025-11-05 17:44:09,445 - INFO - District 9 has 3 communes
+2025-11-05 17:44:09,445 - INFO - District 10 has 9 communes
+2025-11-05 17:44:09,446 - INFO - Finished initializing the map
+2025-11-05 17:44:09,449 - INFO - Restart 19, initial score: 1791891.630507629
+2025-11-05 17:44:09,454 - INFO - Step 3600, current score: 1762343.329679296
+2025-11-05 17:44:09,454 - INFO - Seat deviation: 0, population std: 1762343.33
+2025-11-05 17:44:09,520 - INFO - Step 3650, current score: 1659255.305558879
+2025-11-05 17:44:09,520 - INFO - Seat deviation: 0, population std: 1659255.31
+2025-11-05 17:44:09,604 - INFO - Step 3700, current score: 1535631.1964992285
+2025-11-05 17:44:09,604 - INFO - Seat deviation: 0, population std: 1535631.20
+2025-11-05 17:44:09,754 - INFO - Initializing the map
+2025-11-05 17:44:09,755 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:09,755 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:09,973 - INFO - Assigned 50 communes
+2025-11-05 17:44:10,523 - INFO - Assigned 100 communes
+2025-11-05 17:44:11,358 - INFO - Assigned 150 communes
+2025-11-05 17:44:12,473 - INFO - Assigned 200 communes
+2025-11-05 17:44:14,037 - INFO - Assigned 250 communes
+2025-11-05 17:44:16,048 - INFO - Assigned 300 communes
+2025-11-05 17:44:16,875 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:16,875 - INFO - District 0 has 3 communes
+2025-11-05 17:44:16,875 - INFO - District 1 has 37 communes
+2025-11-05 17:44:16,875 - INFO - District 2 has 5 communes
+2025-11-05 17:44:16,876 - INFO - District 3 has 18 communes
+2025-11-05 17:44:16,876 - INFO - District 4 has 9 communes
+2025-11-05 17:44:16,876 - INFO - District 5 has 25 communes
+2025-11-05 17:44:16,876 - INFO - District 6 has 66 communes
+2025-11-05 17:44:16,876 - INFO - District 7 has 36 communes
+2025-11-05 17:44:16,876 - INFO - District 8 has 11 communes
+2025-11-05 17:44:16,876 - INFO - District 9 has 117 communes
+2025-11-05 17:44:16,876 - INFO - District 10 has 3 communes
+2025-11-05 17:44:16,876 - INFO - Finished initializing the map
+2025-11-05 17:44:16,880 - INFO - Restart 20, initial score: 1242135.5273184741
+2025-11-05 17:44:16,935 - INFO - Step 3850, current score: 1213680.906976271
+2025-11-05 17:44:16,936 - INFO - Seat deviation: 0, population std: 1213680.91
+2025-11-05 17:44:17,000 - INFO - Step 3900, current score: 1170919.676241488
+2025-11-05 17:44:17,001 - INFO - Seat deviation: 0, population std: 1170919.68
+2025-11-05 17:44:17,059 - INFO - Step 3950, current score: 1119354.976446386
+2025-11-05 17:44:17,059 - INFO - Seat deviation: 0, population std: 1119354.98
+2025-11-05 17:44:17,122 - INFO - Initializing the map
+2025-11-05 17:44:17,122 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:17,122 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:17,353 - INFO - Assigned 50 communes
+2025-11-05 17:44:17,891 - INFO - Assigned 100 communes
+2025-11-05 17:44:18,698 - INFO - Assigned 150 communes
+2025-11-05 17:44:19,830 - INFO - Assigned 200 communes
+2025-11-05 17:44:21,383 - INFO - Assigned 250 communes
+2025-11-05 17:44:23,375 - INFO - Assigned 300 communes
+2025-11-05 17:44:24,257 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:24,258 - INFO - District 0 has 26 communes
+2025-11-05 17:44:24,258 - INFO - District 1 has 64 communes
+2025-11-05 17:44:24,258 - INFO - District 2 has 1 communes
+2025-11-05 17:44:24,258 - INFO - District 3 has 123 communes
+2025-11-05 17:44:24,258 - INFO - District 4 has 10 communes
+2025-11-05 17:44:24,258 - INFO - District 5 has 37 communes
+2025-11-05 17:44:24,258 - INFO - District 6 has 45 communes
+2025-11-05 17:44:24,258 - INFO - District 7 has 9 communes
+2025-11-05 17:44:24,258 - INFO - District 8 has 6 communes
+2025-11-05 17:44:24,258 - INFO - District 9 has 1 communes
+2025-11-05 17:44:24,258 - INFO - District 10 has 8 communes
+2025-11-05 17:44:24,258 - INFO - Finished initializing the map
+2025-11-05 17:44:24,262 - INFO - Restart 21, initial score: 1362248.4730661018
+2025-11-05 17:44:24,268 - INFO - Step 4000, current score: 1362248.4730661018
+2025-11-05 17:44:24,268 - INFO - Seat deviation: 0, population std: 1362248.47
+2025-11-05 17:44:24,337 - INFO - Step 4050, current score: 1305353.7648898158
+2025-11-05 17:44:24,337 - INFO - Seat deviation: 0, population std: 1305353.76
+2025-11-05 17:44:24,475 - INFO - Step 4150, current score: 1207966.7540859415
+2025-11-05 17:44:24,475 - INFO - Seat deviation: 0, population std: 1207966.75
+2025-11-05 17:44:24,556 - INFO - Initializing the map
+2025-11-05 17:44:24,556 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:24,556 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:24,796 - INFO - Assigned 50 communes
+2025-11-05 17:44:25,350 - INFO - Assigned 100 communes
+2025-11-05 17:44:26,182 - INFO - Assigned 150 communes
+2025-11-05 17:44:27,302 - INFO - Assigned 200 communes
+2025-11-05 17:44:28,868 - INFO - Assigned 250 communes
+2025-11-05 17:44:30,823 - INFO - Assigned 300 communes
+2025-11-05 17:44:31,635 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:31,636 - INFO - District 0 has 6 communes
+2025-11-05 17:44:31,636 - INFO - District 1 has 9 communes
+2025-11-05 17:44:31,636 - INFO - District 2 has 47 communes
+2025-11-05 17:44:31,636 - INFO - District 3 has 27 communes
+2025-11-05 17:44:31,636 - INFO - District 4 has 77 communes
+2025-11-05 17:44:31,636 - INFO - District 5 has 59 communes
+2025-11-05 17:44:31,636 - INFO - District 6 has 1 communes
+2025-11-05 17:44:31,636 - INFO - District 7 has 29 communes
+2025-11-05 17:44:31,636 - INFO - District 8 has 24 communes
+2025-11-05 17:44:31,636 - INFO - District 9 has 30 communes
+2025-11-05 17:44:31,637 - INFO - District 10 has 21 communes
+2025-11-05 17:44:31,637 - INFO - Finished initializing the map
+2025-11-05 17:44:31,640 - INFO - Restart 22, initial score: 1049324.0859581155
+2025-11-05 17:44:31,721 - INFO - Step 4250, current score: 995906.6926564128
+2025-11-05 17:44:31,721 - INFO - Seat deviation: 0, population std: 995906.69
+2025-11-05 17:44:31,795 - INFO - Step 4300, current score: 938288.6866593487
+2025-11-05 17:44:31,795 - INFO - Seat deviation: 0, population std: 938288.69
+2025-11-05 17:44:31,892 - INFO - Step 4350, current score: 901390.9225751753
+2025-11-05 17:44:31,892 - INFO - Seat deviation: 0, population std: 901390.92
+2025-11-05 17:44:31,970 - INFO - Initializing the map
+2025-11-05 17:44:31,971 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:31,971 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:32,190 - INFO - Assigned 50 communes
+2025-11-05 17:44:32,728 - INFO - Assigned 100 communes
+2025-11-05 17:44:33,573 - INFO - Assigned 150 communes
+2025-11-05 17:44:34,797 - INFO - Assigned 200 communes
+2025-11-05 17:44:36,426 - INFO - Assigned 250 communes
+2025-11-05 17:44:38,372 - INFO - Assigned 300 communes
+2025-11-05 17:44:39,210 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:39,210 - INFO - District 0 has 40 communes
+2025-11-05 17:44:39,210 - INFO - District 1 has 13 communes
+2025-11-05 17:44:39,210 - INFO - District 2 has 35 communes
+2025-11-05 17:44:39,210 - INFO - District 3 has 14 communes
+2025-11-05 17:44:39,211 - INFO - District 4 has 73 communes
+2025-11-05 17:44:39,211 - INFO - District 5 has 24 communes
+2025-11-05 17:44:39,211 - INFO - District 6 has 15 communes
+2025-11-05 17:44:39,211 - INFO - District 7 has 23 communes
+2025-11-05 17:44:39,211 - INFO - District 8 has 83 communes
+2025-11-05 17:44:39,211 - INFO - District 9 has 9 communes
+2025-11-05 17:44:39,211 - INFO - District 10 has 1 communes
+2025-11-05 17:44:39,212 - INFO - Finished initializing the map
+2025-11-05 17:44:39,216 - INFO - Restart 23, initial score: 873172.7981003417
+2025-11-05 17:44:39,290 - INFO - Step 4450, current score: 810202.2054071206
+2025-11-05 17:44:39,291 - INFO - Seat deviation: 0, population std: 810202.21
+2025-11-05 17:44:39,363 - INFO - Step 4500, current score: 765128.7027099179
+2025-11-05 17:44:39,363 - INFO - Seat deviation: 0, population std: 765128.70
+2025-11-05 17:44:39,437 - INFO - Step 4550, current score: 731953.5690043449
+2025-11-05 17:44:39,437 - INFO - Seat deviation: 0, population std: 731953.57
+2025-11-05 17:44:39,506 - INFO - Initializing the map
+2025-11-05 17:44:39,506 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:39,506 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:39,720 - INFO - Assigned 50 communes
+2025-11-05 17:44:40,250 - INFO - Assigned 100 communes
+2025-11-05 17:44:41,117 - INFO - Assigned 150 communes
+2025-11-05 17:44:42,312 - INFO - Assigned 200 communes
+2025-11-05 17:44:43,872 - INFO - Assigned 250 communes
+2025-11-05 17:44:45,847 - INFO - Assigned 300 communes
+2025-11-05 17:44:46,680 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:46,680 - INFO - District 0 has 45 communes
+2025-11-05 17:44:46,680 - INFO - District 1 has 37 communes
+2025-11-05 17:44:46,681 - INFO - District 2 has 26 communes
+2025-11-05 17:44:46,681 - INFO - District 3 has 20 communes
+2025-11-05 17:44:46,681 - INFO - District 4 has 25 communes
+2025-11-05 17:44:46,681 - INFO - District 5 has 12 communes
+2025-11-05 17:44:46,681 - INFO - District 6 has 37 communes
+2025-11-05 17:44:46,682 - INFO - District 7 has 19 communes
+2025-11-05 17:44:46,682 - INFO - District 8 has 47 communes
+2025-11-05 17:44:46,682 - INFO - District 9 has 22 communes
+2025-11-05 17:44:46,682 - INFO - District 10 has 40 communes
+2025-11-05 17:44:46,682 - INFO - Finished initializing the map
+2025-11-05 17:44:46,685 - INFO - Restart 24, initial score: 612865.2219566848
+2025-11-05 17:44:46,690 - INFO - Step 4600, current score: 607595.9008195692
+2025-11-05 17:44:46,690 - INFO - Seat deviation: 0, population std: 607595.90
+2025-11-05 17:44:46,775 - INFO - Step 4650, current score: 527905.286513696
+2025-11-05 17:44:46,775 - INFO - Seat deviation: 0, population std: 527905.29
+2025-11-05 17:44:46,841 - INFO - Step 4700, current score: 473232.6303077764
+2025-11-05 17:44:46,842 - INFO - Seat deviation: 0, population std: 473232.63
+2025-11-05 17:44:47,001 - INFO - Initializing the map
+2025-11-05 17:44:47,001 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:44:47,002 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:44:47,222 - INFO - Assigned 50 communes
+2025-11-05 17:44:47,770 - INFO - Assigned 100 communes
+2025-11-05 17:44:48,590 - INFO - Assigned 150 communes
+2025-11-05 17:44:49,736 - INFO - Assigned 200 communes
+2025-11-05 17:44:51,311 - INFO - Assigned 250 communes
+2025-11-05 17:44:53,319 - INFO - Assigned 300 communes
+2025-11-05 17:44:54,122 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:44:54,123 - INFO - District 0 has 4 communes
+2025-11-05 17:44:54,123 - INFO - District 1 has 30 communes
+2025-11-05 17:44:54,123 - INFO - District 2 has 10 communes
+2025-11-05 17:44:54,123 - INFO - District 3 has 17 communes
+2025-11-05 17:44:54,123 - INFO - District 4 has 6 communes
+2025-11-05 17:44:54,123 - INFO - District 5 has 8 communes
+2025-11-05 17:44:54,123 - INFO - District 6 has 23 communes
+2025-11-05 17:44:54,124 - INFO - District 7 has 36 communes
+2025-11-05 17:44:54,124 - INFO - District 8 has 76 communes
+2025-11-05 17:44:54,124 - INFO - District 9 has 37 communes
+2025-11-05 17:44:54,124 - INFO - District 10 has 83 communes
+2025-11-05 17:44:54,124 - INFO - Finished initializing the map
+2025-11-05 17:44:54,127 - INFO - Restart 25, initial score: 1011398.2693814711
+2025-11-05 17:44:54,132 - INFO - Step 4800, current score: 1011398.2693814711
+2025-11-05 17:44:54,133 - INFO - Seat deviation: 0, population std: 1011398.27
+2025-11-05 17:44:54,316 - INFO - Step 4950, current score: 838345.7879285081
+2025-11-05 17:44:54,316 - INFO - Seat deviation: 0, population std: 838345.79
+2025-11-05 17:44:54,397 - INFO - Hill climbing complete. Best score: 386837.9638075144, Restarts: 25
+2025-11-05 17:44:54,399 - INFO - Results saved to results/data/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.json
+2025-11-05 17:44:54,405 - INFO - Full results saved to results/data/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.pkl
+2025-11-05 17:44:54,405 - INFO - Creating visualizations...
+2025-11-05 17:44:55,307 - INFO - Comparison plot saved to results/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42_comparison.png
+2025-11-05 17:44:55,308 - INFO - Creating animation with 57 frames
+2025-11-05 17:44:55,584 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:45:18,968 - INFO - Animation saved to results/gifs/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.gif
+2025-11-05 17:45:18,971 - INFO - ================================================================================
+2025-11-05 17:45:18,971 - INFO - Experiment complete!
+2025-11-05 17:45:18,971 - INFO - Results: results/data/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.json
+2025-11-05 17:45:18,971 - INFO - Comparison: results/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42_comparison.png
+2025-11-05 17:45:18,972 - INFO - Animation: results/gifs/baseline_hillclimb_hill_climbing_neutral_5000s_20251105_174148_seed42.gif
+2025-11-05 17:45:18,972 - INFO - ================================================================================
+
+[5/19] Starting experiment: partisan_left_mild
+--------------------------------------------------------------------------------
+2025-11-05 17:45:18,973 - INFO - ================================================================================
+2025-11-05 17:45:18,973 - INFO - Experiment: partisan_left_mild
+2025-11-05 17:45:18,973 - INFO - Algorithm: simulated_annealing
+2025-11-05 17:45:18,973 - INFO - Objective: maximize_left_mild - Mild left partisan advantage
+2025-11-05 17:45:18,974 - INFO - Steps: 3000
+2025-11-05 17:45:18,974 - INFO - Random seed: 42
+2025-11-05 17:45:18,974 - INFO - ================================================================================
+2025-11-05 17:45:18,974 - INFO - Building adjacency graph
+2025-11-05 17:45:19,340 - INFO - Starting optimization...
+2025-11-05 17:45:19,341 - INFO - Initializing the map
+2025-11-05 17:45:19,341 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:45:19,341 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:45:19,563 - INFO - Assigned 50 communes
+2025-11-05 17:45:20,106 - INFO - Assigned 100 communes
+2025-11-05 17:45:20,914 - INFO - Assigned 150 communes
+2025-11-05 17:45:22,037 - INFO - Assigned 200 communes
+2025-11-05 17:45:23,558 - INFO - Assigned 250 communes
+2025-11-05 17:45:25,622 - INFO - Assigned 300 communes
+2025-11-05 17:45:26,442 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:45:26,442 - INFO - District 0 has 61 communes
+2025-11-05 17:45:26,442 - INFO - District 1 has 14 communes
+2025-11-05 17:45:26,442 - INFO - District 2 has 3 communes
+2025-11-05 17:45:26,442 - INFO - District 3 has 4 communes
+2025-11-05 17:45:26,442 - INFO - District 4 has 9 communes
+2025-11-05 17:45:26,442 - INFO - District 5 has 60 communes
+2025-11-05 17:45:26,442 - INFO - District 6 has 30 communes
+2025-11-05 17:45:26,442 - INFO - District 7 has 14 communes
+2025-11-05 17:45:26,442 - INFO - District 8 has 10 communes
+2025-11-05 17:45:26,442 - INFO - District 9 has 30 communes
+2025-11-05 17:45:26,443 - INFO - District 10 has 95 communes
+2025-11-05 17:45:26,443 - INFO - Finished initializing the map
+2025-11-05 17:45:26,583 - INFO - Generated a map with 11 districts, starting the simulation
+2025-11-05 17:45:26,583 - INFO - Step 0, current temperature: 1000.0, current score: 561311.2249720973
+2025-11-05 17:45:28,549 - INFO - Step 30, current temperature: 868.7458127689781, current score: 520609.68938215333
+2025-11-05 17:45:28,549 - INFO - Seat deviation: 0, population std: 1041219.29
+2025-11-05 17:45:30,358 - INFO - Step 60, current temperature: 770.0431458051551, current score: 491420.0248924327
+2025-11-05 17:45:30,358 - INFO - Seat deviation: 0, population std: 982839.96
+2025-11-05 17:45:32,253 - INFO - Step 90, current temperature: 675.7290490602829, current score: 471524.06737653655
+2025-11-05 17:45:32,253 - INFO - Seat deviation: 0, population std: 943048.04
+2025-11-05 17:45:34,530 - INFO - Step 120, current temperature: 575.3547499769281, current score: 459012.1685355267
+2025-11-05 17:45:34,531 - INFO - Seat deviation: 0, population std: 918024.24
+2025-11-05 17:45:40,243 - INFO - Step 180, current temperature: 381.0471181045495, current score: 414560.3168926518
+2025-11-05 17:45:40,243 - INFO - Seat deviation: 0, population std: 829120.54
+2025-11-05 17:45:44,785 - INFO - Step 240, current temperature: 273.48915102221605, current score: 360679.3584446629
+2025-11-05 17:45:44,785 - INFO - Seat deviation: 0, population std: 721358.62
+2025-11-05 17:45:47,816 - INFO - Step 270, current temperature: 221.45178723886076, current score: 339458.7455854168
+2025-11-05 17:45:47,817 - INFO - Seat deviation: 0, population std: 678917.40
+2025-11-05 17:45:50,313 - INFO - Step 300, current temperature: 186.67127671570321, current score: 312270.70207642094
+2025-11-05 17:45:50,313 - INFO - Seat deviation: 0, population std: 624541.31
+2025-11-05 17:45:55,026 - INFO - Step 360, current temperature: 132.6398781093821, current score: 282276.5568871565
+2025-11-05 17:45:55,026 - INFO - Seat deviation: 0, population std: 564553.02
+2025-11-05 17:45:58,440 - INFO - Step 390, current temperature: 104.21225282987545, current score: 260390.27949298098
+2025-11-05 17:45:58,440 - INFO - Seat deviation: 0, population std: 520780.47
+2025-11-05 17:46:07,078 - INFO - Step 480, current temperature: 55.326862671220546, current score: 221711.92671036642
+2025-11-05 17:46:07,079 - INFO - Seat deviation: 0, population std: 443423.76
+2025-11-05 17:46:10,866 - INFO - Step 510, current temperature: 42.17803066508771, current score: 192168.63200008127
+2025-11-05 17:46:10,867 - INFO - Seat deviation: 0, population std: 384337.17
+2025-11-05 17:46:17,528 - INFO - Step 570, current temperature: 25.77572166898092, current score: 157186.89336598237
+2025-11-05 17:46:17,528 - INFO - Seat deviation: 0, population std: 314373.69
+2025-11-05 17:46:20,674 - INFO - Step 600, current temperature: 20.662606957299527, current score: 147538.75003709627
+2025-11-05 17:46:20,674 - INFO - Seat deviation: 0, population std: 295077.41
+2025-11-05 17:46:23,778 - INFO - Step 630, current temperature: 16.731088683427885, current score: 130961.96905761508
+2025-11-05 17:46:23,778 - INFO - Seat deviation: 0, population std: 261923.84
+2025-11-05 17:46:33,376 - INFO - Step 720, current temperature: 8.279189497759647, current score: 106770.66665018364
+2025-11-05 17:46:33,377 - INFO - Seat deviation: 0, population std: 213541.24
+2025-11-05 17:46:36,716 - INFO - Step 750, current temperature: 6.570483042414598, current score: 100118.38918384256
+2025-11-05 17:46:36,716 - INFO - Seat deviation: 0, population std: 200236.68
+2025-11-05 17:46:40,014 - INFO - Step 780, current temperature: 5.214429192898647, current score: 96493.97711576926
+2025-11-05 17:46:40,014 - INFO - Seat deviation: 0, population std: 192987.86
+2025-11-05 17:46:43,674 - INFO - Step 810, current temperature: 3.975182104685131, current score: 88118.60420573212
+2025-11-05 17:46:43,674 - INFO - Seat deviation: 0, population std: 176237.11
+2025-11-05 17:46:46,809 - INFO - Step 840, current temperature: 3.186627574103806, current score: 78999.9388964156
+2025-11-05 17:46:46,809 - INFO - Seat deviation: 0, population std: 157999.78
+2025-11-05 17:46:50,750 - INFO - Step 870, current temperature: 2.4050092913110643, current score: 75528.60138756737
+2025-11-05 17:46:50,750 - INFO - Seat deviation: 0, population std: 151057.11
+2025-11-05 17:46:54,056 - INFO - Step 900, current temperature: 1.889563228621364, current score: 66633.55223920426
+2025-11-05 17:46:54,057 - INFO - Seat deviation: 0, population std: 133267.01
+2025-11-05 17:46:57,835 - INFO - Step 930, current temperature: 1.4550452127653408, current score: 51502.46766653251
+2025-11-05 17:46:57,835 - INFO - Seat deviation: 0, population std: 103004.84
+2025-11-05 17:47:01,376 - INFO - Step 960, current temperature: 1.1317652453803582, current score: 51088.361581236975
+2025-11-05 17:47:01,377 - INFO - Seat deviation: 0, population std: 102176.63
+2025-11-05 17:47:05,432 - INFO - Step 990, current temperature: 0.845623408682555, current score: 48368.210846811206
+2025-11-05 17:47:05,432 - INFO - Seat deviation: 0, population std: 96736.33
+2025-11-05 17:47:12,643 - INFO - Step 1050, current temperature: 0.4914479241183732, current score: 43117.06059183471
+2025-11-05 17:47:12,644 - INFO - Seat deviation: 0, population std: 86234.03
+2025-11-05 17:47:16,572 - INFO - Step 1080, current temperature: 0.3746517444326501, current score: 39002.456746625365
+2025-11-05 17:47:16,573 - INFO - Seat deviation: 0, population std: 78004.82
+2025-11-05 17:47:20,619 - INFO - Step 1110, current temperature: 0.2827568975078072, current score: 34876.579092340944
+2025-11-05 17:47:20,619 - INFO - Seat deviation: 0, population std: 69753.06
+2025-11-05 17:47:24,608 - INFO - Step 1140, current temperature: 0.2134020841390028, current score: 32884.25948081196
+2025-11-05 17:47:24,608 - INFO - Seat deviation: 0, population std: 65768.43
+2025-11-05 17:47:28,614 - INFO - Step 1170, current temperature: 0.16105866882915784, current score: 26032.36840891398
+2025-11-05 17:47:28,614 - INFO - Seat deviation: 0, population std: 52064.64
+2025-11-05 17:47:32,126 - INFO - Step 1200, current temperature: 0.12527487273171253, current score: 23937.54429286245
+2025-11-05 17:47:32,126 - INFO - Seat deviation: 0, population std: 47875.00
+2025-11-05 17:47:34,793 - INFO - Step 1230, current temperature: 0.1034981692059372, current score: 23350.173168302445
+2025-11-05 17:47:34,793 - INFO - Seat deviation: 0, population std: 46700.25
+2025-11-05 17:47:38,759 - INFO - Step 1260, current temperature: 0.07811206448998588, current score: 19782.59218733176
+2025-11-05 17:47:38,759 - INFO - Seat deviation: 0, population std: 39565.09
+2025-11-05 17:47:42,397 - INFO - Step 1290, current temperature: 0.06014965986520386, current score: 16855.942851583604
+2025-11-05 17:47:42,397 - INFO - Seat deviation: 0, population std: 33711.79
+2025-11-05 17:47:46,003 - INFO - Step 1320, current temperature: 0.046317833301711665, current score: 15615.779179223571
+2025-11-05 17:47:46,003 - INFO - Seat deviation: 0, population std: 31231.46
+2025-11-05 17:47:49,427 - INFO - Step 1350, current temperature: 0.036390909154707496, current score: 15615.779179223571
+2025-11-05 17:47:49,428 - INFO - Seat deviation: 0, population std: 31231.46
+2025-11-05 17:47:53,221 - INFO - Step 1380, current temperature: 0.02774234446255857, current score: 13278.190010099912
+2025-11-05 17:47:53,221 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:47:56,537 - INFO - Step 1410, current temperature: 0.021796553618976464, current score: 13278.190010099912
+2025-11-05 17:47:56,537 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:48:00,205 - INFO - Step 1440, current temperature: 0.01695382496612866, current score: 13278.190010099912
+2025-11-05 17:48:00,205 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:48:07,025 - INFO - Step 1500, current temperature: 0.010360774712823918, current score: 13278.190010099912
+2025-11-05 17:48:07,025 - INFO - Seat deviation: 0, population std: 26556.29
+2025-11-05 17:48:07,587 - INFO - Optimization complete. Best score: 13278.190010099912
+2025-11-05 17:48:07,589 - INFO - Results saved to results/data/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.json
+2025-11-05 17:48:07,595 - INFO - Full results saved to results/data/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.pkl
+2025-11-05 17:48:07,595 - INFO - Creating visualizations...
+2025-11-05 17:48:08,528 - INFO - Comparison plot saved to results/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42_comparison.png
+2025-11-05 17:48:08,529 - INFO - Creating animation with 40 frames
+2025-11-05 17:48:08,719 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:48:25,297 - INFO - Animation saved to results/gifs/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.gif
+2025-11-05 17:48:25,297 - INFO - ================================================================================
+2025-11-05 17:48:25,297 - INFO - Experiment complete!
+2025-11-05 17:48:25,297 - INFO - Results: results/data/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.json
+2025-11-05 17:48:25,297 - INFO - Comparison: results/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42_comparison.png
+2025-11-05 17:48:25,297 - INFO - Animation: results/gifs/partisan_left_mild_simulated_annealing_maximize_left_mild_3000s_20251105_174518_seed42.gif
+2025-11-05 17:48:25,298 - INFO - ================================================================================
+
+[6/19] Starting experiment: partisan_left_moderate
+--------------------------------------------------------------------------------
+2025-11-05 17:48:25,299 - INFO - ================================================================================
+2025-11-05 17:48:25,299 - INFO - Experiment: partisan_left_moderate
+2025-11-05 17:48:25,300 - INFO - Algorithm: simulated_annealing
+2025-11-05 17:48:25,300 - INFO - Objective: maximize_left_moderate - Moderate left partisan advantage
+2025-11-05 17:48:25,300 - INFO - Steps: 3000
+2025-11-05 17:48:25,300 - INFO - Random seed: 42
+2025-11-05 17:48:25,300 - INFO - ================================================================================
+2025-11-05 17:48:25,301 - INFO - Building adjacency graph
+2025-11-05 17:48:25,680 - INFO - Starting optimization...
+2025-11-05 17:48:25,680 - INFO - Initializing the map
+2025-11-05 17:48:25,680 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:48:25,681 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:48:25,901 - INFO - Assigned 50 communes
+2025-11-05 17:48:26,433 - INFO - Assigned 100 communes
+2025-11-05 17:48:27,231 - INFO - Assigned 150 communes
+2025-11-05 17:48:28,420 - INFO - Assigned 200 communes
+2025-11-05 17:48:29,972 - INFO - Assigned 250 communes
+2025-11-05 17:48:32,013 - INFO - Assigned 300 communes
+2025-11-05 17:48:32,847 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:48:32,847 - INFO - District 0 has 61 communes
+2025-11-05 17:48:32,847 - INFO - District 1 has 14 communes
+2025-11-05 17:48:32,848 - INFO - District 2 has 3 communes
+2025-11-05 17:48:32,848 - INFO - District 3 has 4 communes
+2025-11-05 17:48:32,848 - INFO - District 4 has 9 communes
+2025-11-05 17:48:32,848 - INFO - District 5 has 60 communes
+2025-11-05 17:48:32,848 - INFO - District 6 has 30 communes
+2025-11-05 17:48:32,848 - INFO - District 7 has 14 communes
+2025-11-05 17:48:32,848 - INFO - District 8 has 10 communes
+2025-11-05 17:48:32,848 - INFO - District 9 has 30 communes
+2025-11-05 17:48:32,848 - INFO - District 10 has 95 communes
+2025-11-05 17:48:32,848 - INFO - Finished initializing the map
+2025-11-05 17:48:32,994 - INFO - Generated a map with 11 districts, starting the simulation
+2025-11-05 17:48:32,994 - INFO - Step 0, current temperature: 1000.0, current score: 112262.23565212342
+2025-11-05 17:48:35,039 - INFO - Step 30, current temperature: 868.7458127689781, current score: 104487.04962435289
+2025-11-05 17:48:35,039 - INFO - Seat deviation: 0, population std: 1044870.50
+2025-11-05 17:48:36,916 - INFO - Step 60, current temperature: 762.3427143471035, current score: 99814.72261029058
+2025-11-05 17:48:36,917 - INFO - Seat deviation: 0, population std: 998147.23
+2025-11-05 17:48:39,038 - INFO - Step 90, current temperature: 662.2820409839833, current score: 96604.96502340288
+2025-11-05 17:48:39,038 - INFO - Seat deviation: 0, population std: 966049.65
+2025-11-05 17:48:48,559 - INFO - Step 210, current temperature: 331.0330883210137, current score: 86358.39106904848
+2025-11-05 17:48:48,559 - INFO - Seat deviation: 0, population std: 863583.91
+2025-11-05 17:48:51,339 - INFO - Step 240, current temperature: 273.48915102221605, current score: 82893.95022340392
+2025-11-05 17:48:51,339 - INFO - Seat deviation: 0, population std: 828939.50
+2025-11-05 17:48:56,440 - INFO - Step 300, current temperature: 188.556845167377, current score: 75251.25992868631
+2025-11-05 17:48:56,440 - INFO - Seat deviation: 0, population std: 752512.60
+2025-11-05 17:49:00,293 - INFO - Step 360, current temperature: 145.1969062157826, current score: 67232.76922862286
+2025-11-05 17:49:00,293 - INFO - Seat deviation: 0, population std: 672327.69
+2025-11-05 17:49:05,510 - INFO - Step 420, current temperature: 99.10481551887466, current score: 60166.33708484703
+2025-11-05 17:49:05,511 - INFO - Seat deviation: 0, population std: 601663.37
+2025-11-05 17:49:07,949 - INFO - Step 450, current temperature: 83.53972967320513, current score: 55443.19901734142
+2025-11-05 17:49:07,950 - INFO - Seat deviation: 0, population std: 554431.99
+2025-11-05 17:49:11,001 - INFO - Step 480, current temperature: 66.96800274786395, current score: 53761.64024990462
+2025-11-05 17:49:11,001 - INFO - Seat deviation: 0, population std: 537616.40
+2025-11-05 17:49:14,179 - INFO - Step 510, current temperature: 53.68359952302262, current score: 50859.33001349884
+2025-11-05 17:49:14,180 - INFO - Seat deviation: 0, population std: 508593.30
+2025-11-05 17:49:22,750 - INFO - Step 600, current temperature: 29.07960468580264, current score: 42499.6241000936
+2025-11-05 17:49:22,750 - INFO - Seat deviation: 0, population std: 424996.24
+2025-11-05 17:49:28,299 - INFO - Step 660, current temperature: 19.649933621386364, current score: 35712.35932923174
+2025-11-05 17:49:28,299 - INFO - Seat deviation: 0, population std: 357123.59
+2025-11-05 17:49:30,801 - INFO - Step 690, current temperature: 16.563777796593605, current score: 31768.90679791659
+2025-11-05 17:49:30,802 - INFO - Seat deviation: 0, population std: 317689.07
+2025-11-05 17:49:34,224 - INFO - Step 720, current temperature: 13.013798143971552, current score: 27914.01038420055
+2025-11-05 17:49:34,225 - INFO - Seat deviation: 0, population std: 279140.10
+2025-11-05 17:49:37,349 - INFO - Step 750, current temperature: 10.537635028579857, current score: 24015.17111263745
+2025-11-05 17:49:37,350 - INFO - Seat deviation: 0, population std: 240151.71
+2025-11-05 17:49:40,720 - INFO - Step 780, current temperature: 8.362817674504694, current score: 21033.586745838445
+2025-11-05 17:49:40,721 - INFO - Seat deviation: 0, population std: 210335.87
+2025-11-05 17:49:50,013 - INFO - Step 870, current temperature: 4.222268634356518, current score: 15564.02743199207
+2025-11-05 17:49:50,014 - INFO - Seat deviation: 0, population std: 155640.27
+2025-11-05 17:49:53,787 - INFO - Step 900, current temperature: 3.251329021634329, current score: 13519.728484167861
+2025-11-05 17:49:53,788 - INFO - Seat deviation: 0, population std: 135197.28
+2025-11-05 17:49:57,642 - INFO - Step 930, current temperature: 2.4786269915882264, current score: 12539.782199289582
+2025-11-05 17:49:57,642 - INFO - Seat deviation: 0, population std: 125397.82
+2025-11-05 17:50:01,409 - INFO - Step 960, current temperature: 1.9086497258801656, current score: 11144.266438038148
+2025-11-05 17:50:01,409 - INFO - Seat deviation: 0, population std: 111442.66
+2025-11-05 17:50:08,183 - INFO - Step 1020, current temperature: 1.1664087517150468, current score: 9635.76939335845
+2025-11-05 17:50:08,183 - INFO - Seat deviation: 0, population std: 96357.69
+2025-11-05 17:50:12,289 - INFO - Step 1050, current temperature: 0.8803111816824589, current score: 9323.312765134984
+2025-11-05 17:50:12,289 - INFO - Seat deviation: 0, population std: 93233.13
+2025-11-05 17:50:16,010 - INFO - Step 1080, current temperature: 0.6778775916302141, current score: 8077.025502125363
+2025-11-05 17:50:16,010 - INFO - Seat deviation: 0, population std: 80770.26
+2025-11-05 17:50:19,208 - INFO - Step 1110, current temperature: 0.5379733392796987, current score: 7236.934821906919
+2025-11-05 17:50:19,208 - INFO - Seat deviation: 0, population std: 72369.35
+2025-11-05 17:50:23,128 - INFO - Step 1140, current temperature: 0.41012005571286086, current score: 5898.659647610389
+2025-11-05 17:50:23,128 - INFO - Seat deviation: 0, population std: 58986.60
+2025-11-05 17:50:26,732 - INFO - Step 1170, current temperature: 0.3190001392514312, current score: 5757.35300623013
+2025-11-05 17:50:26,732 - INFO - Seat deviation: 0, population std: 57573.53
+2025-11-05 17:50:30,611 - INFO - Step 1200, current temperature: 0.24318743203404006, current score: 5047.4510598898805
+2025-11-05 17:50:30,612 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:50:34,688 - INFO - Step 1230, current temperature: 0.18170286290799648, current score: 5047.4510598898805
+2025-11-05 17:50:34,688 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:50:38,279 - INFO - Step 1260, current temperature: 0.14275996750890363, current score: 5047.4510598898805
+2025-11-05 17:50:38,279 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:50:41,689 - INFO - Step 1290, current temperature: 0.11216338585409437, current score: 4754.037897521893
+2025-11-05 17:50:41,689 - INFO - Seat deviation: 0, population std: 47540.38
+2025-11-05 17:50:45,527 - INFO - Step 1320, current temperature: 0.08637064648724427, current score: 4265.6066621910795
+2025-11-05 17:50:45,528 - INFO - Seat deviation: 0, population std: 42656.07
+2025-11-05 17:50:49,203 - INFO - Step 1350, current temperature: 0.06785952895241562, current score: 4025.7553288094914
+2025-11-05 17:50:49,203 - INFO - Seat deviation: 0, population std: 40257.55
+2025-11-05 17:50:52,949 - INFO - Step 1380, current temperature: 0.05278259105795365, current score: 3137.5049195443967
+2025-11-05 17:50:52,950 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:50:56,460 - INFO - Step 1410, current temperature: 0.04147012800940076, current score: 3137.5049195443967
+2025-11-05 17:50:56,460 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:51:00,307 - INFO - Step 1440, current temperature: 0.03161444995100841, current score: 3137.5049195443967
+2025-11-05 17:51:00,307 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:51:04,219 - INFO - Step 1470, current temperature: 0.024101045588242408, current score: 2533.3842098487044
+2025-11-05 17:51:04,220 - INFO - Seat deviation: 0, population std: 25333.84
+2025-11-05 17:51:08,324 - INFO - Step 1500, current temperature: 0.01818952394722057, current score: 2533.3842098487044
+2025-11-05 17:51:08,324 - INFO - Seat deviation: 0, population std: 25333.84
+2025-11-05 17:51:11,631 - INFO - Step 1530, current temperature: 0.014435466017192563, current score: 2513.8480470787517
+2025-11-05 17:51:11,631 - INFO - Seat deviation: 0, population std: 25138.48
+2025-11-05 17:51:15,179 - INFO - Step 1560, current temperature: 0.011341630102073641, current score: 2060.9858788678202
+2025-11-05 17:51:15,180 - INFO - Seat deviation: 0, population std: 20609.86
+2025-11-05 17:51:16,975 - INFO - Optimization complete. Best score: 2060.9858788678202
+2025-11-05 17:51:16,977 - INFO - Results saved to results/data/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.json
+2025-11-05 17:51:16,984 - INFO - Full results saved to results/data/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.pkl
+2025-11-05 17:51:16,984 - INFO - Creating visualizations...
+2025-11-05 17:51:17,861 - INFO - Comparison plot saved to results/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42_comparison.png
+2025-11-05 17:51:17,862 - INFO - Creating animation with 40 frames
+2025-11-05 17:51:18,061 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:51:34,452 - INFO - Animation saved to results/gifs/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.gif
+2025-11-05 17:51:34,453 - INFO - ================================================================================
+2025-11-05 17:51:34,453 - INFO - Experiment complete!
+2025-11-05 17:51:34,453 - INFO - Results: results/data/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.json
+2025-11-05 17:51:34,453 - INFO - Comparison: results/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42_comparison.png
+2025-11-05 17:51:34,453 - INFO - Animation: results/gifs/partisan_left_moderate_simulated_annealing_maximize_left_moderate_3000s_20251105_174825_seed42.gif
+2025-11-05 17:51:34,453 - INFO - ================================================================================
+
+[7/19] Starting experiment: partisan_left_extreme
+--------------------------------------------------------------------------------
+2025-11-05 17:51:34,455 - INFO - ================================================================================
+2025-11-05 17:51:34,456 - INFO - Experiment: partisan_left_extreme
+2025-11-05 17:51:34,456 - INFO - Algorithm: simulated_annealing
+2025-11-05 17:51:34,456 - INFO - Objective: maximize_left_extreme - Extreme left partisan advantage
+2025-11-05 17:51:34,456 - INFO - Steps: 3000
+2025-11-05 17:51:34,456 - INFO - Random seed: 42
+2025-11-05 17:51:34,456 - INFO - ================================================================================
+2025-11-05 17:51:34,457 - INFO - Building adjacency graph
+2025-11-05 17:51:34,829 - INFO - Starting optimization...
+2025-11-05 17:51:34,830 - INFO - Initializing the map
+2025-11-05 17:51:34,830 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:51:34,830 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:51:35,050 - INFO - Assigned 50 communes
+2025-11-05 17:51:35,627 - INFO - Assigned 100 communes
+2025-11-05 17:51:36,464 - INFO - Assigned 150 communes
+2025-11-05 17:51:37,627 - INFO - Assigned 200 communes
+2025-11-05 17:51:39,252 - INFO - Assigned 250 communes
+2025-11-05 17:51:41,224 - INFO - Assigned 300 communes
+2025-11-05 17:51:42,004 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:51:42,005 - INFO - District 0 has 61 communes
+2025-11-05 17:51:42,005 - INFO - District 1 has 14 communes
+2025-11-05 17:51:42,005 - INFO - District 2 has 3 communes
+2025-11-05 17:51:42,005 - INFO - District 3 has 4 communes
+2025-11-05 17:51:42,005 - INFO - District 4 has 9 communes
+2025-11-05 17:51:42,005 - INFO - District 5 has 60 communes
+2025-11-05 17:51:42,005 - INFO - District 6 has 30 communes
+2025-11-05 17:51:42,005 - INFO - District 7 has 14 communes
+2025-11-05 17:51:42,005 - INFO - District 8 has 10 communes
+2025-11-05 17:51:42,005 - INFO - District 9 has 30 communes
+2025-11-05 17:51:42,005 - INFO - District 10 has 95 communes
+2025-11-05 17:51:42,005 - INFO - Finished initializing the map
+2025-11-05 17:51:42,145 - INFO - Generated a map with 11 districts, starting the simulation
+2025-11-05 17:51:42,145 - INFO - Step 0, current temperature: 1000.0, current score: 112262.23565212342
+2025-11-05 17:51:44,204 - INFO - Step 30, current temperature: 868.7458127689781, current score: 104487.04962435289
+2025-11-05 17:51:44,204 - INFO - Seat deviation: 0, population std: 1044870.50
+2025-11-05 17:51:46,161 - INFO - Step 60, current temperature: 762.3427143471035, current score: 99814.72261029058
+2025-11-05 17:51:46,162 - INFO - Seat deviation: 0, population std: 998147.23
+2025-11-05 17:51:48,261 - INFO - Step 90, current temperature: 662.2820409839833, current score: 96604.96502340288
+2025-11-05 17:51:48,261 - INFO - Seat deviation: 0, population std: 966049.65
+2025-11-05 17:51:57,915 - INFO - Step 210, current temperature: 331.0330883210137, current score: 86358.39106904848
+2025-11-05 17:51:57,915 - INFO - Seat deviation: 0, population std: 863583.91
+2025-11-05 17:52:00,690 - INFO - Step 240, current temperature: 273.48915102221605, current score: 82893.95022340392
+2025-11-05 17:52:00,690 - INFO - Seat deviation: 0, population std: 828939.50
+2025-11-05 17:52:05,906 - INFO - Step 300, current temperature: 188.556845167377, current score: 75251.25992868631
+2025-11-05 17:52:05,906 - INFO - Seat deviation: 0, population std: 752512.60
+2025-11-05 17:52:09,628 - INFO - Step 360, current temperature: 145.1969062157826, current score: 67232.76922862286
+2025-11-05 17:52:09,629 - INFO - Seat deviation: 0, population std: 672327.69
+2025-11-05 17:52:14,878 - INFO - Step 420, current temperature: 99.10481551887466, current score: 60166.33708484703
+2025-11-05 17:52:14,878 - INFO - Seat deviation: 0, population std: 601663.37
+2025-11-05 17:52:17,366 - INFO - Step 450, current temperature: 83.53972967320513, current score: 55443.19901734142
+2025-11-05 17:52:17,366 - INFO - Seat deviation: 0, population std: 554431.99
+2025-11-05 17:52:20,530 - INFO - Step 480, current temperature: 66.96800274786395, current score: 53761.64024990462
+2025-11-05 17:52:20,531 - INFO - Seat deviation: 0, population std: 537616.40
+2025-11-05 17:52:23,686 - INFO - Step 510, current temperature: 53.68359952302262, current score: 50859.33001349884
+2025-11-05 17:52:23,686 - INFO - Seat deviation: 0, population std: 508593.30
+2025-11-05 17:52:31,982 - INFO - Step 600, current temperature: 29.07960468580264, current score: 42499.6241000936
+2025-11-05 17:52:31,982 - INFO - Seat deviation: 0, population std: 424996.24
+2025-11-05 17:52:37,502 - INFO - Step 660, current temperature: 19.649933621386364, current score: 35712.35932923174
+2025-11-05 17:52:37,502 - INFO - Seat deviation: 0, population std: 357123.59
+2025-11-05 17:52:39,940 - INFO - Step 690, current temperature: 16.563777796593605, current score: 31768.90679791659
+2025-11-05 17:52:39,941 - INFO - Seat deviation: 0, population std: 317689.07
+2025-11-05 17:52:43,315 - INFO - Step 720, current temperature: 13.013798143971552, current score: 27914.01038420055
+2025-11-05 17:52:43,316 - INFO - Seat deviation: 0, population std: 279140.10
+2025-11-05 17:52:46,290 - INFO - Step 750, current temperature: 10.537635028579857, current score: 24015.17111263745
+2025-11-05 17:52:46,291 - INFO - Seat deviation: 0, population std: 240151.71
+2025-11-05 17:52:49,564 - INFO - Step 780, current temperature: 8.362817674504694, current score: 21033.586745838445
+2025-11-05 17:52:49,564 - INFO - Seat deviation: 0, population std: 210335.87
+2025-11-05 17:52:58,886 - INFO - Step 870, current temperature: 4.222268634356518, current score: 15564.02743199207
+2025-11-05 17:52:58,887 - INFO - Seat deviation: 0, population std: 155640.27
+2025-11-05 17:53:02,815 - INFO - Step 900, current temperature: 3.251329021634329, current score: 13519.728484167861
+2025-11-05 17:53:02,815 - INFO - Seat deviation: 0, population std: 135197.28
+2025-11-05 17:53:06,645 - INFO - Step 930, current temperature: 2.4786269915882264, current score: 12539.782199289582
+2025-11-05 17:53:06,646 - INFO - Seat deviation: 0, population std: 125397.82
+2025-11-05 17:53:10,406 - INFO - Step 960, current temperature: 1.9086497258801656, current score: 11144.266438038148
+2025-11-05 17:53:10,407 - INFO - Seat deviation: 0, population std: 111442.66
+2025-11-05 17:53:17,146 - INFO - Step 1020, current temperature: 1.1664087517150468, current score: 9635.76939335845
+2025-11-05 17:53:17,146 - INFO - Seat deviation: 0, population std: 96357.69
+2025-11-05 17:53:20,920 - INFO - Step 1050, current temperature: 0.8803111816824589, current score: 9323.312765134984
+2025-11-05 17:53:20,920 - INFO - Seat deviation: 0, population std: 93233.13
+2025-11-05 17:53:24,723 - INFO - Step 1080, current temperature: 0.6778775916302141, current score: 8077.025502125363
+2025-11-05 17:53:24,723 - INFO - Seat deviation: 0, population std: 80770.26
+2025-11-05 17:53:27,965 - INFO - Step 1110, current temperature: 0.5379733392796987, current score: 7236.934821906919
+2025-11-05 17:53:27,965 - INFO - Seat deviation: 0, population std: 72369.35
+2025-11-05 17:53:31,776 - INFO - Step 1140, current temperature: 0.41012005571286086, current score: 5898.659647610389
+2025-11-05 17:53:31,777 - INFO - Seat deviation: 0, population std: 58986.60
+2025-11-05 17:53:35,486 - INFO - Step 1170, current temperature: 0.3190001392514312, current score: 5757.35300623013
+2025-11-05 17:53:35,487 - INFO - Seat deviation: 0, population std: 57573.53
+2025-11-05 17:53:39,398 - INFO - Step 1200, current temperature: 0.24318743203404006, current score: 5047.4510598898805
+2025-11-05 17:53:39,399 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:53:43,466 - INFO - Step 1230, current temperature: 0.18170286290799648, current score: 5047.4510598898805
+2025-11-05 17:53:43,466 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:53:46,893 - INFO - Step 1260, current temperature: 0.14275996750890363, current score: 5047.4510598898805
+2025-11-05 17:53:46,893 - INFO - Seat deviation: 0, population std: 50474.51
+2025-11-05 17:53:50,339 - INFO - Step 1290, current temperature: 0.11216338585409437, current score: 4754.037897521893
+2025-11-05 17:53:50,340 - INFO - Seat deviation: 0, population std: 47540.38
+2025-11-05 17:53:54,076 - INFO - Step 1320, current temperature: 0.08637064648724427, current score: 4265.6066621910795
+2025-11-05 17:53:54,076 - INFO - Seat deviation: 0, population std: 42656.07
+2025-11-05 17:53:57,396 - INFO - Step 1350, current temperature: 0.06785952895241562, current score: 4025.7553288094914
+2025-11-05 17:53:57,396 - INFO - Seat deviation: 0, population std: 40257.55
+2025-11-05 17:54:00,889 - INFO - Step 1380, current temperature: 0.05278259105795365, current score: 3137.5049195443967
+2025-11-05 17:54:00,889 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:54:04,405 - INFO - Step 1410, current temperature: 0.04147012800940076, current score: 3137.5049195443967
+2025-11-05 17:54:04,406 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:54:08,215 - INFO - Step 1440, current temperature: 0.03161444995100841, current score: 3137.5049195443967
+2025-11-05 17:54:08,215 - INFO - Seat deviation: 0, population std: 31375.05
+2025-11-05 17:54:12,029 - INFO - Step 1470, current temperature: 0.024101045588242408, current score: 2533.3842098487044
+2025-11-05 17:54:12,029 - INFO - Seat deviation: 0, population std: 25333.84

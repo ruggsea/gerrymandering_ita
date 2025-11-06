@@ -1,7 +1,13 @@
 .aider*
-*.png
 *.logs
 .*/
 .*
-*.gif
 emilia*/
+*.pkl
+results/data/*.json
+__pycache__/
+*.pyc
+# Allowing PNG and GIF files for publication materials
+# *.png
+# *.gif
+# results/gifs/

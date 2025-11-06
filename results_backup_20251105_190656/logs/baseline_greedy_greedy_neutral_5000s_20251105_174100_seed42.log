@@ -1,0 +1,189 @@
+2025-11-05 17:41:00,570 - INFO - ================================================================================
+2025-11-05 17:41:00,570 - INFO - Experiment: baseline_greedy
+2025-11-05 17:41:00,570 - INFO - Algorithm: greedy
+2025-11-05 17:41:00,570 - INFO - Objective: neutral - Population balance + proportionality
+2025-11-05 17:41:00,570 - INFO - Steps: 5000
+2025-11-05 17:41:00,570 - INFO - Random seed: 42
+2025-11-05 17:41:00,570 - INFO - ================================================================================
+2025-11-05 17:41:00,572 - INFO - Building adjacency graph
+2025-11-05 17:41:00,920 - INFO - Starting optimization...
+2025-11-05 17:41:00,921 - INFO - Initializing the map
+2025-11-05 17:41:00,921 - INFO - Selecting 11 random communes to start the districts
+2025-11-05 17:41:00,921 - INFO - Assigning the remaining communes to districts
+2025-11-05 17:41:01,149 - INFO - Assigned 50 communes
+2025-11-05 17:41:01,680 - INFO - Assigned 100 communes
+2025-11-05 17:41:02,488 - INFO - Assigned 150 communes
+2025-11-05 17:41:03,695 - INFO - Assigned 200 communes
+2025-11-05 17:41:05,280 - INFO - Assigned 250 communes
+2025-11-05 17:41:07,315 - INFO - Assigned 300 communes
+2025-11-05 17:41:08,148 - INFO - Finished assigning communes to districts, assigned 330 communes out of 330 communes
+2025-11-05 17:41:08,148 - INFO - District 0 has 61 communes
+2025-11-05 17:41:08,149 - INFO - District 1 has 14 communes
+2025-11-05 17:41:08,149 - INFO - District 2 has 3 communes
+2025-11-05 17:41:08,149 - INFO - District 3 has 4 communes
+2025-11-05 17:41:08,149 - INFO - District 4 has 9 communes
+2025-11-05 17:41:08,149 - INFO - District 5 has 60 communes
+2025-11-05 17:41:08,149 - INFO - District 6 has 30 communes
+2025-11-05 17:41:08,149 - INFO - District 7 has 14 communes
+2025-11-05 17:41:08,149 - INFO - District 8 has 10 communes
+2025-11-05 17:41:08,149 - INFO - District 9 has 30 communes
+2025-11-05 17:41:08,149 - INFO - District 10 has 95 communes
+2025-11-05 17:41:08,149 - INFO - Finished initializing the map
+2025-11-05 17:41:08,153 - INFO - Generated a map with 11 districts, starting greedy optimization
+2025-11-05 17:41:08,153 - INFO - Step 0, current score: 1122622.3565212341
+2025-11-05 17:41:08,226 - INFO - Step 50, current score: 1035085.7473045929, improvements: 12
+2025-11-05 17:41:08,226 - INFO - Seat deviation: 0, population std: 1035085.75
+2025-11-05 17:41:08,295 - INFO - Step 100, current score: 931640.4317971109, improvements: 26
+2025-11-05 17:41:08,295 - INFO - Seat deviation: 0, population std: 931640.43
+2025-11-05 17:41:08,363 - INFO - Step 150, current score: 900797.0449349127, improvements: 34
+2025-11-05 17:41:08,364 - INFO - Seat deviation: 0, population std: 900797.04
+2025-11-05 17:41:08,440 - INFO - Step 200, current score: 857677.2104743762, improvements: 46
+2025-11-05 17:41:08,440 - INFO - Seat deviation: 0, population std: 857677.21
+2025-11-05 17:41:08,877 - INFO - Step 500, current score: 528665.608991869, improvements: 126
+2025-11-05 17:41:08,878 - INFO - Seat deviation: 0, population std: 528665.61
+2025-11-05 17:41:09,064 - INFO - Step 600, current score: 457962.19734584505, improvements: 148
+2025-11-05 17:41:09,064 - INFO - Seat deviation: 0, population std: 457962.20
+2025-11-05 17:41:09,148 - INFO - Step 650, current score: 439282.32308558817, improvements: 158
+2025-11-05 17:41:09,148 - INFO - Seat deviation: 0, population std: 439282.32
+2025-11-05 17:41:09,575 - INFO - Step 850, current score: 273420.5456488697, improvements: 203
+2025-11-05 17:41:09,575 - INFO - Seat deviation: 0, population std: 273420.55
+2025-11-05 17:41:09,683 - INFO - Step 900, current score: 232717.82117291976, improvements: 214
+2025-11-05 17:41:09,684 - INFO - Seat deviation: 0, population std: 232717.82
+2025-11-05 17:41:09,882 - INFO - Step 1000, current score: 164126.81884838096, improvements: 235
+2025-11-05 17:41:09,882 - INFO - Seat deviation: 0, population std: 164126.82
+2025-11-05 17:41:10,069 - INFO - Step 1100, current score: 139020.16195704127, improvements: 247
+2025-11-05 17:41:10,070 - INFO - Seat deviation: 0, population std: 139020.16
+2025-11-05 17:41:10,168 - INFO - Step 1150, current score: 131594.45639476881, improvements: 256
+2025-11-05 17:41:10,169 - INFO - Seat deviation: 0, population std: 131594.46
+2025-11-05 17:41:10,278 - INFO - Step 1200, current score: 108910.24799188042, improvements: 262
+2025-11-05 17:41:10,279 - INFO - Seat deviation: 0, population std: 108910.25
+2025-11-05 17:41:10,379 - INFO - Step 1250, current score: 87976.92045189095, improvements: 268
+2025-11-05 17:41:10,379 - INFO - Seat deviation: 0, population std: 87976.92
+2025-11-05 17:41:10,590 - INFO - Step 1350, current score: 82249.91022718605, improvements: 275
+2025-11-05 17:41:10,591 - INFO - Seat deviation: 0, population std: 82249.91
+2025-11-05 17:41:10,698 - INFO - Step 1400, current score: 79879.1785944599, improvements: 279
+2025-11-05 17:41:10,698 - INFO - Seat deviation: 0, population std: 79879.18
+2025-11-05 17:41:10,807 - INFO - Step 1450, current score: 73939.6924491242, improvements: 280
+2025-11-05 17:41:10,807 - INFO - Seat deviation: 0, population std: 73939.69
+2025-11-05 17:41:10,909 - INFO - Step 1500, current score: 73758.13914667428, improvements: 281
+2025-11-05 17:41:10,909 - INFO - Seat deviation: 0, population std: 73758.14
+2025-11-05 17:41:11,012 - INFO - Step 1550, current score: 66375.35363520369, improvements: 287
+2025-11-05 17:41:11,013 - INFO - Seat deviation: 0, population std: 66375.35
+2025-11-05 17:41:11,114 - INFO - Step 1600, current score: 63019.666663512, improvements: 290
+2025-11-05 17:41:11,115 - INFO - Seat deviation: 0, population std: 63019.67
+2025-11-05 17:41:11,226 - INFO - Step 1650, current score: 63019.666663512, improvements: 290
+2025-11-05 17:41:11,226 - INFO - Seat deviation: 0, population std: 63019.67
+2025-11-05 17:41:11,540 - INFO - Step 1800, current score: 55350.492528137795, improvements: 295
+2025-11-05 17:41:11,541 - INFO - Seat deviation: 0, population std: 55350.49
+2025-11-05 17:41:11,635 - INFO - Step 1850, current score: 42597.35251289026, improvements: 298
+2025-11-05 17:41:11,635 - INFO - Seat deviation: 0, population std: 42597.35
+2025-11-05 17:41:11,756 - INFO - Step 1900, current score: 40330.77610796839, improvements: 301
+2025-11-05 17:41:11,756 - INFO - Seat deviation: 0, population std: 40330.78
+2025-11-05 17:41:11,859 - INFO - Step 1950, current score: 35695.77685764906, improvements: 303
+2025-11-05 17:41:11,859 - INFO - Seat deviation: 0, population std: 35695.78
+2025-11-05 17:41:11,958 - INFO - Step 2000, current score: 30861.839576028662, improvements: 305
+2025-11-05 17:41:11,959 - INFO - Seat deviation: 0, population std: 30861.84
+2025-11-05 17:41:12,078 - INFO - Step 2050, current score: 30861.839576028662, improvements: 305
+2025-11-05 17:41:12,078 - INFO - Seat deviation: 0, population std: 30861.84
+2025-11-05 17:41:12,194 - INFO - Step 2100, current score: 24580.091297599916, improvements: 307
+2025-11-05 17:41:12,195 - INFO - Seat deviation: 0, population std: 24580.09
+2025-11-05 17:41:12,301 - INFO - Step 2150, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,301 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,541 - INFO - Step 2250, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,542 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,637 - INFO - Step 2300, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,637 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,845 - INFO - Step 2400, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,846 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:12,954 - INFO - Step 2450, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:12,955 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,075 - INFO - Step 2500, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,075 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,187 - INFO - Step 2550, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,188 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,295 - INFO - Step 2600, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,295 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,416 - INFO - Step 2650, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,416 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,505 - INFO - Step 2700, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,506 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,607 - INFO - Step 2750, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,607 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,701 - INFO - Step 2800, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,702 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,825 - INFO - Step 2850, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,825 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:13,941 - INFO - Step 2900, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:13,942 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,127 - INFO - Step 3000, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,127 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,229 - INFO - Step 3050, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,229 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,343 - INFO - Step 3100, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,343 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,676 - INFO - Step 3250, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,677 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,770 - INFO - Step 3300, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,770 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:14,955 - INFO - Step 3400, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:14,956 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,068 - INFO - Step 3450, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,068 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,370 - INFO - Step 3600, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,370 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,464 - INFO - Step 3650, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,465 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,664 - INFO - Step 3750, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,665 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,781 - INFO - Step 3800, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,781 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,881 - INFO - Step 3850, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,881 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:15,980 - INFO - Step 3900, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:15,981 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,089 - INFO - Step 3950, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,089 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,383 - INFO - Step 4100, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,383 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,494 - INFO - Step 4150, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,495 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,802 - INFO - Step 4300, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,802 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:16,887 - INFO - Step 4350, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:16,888 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,000 - INFO - Step 4400, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,001 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,212 - INFO - Step 4500, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,212 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,368 - INFO - Step 4550, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,369 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,476 - INFO - Step 4600, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,477 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,579 - INFO - Step 4650, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,580 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,685 - INFO - Step 4700, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,685 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,795 - INFO - Step 4750, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,795 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:17,889 - INFO - Step 4800, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:17,889 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,022 - INFO - Step 4850, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:18,022 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,126 - INFO - Step 4900, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:18,126 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,226 - INFO - Step 4950, current score: 22625.636429384936, improvements: 308
+2025-11-05 17:41:18,227 - INFO - Seat deviation: 0, population std: 22625.64
+2025-11-05 17:41:18,385 - INFO - Greedy optimization complete. Best score: 22625.636429384936, Total improvements: 308
+2025-11-05 17:41:18,387 - INFO - Results saved to results/data/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.json
+2025-11-05 17:41:18,394 - INFO - Full results saved to results/data/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.pkl
+2025-11-05 17:41:18,394 - INFO - Creating visualizations...
+2025-11-05 17:41:19,330 - INFO - Comparison plot saved to results/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42_comparison.png
+2025-11-05 17:41:19,330 - INFO - Creating animation with 71 frames
+2025-11-05 17:41:19,685 - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-11-05 17:41:48,807 - INFO - Animation saved to results/gifs/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.gif
+2025-11-05 17:41:48,810 - INFO - ================================================================================
+2025-11-05 17:41:48,810 - INFO - Experiment complete!
+2025-11-05 17:41:48,810 - INFO - Results: results/data/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.json
+2025-11-05 17:41:48,811 - INFO - Comparison: results/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42_comparison.png
+2025-11-05 17:41:48,811 - INFO - Animation: results/gifs/baseline_greedy_greedy_neutral_5000s_20251105_174100_seed42.gif
+2025-11-05 17:41:48,811 - INFO - ================================================================================

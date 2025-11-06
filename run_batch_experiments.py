@@ -1,0 +1,310 @@
+#!/usr/bin/env python3
+"""
+Batch experiment runner for systematic evaluation.
+"""
+import argparse
+import logging
+import json
+import pickle
+import importlib
+from pathlib import Path
+from datetime import datetime
+import sys
+
+from src.data_loader import load_and_prepare_data
+from src.visualizer_improved import create_animation_improved, plot_final_comparison_improved
+from experiments.experiment_configs import (
+    ALGORITHMS, OBJECTIVES, PAPER_EXPERIMENTS, TEST_EXPERIMENTS
+)
+
+
+def setup_logging(log_dir: Path, experiment_name: str):
+    """Setup logging to file and console."""
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_file = log_dir / f"{experiment_name}.log"
+
+    # Remove existing handlers
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file),
+            logging.StreamHandler()
+        ],
+        force=True
+    )
+
+
+def run_single_experiment(
+    experiment_config: dict,
+    gdf,
+    output_dir: Path,
+    n_districts: int = 11
+):
+    """Run a single experiment."""
+
+    name = experiment_config['name']
+    algorithm_name = experiment_config['algorithm']
+    objective_name = experiment_config['objective']
+    steps = experiment_config['steps']
+    seed = experiment_config.get('seed', None)
+    create_gif = experiment_config.get('create_gif', False)
+
+    # Get algorithm and objective config
+    algo_config = ALGORITHMS[algorithm_name]
+    obj_config = OBJECTIVES[objective_name]
+
+    # Create experiment name
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    experiment_name = f"{name}_{algorithm_name}_{objective_name}_{steps}s_{timestamp}"
+    if seed is not None:
+        experiment_name += f"_seed{seed}"
+
+    # Setup directories
+    log_dir = output_dir / 'logs'
+    gif_dir = output_dir / 'gifs'
+    data_dir = output_dir / 'data'
+
+    for d in [log_dir, gif_dir, data_dir]:
+        d.mkdir(parents=True, exist_ok=True)
+
+    # Setup logging
+    setup_logging(log_dir, experiment_name)
+
+    logging.info("="*80)
+    logging.info(f"Experiment: {name}")
+    logging.info(f"Algorithm: {algorithm_name}")
+    logging.info(f"Objective: {objective_name} - {obj_config['description']}")
+    logging.info(f"Steps: {steps}")
+    logging.info(f"Random seed: {seed}")
+    logging.info("="*80)
+
+    # Import and instantiate algorithm
+    module = importlib.import_module(algo_config['module'])
+    OptimizerClass = getattr(module, algo_config['class'])
+
+    # Create optimizer
+    optimizer = OptimizerClass(
+        gdf=gdf,
+        n_districts=n_districts,
+        target_party=obj_config['target_party'],
+        objective_weights=obj_config['weights'],
+        random_seed=seed,
+        **algo_config.get('init_params', {})
+    )
+
+    # Run optimization
+    logging.info("Starting optimization...")
+    try:
+        optimize_params = algo_config.get('optimize_params', {})
+        best_districts, history = optimizer.optimize(
+            steps=steps,
+            save_frequency=max(1, steps // 100),
+            **optimize_params
+        )
+    except Exception as e:
+        logging.error(f"Optimization failed: {e}")
+        raise
+
+    # Save results
+    results = {
+        'experiment_name': experiment_name,
+        'name': name,
+        'algorithm': algorithm_name,
+        'objective': objective_name,
+        'objective_description': obj_config['description'],
+        'n_districts': n_districts,
+        'steps': steps,
+        'seed': seed,
+        'target_party': obj_config['target_party'],
+        'weights': obj_config['weights'],
+        'best_districts': best_districts.tolist(),
+        'history': [
+            {k: v.tolist() if hasattr(v, 'tolist') else v
+             for k, v in h.items() if k != 'districts'}
+            for h in history
+        ]
+    }
+
+    results_file = data_dir / f"{experiment_name}.json"
+    with open(results_file, 'w') as f:
+        json.dump(results, f, indent=2)
+    logging.info(f"Results saved to {results_file}")
+
+    # Save pickle with full history
+    pickle_file = data_dir / f"{experiment_name}.pkl"
+    with open(pickle_file, 'wb') as f:
+        pickle.dump({
+            'gdf': gdf,
+            'history': history,
+            'best_districts': best_districts,
+            'config': experiment_config,
+            'algorithm': algorithm_name,
+            'objective': objective_name
+        }, f)
+    logging.info(f"Full results saved to {pickle_file}")
+
+    # Create visualizations
+    logging.info("Creating visualizations...")
+
+    # Define party colors
+    party_colors = {
+        'coalition_left': '#E74C3C',      # Red
+        'coalition_right': '#3498DB',     # Blue
+        'coalition_center': '#F39C12'     # Orange
+    }
+    party_cols = ['coalition_left', 'coalition_right', 'coalition_center']
+
+    # Comparison plot
+    comparison_file = output_dir / f"{experiment_name}_comparison.png"
+    initial_districts = history[0]['districts']
+    plot_final_comparison_improved(
+        gdf=gdf,
+        initial_districts=initial_districts,
+        final_districts=best_districts,
+        party_cols=party_cols,
+        party_colors=party_colors,
+        output_path=str(comparison_file),
+        n_districts=n_districts
+    )
+
+    # Animated GIF
+    if create_gif and len(history) > 1:
+        gif_file = gif_dir / f"{experiment_name}.gif"
+        try:
+            create_animation_improved(
+                gdf=gdf,
+                history=history,
+                output_path=str(gif_file),
+                party_cols=party_cols,
+                party_colors=party_colors,
+                fps=3,
+                dpi=80
+            )
+        except Exception as e:
+            logging.warning(f"GIF creation failed: {e}")
+
+    logging.info("="*80)
+    logging.info("Experiment complete!")
+    logging.info(f"Results: {results_file}")
+    logging.info(f"Comparison: {comparison_file}")
+    if create_gif:
+        logging.info(f"Animation: {gif_file}")
+    logging.info("="*80)
+
+    return results
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Run batch experiments for gerrymandering research'
+    )
+    parser.add_argument(
+        '--suite',
+        type=str,
+        default='paper',
+        choices=['paper', 'test'],
+        help='Experiment suite to run'
+    )
+    parser.add_argument(
+        '--experiments',
+        type=str,
+        nargs='+',
+        help='Specific experiment names to run (optional)'
+    )
+    parser.add_argument(
+        '--data_dir',
+        type=str,
+        default='.',
+        help='Directory containing data files'
+    )
+    parser.add_argument(
+        '--output_dir',
+        type=str,
+        default='results',
+        help='Directory for output files'
+    )
+    parser.add_argument(
+        '--n_districts',
+        type=int,
+        default=11,
+        help='Number of districts'
+    )
+
+    args = parser.parse_args()
+
+    # Load data once
+    print("Loading Emilia-Romagna data...")
+    gdf = load_and_prepare_data(region='emilia', data_dir=args.data_dir)
+    print(f"Loaded {len(gdf)} communes\n")
+
+    # Get experiment suite
+    if args.suite == 'paper':
+        experiments = PAPER_EXPERIMENTS
+    else:
+        experiments = TEST_EXPERIMENTS
+
+    # Filter experiments if specified
+    if args.experiments:
+        experiments = [e for e in experiments if e['name'] in args.experiments]
+
+    if not experiments:
+        print("No experiments to run!")
+        return
+
+    print(f"Running {len(experiments)} experiments...")
+    print("="*80)
+
+    output_dir = Path(args.output_dir)
+    results_summary = []
+
+    for i, exp_config in enumerate(experiments, 1):
+        print(f"\n[{i}/{len(experiments)}] Starting experiment: {exp_config['name']}")
+        print("-"*80)
+
+        try:
+            result = run_single_experiment(
+                experiment_config=exp_config,
+                gdf=gdf,
+                output_dir=output_dir,
+                n_districts=args.n_districts
+            )
+            results_summary.append({
+                'name': exp_config['name'],
+                'status': 'success',
+                'result_file': result.get('experiment_name')
+            })
+        except Exception as e:
+            print(f"ERROR: Experiment {exp_config['name']} failed: {e}")
+            results_summary.append({
+                'name': exp_config['name'],
+                'status': 'failed',
+                'error': str(e)
+            })
+            continue
+
+    # Save summary
+    print("\n" + "="*80)
+    print("BATCH EXPERIMENTS COMPLETE")
+    print("="*80)
+
+    summary_file = output_dir / 'batch_summary.json'
+    with open(summary_file, 'w') as f:
+        json.dump({
+            'suite': args.suite,
+            'total_experiments': len(experiments),
+            'successful': sum(1 for r in results_summary if r['status'] == 'success'),
+            'failed': sum(1 for r in results_summary if r['status'] == 'failed'),
+            'experiments': results_summary
+        }, f, indent=2)
+
+    print(f"\nSummary saved to: {summary_file}")
+    print(f"Successful: {sum(1 for r in results_summary if r['status'] == 'success')}/{len(experiments)}")
+    print(f"Failed: {sum(1 for r in results_summary if r['status'] == 'failed')}/{len(experiments)}")
+
+
+if __name__ == '__main__':
+    main()
