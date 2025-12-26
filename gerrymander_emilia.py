@@ -70,6 +70,10 @@ class EmiliaGerrymander:
             for i in range(len(self.data))
         ])
 
+        # Total voters per municipality (for population balance)
+        self.total_votes = self.left_votes + self.right_votes + self.m5s_votes
+        self.target_voters_per_district = self.total_votes.sum() / 11
+
         self.n_municipalities = len(self.municipalities)
         self.n_districts = 11
 
@@ -80,6 +84,8 @@ class EmiliaGerrymander:
         print(f"\nLoaded {self.n_municipalities} municipalities")
         print(f"Target: {self.n_districts} districts")
         print(f"LEFT={self.left_votes.sum():,.0f} RIGHT={self.right_votes.sum():,.0f} M5S={self.m5s_votes.sum():,.0f}")
+        print(f"Total voters: {self.total_votes.sum():,.0f}")
+        print(f"Target voters/district: {self.target_voters_per_district:,.0f}")
         print(f"Adjacency: avg {np.mean([len(v) for v in self.adjacency.values()]):.1f} neighbors/municipality")
 
     def _build_adjacency(self) -> Dict[int, Set[int]]:
@@ -128,31 +134,54 @@ class EmiliaGerrymander:
                 return False
         return True
 
-    def compute_utility(self, assignment: np.ndarray, target: str = 'right') -> Tuple[int, Dict]:
-        """Compute utility = seats won by target."""
+    def compute_utility(self, assignment: np.ndarray, target: str = 'right',
+                       population_penalty_weight: float = 0.1) -> Tuple[float, Dict]:
+        """
+        Compute utility = seats won by target - population imbalance penalty.
+
+        Utility = seats_won - penalty_weight * population_deviation
+
+        This encourages balanced districts while maximizing seats.
+        """
         district_left = np.zeros(self.n_districts)
         district_right = np.zeros(self.n_districts)
         district_m5s = np.zeros(self.n_districts)
+        district_population = np.zeros(self.n_districts)
 
         np.add.at(district_left, assignment, self.left_votes)
         np.add.at(district_right, assignment, self.right_votes)
         np.add.at(district_m5s, assignment, self.m5s_votes)
+        np.add.at(district_population, assignment, self.total_votes)
 
         right_wins = (district_right > district_left) & (district_right > district_m5s)
         left_wins = (district_left > district_right) & (district_left > district_m5s)
 
+        # Calculate population balance penalty
+        # Use coefficient of variation: std_dev / mean
+        pop_std = np.std(district_population)
+        pop_mean = np.mean(district_population)
+        population_penalty = pop_std / pop_mean if pop_mean > 0 else 0
+
         results = {
             'left_seats': int(left_wins.sum()),
             'right_seats': int(right_wins.sum()),
-            'm5s_seats': int((~right_wins & ~left_wins).sum())
+            'm5s_seats': int((~right_wins & ~left_wins).sum()),
+            'population_penalty': population_penalty,
+            'population_std': pop_std,
+            'population_mean': pop_mean,
+            'max_deviation': (district_population.max() - self.target_voters_per_district) / self.target_voters_per_district
         }
 
+        # Base utility: seats won
         if target == 'right':
-            utility = results['right_seats']
+            base_utility = results['right_seats']
         elif target == 'left':
-            utility = results['left_seats']
+            base_utility = results['left_seats']
         else:
-            utility = results['m5s_seats']
+            base_utility = results['m5s_seats']
+
+        # Final utility with penalty
+        utility = base_utility - population_penalty_weight * population_penalty
 
         return utility, results
 
@@ -257,7 +286,8 @@ class EmiliaGerrymander:
                     improvements += 1
 
                     if verbose and improvements % 5 == 0:
-                        print(f"  Iter {iteration}: {best_utility} seats (LEFT={best_results['left_seats']}, RIGHT={best_results['right_seats']})")
+                        max_dev = best_results.get('max_deviation', 0) * 100
+                        print(f"  Iter {iteration}: {best_utility:.2f} utility (L={best_results['left_seats']}, R={best_results['right_seats']}, MaxDev={max_dev:.1f}%)")
                 elif new_utility < current_utility:
                     # Revert
                     current[muni] = old_district
@@ -304,7 +334,9 @@ class EmiliaGerrymander:
             raise ValueError("Optimization broke contiguity!")
 
         if verbose:
+            max_dev = best_results.get('max_deviation', 0) * 100
             print(f"Final: LEFT={best_results['left_seats']} RIGHT={best_results['right_seats']} M5S={best_results['m5s_seats']}")
+            print(f"Population: Max deviation={max_dev:.1f}% | Std={best_results.get('population_std', 0):.0f} voters")
             print(f"✓ All districts contiguous and valid")
 
         return best, best_results
@@ -324,11 +356,13 @@ class EmiliaGerrymander:
             )
 
             achieved = results[f'{target}_seats']
-            print(f"  Result: LEFT={results['left_seats']} RIGHT={results['right_seats']} M5S={results['m5s_seats']}")
+            max_dev = results.get('max_deviation', 0) * 100
+            print(f"  Result: LEFT={results['left_seats']} RIGHT={results['right_seats']} M5S={results['m5s_seats']} | MaxDev={max_dev:.1f}%")
             print(f"  {target.upper()}: {achieved}/{goal_seats}")
 
             if achieved >= goal_seats:
                 print(f"\n🎯 GOAL ACHIEVED! {target.upper()} won {achieved} seats with VALID districts!")
+                print(f"   Population balance: Max deviation {max_dev:.1f}%")
 
                 output = f"emilia_{target}_{achieved}seats_attempt{attempt}.pkl"
                 with open(output, 'wb') as f:
